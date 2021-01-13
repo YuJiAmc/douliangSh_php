@@ -1,0 +1,91 @@
+<!-- 移动端导航栏 -->
+<!-- <div class="head_m clearfix">
+  <a href="/" class="logo_m fl">
+    <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png" alt="m-斗量传媒-logo">
+  </a>
+  <img id="navSlideDown" src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png" alt="m-6-2.png">
+</div> -->
+<div class="nav_list">
+  <div class="nav_head clearfix">
+    <div class="fl">
+      <img
+        src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
+        alt="m-6-3.png"
+      />
+    </div>
+    <span id="navSlideUp">✕</span>
+  </div>
+  <ul>
+    <li>
+      <a href="/">首页</a>
+    </li>
+    <li>
+      {dede:type typeid='4'}
+      <a href="[field:typelink /]">抖音运营</a>
+      {/dede:type}
+    </li>
+    <li>
+      {dede:type typeid='5'}
+      <a href="[field:typelink /]">电商直播</a>
+      {/dede:type}
+    </li>
+    <li>
+      {dede:type typeid='6'}
+      <a href="[field:typelink /]">抖音培训</a>
+      {/dede:type}
+    </li>
+    <li>
+      {dede:type typeid='7'}
+      <a href="[field:typelink /]">电商运营</a>
+      {/dede:type}
+    </li>
+    <li>
+      {dede:type typeid='8'}
+      <a href="[field:typelink /]">设计外包</a>
+      {/dede:type}
+    </li>
+    <li>
+      {dede:type typeid='1'}
+      <a href="[field:typelink /]">新闻资讯</a>
+      {/dede:type}
+    </li>
+    <li class="active">
+      {dede:type typeid='2'}
+      <a href="[field:typelink /]">联系我们</a>
+      {/dede:type}
+    </li>
+  </ul>
+  <div class="nav_phone">
+    <img
+      src="{dede:global.cfg_templets_skin/}/img/mobile/index/1_11.png"
+      alt="1_11.png"
+    />
+    <p>199 0163 8825</p>
+  </div>
+  <div class="nav_message">
+    <img
+      src="{dede:global.cfg_templets_skin/}/img/mobile/index/1_15.png"
+      alt="1_15.png"
+    />
+  </div>
+  <div class="nav_ewm">
+    <img
+      src="{dede:global.cfg_templets_skin/}/img/mobile/index/1_19.png"
+      alt="1_19.png"
+    />
+  </div>
+</div>
+
+<script>
+  $("#navSlideDown").click(function () {
+    $("#mobile").hide();
+    $(".nav_list").slideDown("fast", function () {
+      $("#mobile").hide();
+    });
+  });
+  $("#navSlideUp").click(function () {
+    $(".nav_list").slideUp("fast", function () {
+      $("#mobile").show();
+    });
+  });
+</script>

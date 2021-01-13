@@ -1,0 +1,247 @@
+<!-- 新闻资讯 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>新闻资讯-上海斗量文化传媒有限公司</title>
+    <meta name="keywords" content="新闻资讯" />
+    <meta
+      name="description"
+      content="上海斗量文化传媒有限公司——短视频代运营服务商 , 抖音官方认证 MCN机构，为您整理抖音短视频代运营等相关新闻资讯。"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{dede:global.cfg_templets_skin/}/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{dede:global.cfg_templets_skin/}/favicon-16x16.png"
+    />
+    <script src="{dede:global.cfg_templets_skin/}/js/flexible.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{dede:global.cfg_templets_skin/}/css/bootstrap-custom.min.css"
+    />
+    <script>
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/base.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/header.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/footer.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/newsCenter.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+    </script>
+    <script src="{dede:global.cfg_templets_skin/}/js/b.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/js/b2.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/js/jquery-ias.min.js"></script>
+    <script>
+      document.write(
+        '<script src="{dede:global.cfg_templets_skin/}/js/common.js?v=' +
+          new Date().getTime() +
+          '"><\/script>'
+      );
+    </script>
+    <script src="{dede:global.cfg_templets_skin/}/js/bootstrap/bootstrap.js"></script>
+  </head>
+  <body>
+    <div id="newsCenter">
+      <!-- header -->
+      <ul class="back_top">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li>
+          <div class="back_top_icon"></div>
+        </li>
+      </ul>
+      <div class="header clearfix">
+        <a href="/" class="logo fl">
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
+            alt="斗量传媒-logo"
+          />
+        </a>
+        <ul class="header-nav fr">
+          <li>
+            <a href="/">首页</a>
+          </li>
+          <li>
+            {dede:type typeid='4'}
+            <a href="[field:typelink /]">抖音运营</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='5'}
+            <a href="[field:typelink /]">电商直播</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='6'}
+            <a href="[field:typelink /]">抖音培训</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='7'}
+            <a href="[field:typelink /]">电商运营</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='8'}
+            <a href="[field:typelink /]">设计外包</a>
+            {/dede:type}
+          </li>
+          <li class="active">
+            {dede:type typeid='1'}
+            <a href="[field:typelink /]">新闻资讯</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='2'}
+            <a href="[field:typelink /]">联系我们</a>
+            {/dede:type}
+          </li>
+        </ul>
+      </div>
+      <!-- banner -->
+      <div class="banner">
+        <img
+          id="banner"
+          style="width: 100%"
+          src="{dede:global.cfg_templets_skin/}/img/newsCenter/banner.jpg"
+          alt="新闻中心-banner"
+        />
+      </div>
+      <!-- news center -->
+      <div class="news_center">
+        <div class="title">
+          <div>NEWS CENTER</div>
+          <p>新闻中心</p>
+        </div>
+        <!-- 列表 -->
+        <ul id="newsLists">
+          {dede:list orderby='pubdate' pagesize='10'}
+          <li class="list_item clearfix">
+            <a href="[field:arcurl/]" style="color: #333">
+              <div class="new_date">
+                <div class="month">
+                  [field:pubdate runphp='yes'] $month = strftime('%m',@me);
+                  $new_month = substr($month,0,1); if($new_month == 0) @me =
+                  substr($month,1); else @me = $month; [/field:pubdate]<span
+                    >/月</span
+                  >
+                </div>
+                <div class="day">
+                  [field:pubdate function="MyDate('d',@me)"/]<span>/日</span>
+                </div>
+              </div>
+              <div class="article">
+                <div class="head">[field:title/]</div>
+                <div class="read-num">[field:click/] 阅读</div>
+                <div class="main">
+                  <div class="main_content">
+                    <div>[field:description/]...</div>
+                  </div>
+                  <div class="check">阅读全文 》</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          {/dede:list}
+        </ul>
+        <div class="row text-center">
+          <ul class="pagination pagination-sm">
+            {dede:pagelist listsize="5"/}
+          </ul>
+        </div>
+      </div>
+      <!-- footer -->
+      <div id="foot">{dede:include filename="footer.html"/}</div>
+    </div>
+
+    <div id="mobile">
+      <!-- head -->
+      <div class="head_m clearfix">
+        <a href="/" class="logo_m fl">
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
+            alt="m-斗量传媒-logo"
+          />
+        </a>
+        <img
+          id="navSlideDown"
+          src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
+          alt="m-6-2.png"
+        />
+      </div>
+      <!-- banner -->
+      <div class="banner_m">
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/mobile/news/banner.png"
+          alt="m-news-banner"
+        />
+      </div>
+      <!-- m_main -->
+      <div class="m_body">
+        <div class="m_title">新闻中心</div>
+        <ul id="newsLists_m">
+          {dede:list orderby='pubdate' pagesize='5'}
+          <li class="clearfix">
+            <a href="[field:arcurl/]" style="color: #333">
+              <div class="m_date">
+                [field:pubdate runphp='yes'] $month = strftime('%m',@me);
+                $new_month = substr($month,0,1); if($new_month == 0) @me =
+                substr($month,1); else @me = $month; [/field:pubdate]
+              </div>
+              <div class="m_main">
+                <div class="icon"></div>
+                <div class="m_head">[field:title/]</div>
+                <div class="read-num_m">[field:click/] <span>阅读</span></div>
+                <div class="m_cont">[field:description/]...</div>
+              </div>
+            </a>
+          </li>
+          {/dede:list}
+        </ul>
+        <div class="row text-center">
+          <ul class="pagination pagination-sm">
+            {dede:pagelist listsize="3" listitem="pageno"/}
+          </ul>
+        </div>
+        <!-- <div class="more_m" onclick="moreNews()">查看更多...</div> -->
+      </div>
+      <!-- footer_m -->
+      <div id="foot_m">{dede:include filename="footer_m.html"/}</div>
+    </div>
+    <!-- 移动端导航栏 -->
+    <div id="head_m">{dede:include filename="header_m.html"/}</div>
+
+    <script>
+      $(document).ready(function () {
+        $(".back_top li:last-child").click(function () {
+          $("body,html").animate({ scrollTop: 0 }, 500);
+        });
+      });
+    </script>
+  </body>
+</html>

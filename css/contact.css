@@ -1,0 +1,312 @@
+/* contact */
+.contact {
+  text-align: center;
+  color: #fff;
+  padding-top: .83rem /* 160/192 */;
+}
+#ecomOperate .contact {
+  background-color:#00182d;
+}
+#contactUs .contact{
+  padding: 0;
+}
+#mgwb .contact{
+  padding-top: .42rem /* 80/192 */;
+}
+#contactUs .contact .contact_title p:first-child{
+  color: #d38a61;
+}
+#mgwb .contact .contact_title p:first-child{
+  color: #ffa103;
+}
+.contact .contact_title p:first-child{
+  font-size: .29rem /* 55/192 */;
+}
+.contact .contact_title p:nth-child(2){
+  color: #fff;
+  font-size: .16rem /* 30/192 */;
+  margin: .05rem /* 10/192 */ 0;
+}
+#contactUs .contact .contact_title p:nth-child(2){
+  color: #333;
+  font-size: .16rem /* 30/192 */;
+  margin: .1rem /* 20/192 */ 0;
+}
+#mgwb .contact .contact_title p:nth-child(2){
+  color: #333;
+  font-size: .16rem /* 30/192 */;
+  margin: .1rem /* 20/192 */ 0;
+}
+#ecomOperate .contact_title p:first-child{
+  color: #46b4ff;
+}
+#ecommerceLive .contact_title p:first-child{
+  color: #a2c7fe;
+}
+#tiktokOperate .contact_title p:first-child{
+  color: #d82647;
+}
+#tiktokOperate .contact{
+  background-color: rgba(0, 0, 0, .4);
+}
+#tiktokTrain .contact_title p:first-child{
+  color: #f4cf1f;
+}
+#tiktokTrain .contact{
+  background: url(../img/tiktokTrain/ditu_05.jpg) no-repeat;
+  background-size: cover;
+}
+/* contact_form */
+.contact_form {
+  font-size: .1rem /* 20/192 */;
+  width: 3.65rem /* 700/192 */;
+  margin: 0 auto;
+  margin-top: .26rem /* 50/192 */;
+  padding-bottom: .52rem /* 100/192 */;
+}
+.form_label .label_i {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.form_label .name_img{
+  width: .19rem /* 36/192 */;
+  height: .19rem /* 37/192 */;
+  background-image: url(../img/index/5.png);
+}
+.form_label .phone_img{
+  width: .15rem /* 28/192 */;
+  height: .21rem /* 41/192 */;
+  background-image: url(../img/index/6.png);
+}
+.form_label .message_img{
+  width: .19rem /* 37/192 */;
+  height: .19rem /* 37/192 */;
+  background-image: url(../img/index/7.png);
+}
+#contactUs .form_label .name_img{
+  width: .19rem /* 36/192 */;
+  height: .19rem /* 37/192 */;
+  background-image: url(../img/contactUs/1_30.png);
+}
+#contactUs .form_label .phone_img{
+  width: .15rem /* 28/192 */;
+  height: .21rem /* 41/192 */;
+  background-image: url(../img/contactUs/1_27.png);
+}
+#contactUs .form_label .message_img{
+  width: .19rem /* 37/192 */;
+  height: .19rem /* 37/192 */;
+  background-image: url(../img/contactUs/1_35.png);
+}
+#mgwb .form_label .name_img{
+  width: .19rem /* 36/192 */;
+  height: .19rem /* 37/192 */;
+  background-image: url(../img/mgwb/22.png);
+}
+#mgwb .form_label .phone_img{
+  width: .15rem /* 28/192 */;
+  height: .21rem /* 41/192 */;
+  background-image: url(../img/mgwb/11.png);
+}
+#mgwb .form_label .message_img{
+  width: .19rem /* 37/192 */;
+  height: .19rem /* 37/192 */;
+  background-image: url(../img/mgwb/33.png);
+}
+.form_label {
+  display: inline-block;
+  text-align: left;
+}
+#contactUs .form_label {
+  color: #d38a61;
+}
+#mgwb .form_label {
+  color: #ffa103;
+}
+.form_label:first-child {
+  margin-right: .31rem /* 60/192 */;
+}
+.contact_form .form_label.message {
+  margin-top: .16rem /* 30/192 */;
+}
+.contact_form  .form_label.message img{
+  vertical-align: bottom;
+}
+.contact_form  .form_label.message textarea{
+  width: 3.41rem /* 655/192 */;
+  height: .83rem /* 160/192 */;
+  padding: .03rem /* 5/192 */ .05rem /* 10/192 */;
+  font-size: .1rem /* 20/192 */;
+  resize: none;
+}
+#contactUs .form_label textarea {
+  border: 1px solid #6e6e6e;
+  outline: none;; 
+  border-radius: .03rem /* 5/192 */;
+  box-shadow: .01rem /* 1/192 */ .01rem /* 2/192 */ .03rem /* 6/192 */ rgba(95, 95, 95, .8);
+}
+#mgwb .form_label textarea {
+  border: 1px solid #6e6e6e;
+  outline: none;; 
+  border-radius: .03rem /* 5/192 */;
+  box-shadow: .01rem /* 1/192 */ .01rem /* 2/192 */ .03rem /* 6/192 */ rgba(95, 95, 95, .8);
+}
+.contact_form .form_btn{
+  width: 2.34rem /* 450/192 */;
+  height: .33rem /* 63/192 */;
+  cursor: pointer;
+  background: url(../img/index/4.png) no-repeat;
+  margin: 0 auto;
+  margin-top: .31rem /* 60/192 */;
+  line-height: .33rem /* 63/192 */;
+  font-size: .1rem /* 20/192 */;
+  background-size: contain;
+}
+.form_label span {
+  color: red;
+}
+.form_label img {
+  vertical-align: baseline;
+}
+.form_label input {
+  height: .2rem /* 38/192 */;
+  font-size: .1rem /* 20/192 */;
+  width: 1.46rem /* 280/192 */;
+  padding: 0 .05rem /* 10/192 */;
+}
+#contactUs .form_label input {
+  border: 1px solid #6e6e6e;
+  outline: none;; 
+  box-shadow: .01rem /* 1/192 */ .01rem /* 2/192 */ .03rem /* 6/192 */ rgba(95, 95, 95, .8);
+}
+#mgwb .form_label input {
+  border: 1px solid #6e6e6e;
+  outline: none;; 
+  box-shadow: .01rem /* 1/192 */ .01rem /* 2/192 */ .03rem /* 6/192 */ rgba(95, 95, 95, .8);
+}
+.form_label >div {
+  margin-bottom: .08rem /* 15/192 */;
+}
+#ecomOperate .form_btn{
+  background: url(../img/ecomOperate/3_24.png) no-repeat;
+  background-size: contain;
+}
+#ecommerceLive .form_btn{
+  background: url(../img/ecommerceLive/4-4.png) no-repeat;
+  background-size: contain;
+}
+#tiktokOperate .form_btn{
+  background: url(../img/tiktokOperate/kuang2.png) no-repeat;;
+  background-size: contain;
+}
+#tiktokTrain .form_btn{
+  background: url(../img/tiktokTrain/liuyanban_05.png) no-repeat;
+  background-size: contain;
+}
+#contactUs .form_btn{
+  background: url(../img/contactUs/1_38.png) no-repeat;
+  background-size: contain;
+}
+#mgwb .form_btn{
+  background: url(../img/mgwb/4.png) no-repeat;
+  background-size: contain;
+}
+#contactUs .form_btn span{
+  display: none;
+}
+#mgwb .form_btn {
+  height: .3rem /* 58/192 */;
+  line-height: .3rem /* 58/192 */;
+}
+
+/* 移动端 */
+@media screen and (max-width: 750px) {
+  .contact_m .contact_m_content{
+    display: inline-block;
+    margin-top: .53rem /* 40/75 */;
+  }
+  .contact_m_label {
+    margin-bottom: .27rem /* 20/75 */;
+  }
+  .contact_m_label >div{
+    text-align: left;
+    font-size: .32rem /* 24/75 */;
+    color: #d38a61;
+    margin-bottom: .13rem /* 10/75 */;
+  }
+  /* label颜色区分 */
+  #index_contact_m .contact_m_label >div{
+    color: #fff
+  }
+  .contact_m_label >div span{
+    color: red;
+  }
+  .contact_m_label .label_icon{
+    display: inline-block;
+    vertical-align: text-bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .contact_m_label .name >div{
+    width: .43rem /* 32/75 */;
+    height: .44rem /* 33/75 */;
+    background-image: url(../img/mobile/ctus/1_15.png)
+  }
+  .contact_m_label .phone >div{
+    width: .32rem /* 24/75 */;
+    height: .47rem /* 35/75 */;
+    background-image: url(../img/mobile/ctus/1_19.png)
+  }
+  .contact_m_label .textarea >div{
+    width: .41rem /* 31/75 */;
+    height: .41rem /* 31/75 */;
+    background-image: url(../img/mobile/ctus/1_22.png)
+  }
+  /* label图标区分 */
+  #index_contact_m .contact_m_label .name >div{
+    background-image: url(../img/mobile/index/5_03.png)
+  }
+  #index_contact_m .contact_m_label .phone >div{
+    background-image: url(../img/mobile/index/5_07.png)
+  }
+  #index_contact_m .contact_m_label .textarea >div{
+    background-image: url(../img/mobile/index/5_10.png)
+  }
+  .contact_m_label input{
+    box-sizing: border-box;
+    width: 5.87rem /* 440/75 */;
+    height: .64rem /* 48/75 */;
+    font-size: .32rem /* 24/75 */;
+    border: 1px solid #6e6e6e;
+    outline: none;
+    box-shadow: .01rem /* 1/192 */ .01rem /* 2/192 */ .03rem /* 6/192 */ rgba(95, 95, 95, .8);
+    padding-left: .13rem /* 10/75 */;
+  }
+  .contact_m_label textarea {
+    box-sizing: border-box;
+    resize: none;
+    padding: .13rem /* 10/75 */;
+    width: 5.87rem /* 440/75 */;
+    height: 1.87rem /* 140/75 */;
+    font-size: .32rem /* 24/75 */;
+    box-shadow: .01rem /* 1/192 */ .01rem /* 2/192 */ .03rem /* 6/192 */ rgba(95, 95, 95, .8);
+  }
+  .contact_m_btn {
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: .27rem /* 20/75 */;
+    width: 5.12rem /* 384/75 */;
+    height: .73rem /* 55/75 */;
+    background-image: url(../img/mobile/ctus/2_03.png);
+    line-height: .73rem /* 55/75 */;
+    font-size: .32rem /* 24/75 */;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /* 提交按钮区分 */
+  #index_contact_m .contact_m_btn {
+    background-image: url(../img/mobile/index/5_14.png);
+  }
+}

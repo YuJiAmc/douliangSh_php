@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{dede:field.title/}</title>
+    <meta name="keywords" content="{dede:field.keywords/}" />
+    <meta
+      name="description"
+      content="{dede:field.description function='html2text(@me)'/}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{dede:global.cfg_templets_skin/}/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{dede:global.cfg_templets_skin/}/favicon-16x16.png"
+    />
+    <script src="{dede:global.cfg_templets_skin/}/js/flexible.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{dede:global.cfg_templets_skin/}/css/bootstrap-custom.min.css"
+    />
+    <script>
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/base.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/header.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/footer.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/newsCenter.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+    </script>
+    <script src="{dede:global.cfg_templets_skin/}/js/b.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/js/b2.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
+    <script>
+      document.write(
+        '<script src="{dede:global.cfg_templets_skin/}/js/common.js?v=' +
+          new Date().getTime() +
+          '"><\/script>'
+      );
+    </script>
+    <script src="{dede:global.cfg_templets_skin/}/js/bootstrap/bootstrap.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/js/bootstrap/bootstrap-paginator.min.js"></script>
+  </head>
+  <body>
+    <div id="newsCenter">
+      <div class="news_detail">
+        <ul class="back_top">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li>
+            <div class="back_top_icon"></div>
+          </li>
+        </ul>
+        <div class="header clearfix">
+          <a href="/" class="logo fl">
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
+              alt="斗量传媒-logo"
+            />
+          </a>
+          <ul class="header-nav fr">
+            <li>
+              <a href="/">首页</a>
+            </li>
+            <li>
+              {dede:type typeid='4'}
+              <a href="[field:typelink /]">抖音运营</a>
+              {/dede:type}
+            </li>
+            <li>
+              {dede:type typeid='5'}
+              <a href="[field:typelink /]">电商直播</a>
+              {/dede:type}
+            </li>
+            <li>
+              {dede:type typeid='6'}
+              <a href="[field:typelink /]">抖音培训</a>
+              {/dede:type}
+            </li>
+            <li>
+              {dede:type typeid='7'}
+              <a href="[field:typelink /]">电商运营</a>
+              {/dede:type}
+            </li>
+            <li>
+              {dede:type typeid='8'}
+              <a href="[field:typelink /]">设计外包</a>
+              {/dede:type}
+            </li>
+            <li class="active">
+              {dede:type typeid='1'}
+              <a href="[field:typelink /]">新闻资讯</a>
+              {/dede:type}
+            </li>
+            <li>
+              {dede:type typeid='2'}
+              <a href="[field:typelink /]">联系我们</a>
+              {/dede:type}
+            </li>
+          </ul>
+        </div>
+        <!-- banner -->
+        <div class="banner">
+          <img
+            id="banner"
+            style="width: 100%"
+            src="{dede:global.cfg_templets_skin/}/img/newsCenter/banner.jpg"
+            alt="新闻中心-banner"
+          />
+        </div>
+        <div class="crumbs w_1200">
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/newsCenter/home.png"
+            alt=""
+          />
+          <span>
+            <a href="/">首页</a>
+            > {dede:type typeid='1'}
+            <a href="[field:typelink /]">新闻资讯</a>
+            {/dede:type} >
+            <span class="crumbs_title">{dede:field.title/}</span>
+          </span>
+        </div>
+        <div class="news_content w_1200">
+          <div class="news_title">{dede:field.title/}</div>
+          <div class="news_date">
+            {dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}
+          </div>
+          <div class="line"></div>
+          <div class="main">{dede:field.body/}</div>
+        </div>
+      </div>
+      <div class="turn_page w_1200 clearfix">
+        <ul>
+          <li>{dede:prenext get='pre'/}</li>
+          <li>{dede:prenext get='next'/}</li>
+        </ul>
+      </div>
+      {dede:include filename="footer.html"/}
+    </div>
+    <!-- mobile -->
+    <div id="mobile">
+      <!-- head -->
+      <div class="head_m clearfix">
+        <a href="/" class="logo_m fl">
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
+            alt="m-斗量传媒-logo"
+          />
+        </a>
+        <img
+          id="navSlideDown"
+          src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
+          alt="m-6-2.png"
+        />
+      </div>
+      <!-- banner -->
+      <div class="banner_m">
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/mobile/news/banner.png"
+          alt="m-news-banner"
+        />
+      </div>
+      <div class="aticle_main">
+        <div class="crumbs">
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/newsCenter/home.png"
+            alt=""
+          />
+          <span>
+            {dede:type typeid='3'}
+            <a href="[field:typelink /]">首页</a>
+            {/dede:type} > {dede:type typeid='1'}
+            <a href="[field:typelink /]">新闻资讯</a>
+            {/dede:type} >
+            <span class="crumbs_title">{dede:field.title/}</span>
+          </span>
+        </div>
+        <div class="news_content">
+          <div class="news_title">{dede:field.title/}</div>
+          <div class="news_date">
+            {dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}
+          </div>
+          <div class="line"></div>
+          <div class="main">{dede:field.body/}</div>
+        </div>
+        <div class="turn_page clearfix">
+          <ul>
+            <li>{dede:prenext get='pre'/}</li>
+            <li>{dede:prenext get='next'/}</li>
+          </ul>
+        </div>
+      </div>
+      <!-- footer_m -->
+      <div id="foot_m">{dede:include filename="footer_m.html"/}</div>
+    </div>
+
+    <!-- 移动端导航栏 -->
+    <div id="head_m">{dede:include filename="header_m.html"/}</div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".back_top li:last-child").click(function () {
+        $("body,html").animate({ scrollTop: 0 }, 500);
+      });
+    });
+  </script>
+</html>

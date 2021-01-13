@@ -1,0 +1,80 @@
+<div class="contact_m">
+  <div class="mt_title">
+    <!-- 
+    朋友 , 请填写您的需求提交给我们 !
+     -->
+    立即获取服务方案与报价
+  </div>
+  <div class="contact_m_content">
+    <div class="contact_m_label">
+      <div class="name">
+        <div class="label_icon"></div>
+        &nbsp;您的姓名 : <span>*</span>
+      </div>
+      <input type="text" id="nameM" />
+    </div>
+    <div class="contact_m_label">
+      <div class="phone">
+        <div class="label_icon"></div>
+        &nbsp;联系方式 : <span>*</span>
+      </div>
+      <input type="text" id="phoneM" />
+    </div>
+    <div class="contact_m_label">
+      <div class="textarea">
+        <div class="label_icon"></div>
+        &nbsp;留言 :
+      </div>
+      <textarea id="textareaM"></textarea>
+    </div>
+  </div>
+  <div class="contact_m_btn">
+    <span>立即获取方案与报价</span>
+  </div>
+</div>
+<script>
+  var type = $("#contact").parent()[0].id;
+  var map = {
+    tiktokTrain: "抖音培训",
+    tiktokOperate: "抖音运营",
+    ecommerceLive: "电商直播",
+    contactUs: "联系我们",
+    ecomOperate: "电商运营",
+    "art-design": "设计外包"
+  }
+  var dataName = map[type] || "首页";
+  $(".contact_m_btn").click(function(){
+    var name = $("#nameM").val();
+    var phone = $("#phoneM").val()
+    var message = $("#textareaM").val()
+    if(!name.trim()||!phone.trim()){
+      alert("请填写正确的联系方式，方便我们联系您！")
+      return false;
+    }
+    if(!((/^1[3456789]\d{9}$/).test(phone) )){
+      alert("请正确填写您的手机号码")
+      return false;
+    }
+    $.ajax({
+    	type: 'get',
+    	url: 'http://info.wkefu.com/api/activity2018/messageBox',
+    	data: {
+    		'name': name+" (来源页面: 斗量传媒_"+dataName+")",
+    		'phone': phone,
+    		'note': message,
+        "source": 3,
+    	},
+    	success: function(data) {
+    		if (data.resultCode == '0') {
+    			alert("留言成功，我们的工作人员已收到你的留言信息，将会在尽快时间内联系你！");
+    		}else{
+    			alert("我们的网站可能今天心情不太好，留言暂时发送失败，请稍后再试！");
+    		};
+        $("#name").val("");
+        $("#phone").val("");
+        $("#textarea").val("");
+    	}
+    });
+  })
+ 
+</script>

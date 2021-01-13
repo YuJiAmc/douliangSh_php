@@ -1,0 +1,39 @@
+<!-- header -->
+<!-- back_top -->
+<ul class="back_top">
+  <li>
+    <div class="back_top_icon"></div>
+    <div class="telephone_top">19901638825</div>
+  </li>
+  <li>
+    <!-- <a
+    class="back_top_icon"
+    target="_blank"
+    href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
+    ></a> -->
+  </li>
+  <li>
+    <div class="back_top_icon"></div>
+    <div class="erweima"><img src="{dede:global.cfg_templets_skin/}/img/index/erweima1.png" alt="erweima"></div>
+  </li>
+  <li>
+    <a href="#contact_anchor">
+      <div class="back_top_icon"></div>
+    </a>
+  </li>
+  <li>
+    <div class="back_top_icon"></div>
+  </li>
+</ul>
+<script>
+  $(document).ready(function() {
+      $(".header-nav li a").each(function(){
+          if($(this)[0].href == String(window.location)) {
+              $(this).parent("li").addClass("active").siblings().removeClass("active");
+          }
+      });
+  });
+  $('.back_top li:last-child').click(function() {
+      $('body,html').animate({scrollTop:0},500);
+   })
+</script>
