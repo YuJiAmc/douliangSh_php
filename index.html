@@ -524,22 +524,22 @@
       <div class="swiper-container1">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/case1.jpg" alt="m-tiktokOperate-case1.jpg">
+              <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/case1.jpg" alt="m-index-case1.jpg">
             </div>
             <div class="swiper-slide">
-              <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/case2.jpg" alt="m-tiktokOperate-case2.jpg">
+              <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/case2.jpg" alt="m-index-case2.jpg">
             </div>
             <div class="swiper-slide">
-              <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/case3.jpg" alt="m-tiktokOperate-case3.jpg">
+              <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/case3.jpg" alt="m-index-case3.jpg">
             </div>
             <div class="swiper-slide">
-              <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/case4.jpg" alt="m-tiktokOperate-case4.jpg">
+              <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/case4.jpg" alt="m-index-case4.jpg">
             </div>
             <div class="swiper-slide">
-              <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/case5.jpg" alt="m-tiktokOperate-case5.jpg">
+              <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/case5.jpg" alt="m-index-case5.jpg">
             </div>
             <div class="swiper-slide">
-              <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/case6.jpg" alt="m-tiktokOperate-case6.jpg">
+              <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/case6.jpg" alt="m-index-case6.jpg">
             </div>
           </div>
       </div>
@@ -552,10 +552,46 @@
     </div>
     <!-- 新闻资讯 -->
     <div class="divis_title news_m">新闻资讯</div>
-    <!-- <div class="spe_news">
-    </div> -->
+    <div class="spe_news">
+      {dede:arclist  titlelen='90' limit='0,1' }
+      <div class="news_img">
+        <img src="[field:picname /]" alt="缩略图">
+      </div>
+      <div class="newest_desc">
+        <div class="desc_title">
+          <a class="news-title" href="[field:arcurl/]">
+          <div style="color: #fff;">[field:pubdate runphp='yes']
+            $month = strftime('%m',@me);
+            $new_month = substr($month,0,1);
+            if($new_month == 0) @me = substr($month,1);
+            else @me = $month;
+            [/field:pubdate] / [field:pubdate function="MyDate('d',@me)"/] [field:title/]</div>
+          </a>
+          <span><a href="/news/" style="color: #888;font-size: .21rem;">more></a></span>
+        </div>
+        <div class="read_num">[field:click/] 阅读量</div>
+      </div>
+      {/dede:arclist}
+    </div>
     
     <div class="rem_news">
+      {dede:arclist  flag='c' titlelen='90' limit='0,6' }
+      <div class="list_item clearfix">
+        <div class="date">
+          [field:pubdate function='MyDate("Y",@me)'/]
+          <p>[field:pubdate runphp='yes']
+            $month = strftime('%m',@me);
+            $new_month = substr($month,0,1);
+            if($new_month == 0) @me = substr($month,1);
+            else @me = $month;
+        [/field:pubdate]/[field:pubdate function="MyDate('d',@me)"/]</p>
+        </div>
+        <div class="line"></div>
+        <div class="list_item_desc">
+          <a style="color: #fff" href="[field:arcurl/]">[field:title/]</a>
+        </div>
+      </div>
+      {/dede:arclist}
     </div>
     <!-- foot_m -->
     <div id="foot_m">
@@ -569,7 +605,6 @@
 
   <script src="{dede:global.cfg_templets_skin/}/js/swiper/swiper.min.js"></script>
   <script>
-    let arrlist = [];
     (function() {
         var slider = new Swiper('.swiper-container',{
             speed: 500,

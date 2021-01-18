@@ -389,6 +389,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .newest_desc span {
   float: left;
   font-size: 0.08rem /* 16/192 */;
@@ -642,7 +643,7 @@
     overflow: hidden;
     margin-top: 0.16rem /* 12/75 */;
   }
-  .desc_title > div {
+  .desc_title  div {
     cursor: pointer;
     color: #f7f7f7;
     float: left;
@@ -650,6 +651,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: .29rem /* 22/75 */;
   }
   .newest_desc span {
     float: left;
@@ -702,8 +704,8 @@
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
   }
-  .no_list {
-    color: #888;
-    font-size: 0.24rem /* 18/75 */;
+  .read_num {
+    font-size: .24rem /* 18/75 */;
+    color: #ddd;
   }
 }

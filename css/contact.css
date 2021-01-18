@@ -235,10 +235,29 @@
     color: #d38a61;
     margin-bottom: .13rem /* 10/75 */;
   }
+  /* title颜色区分 */
+ .mt_title {
+    color: #fff;
+    font-size: 0.53rem /* 40/75 */;
+  }
+  #index_contact_m .mt_title {
+    color: #fff;
+  }
+  #ctus_contact_m .mt_title {
+    color: #d38a61;
+  }
+  #dyop_contact_m .mt_title {
+    color: #d82647;
+  }
+  /*  */
   /* label颜色区分 */
   #index_contact_m .contact_m_label >div{
-    color: #fff
+    color: #fff;
   }
+  #dyop_contact_m .contact_m_label >div{
+    color: #fff;
+  }
+  /*  */
   .contact_m_label >div span{
     color: red;
   }
@@ -273,6 +292,16 @@
   #index_contact_m .contact_m_label .textarea >div{
     background-image: url(../img/mobile/index/5_10.png)
   }
+  #dyop_contact_m .contact_m_label .name >div{
+    background-image: url(../img/mobile/index/5_03.png)
+  }
+  #dyop_contact_m .contact_m_label .phone >div{
+    background-image: url(../img/mobile/index/5_07.png)
+  }
+  #dyop_contact_m .contact_m_label .textarea >div{
+    background-image: url(../img/mobile/index/5_10.png)
+  }
+  /*  */
   .contact_m_label input{
     box-sizing: border-box;
     width: 5.87rem /* 440/75 */;
@@ -309,4 +338,8 @@
   #index_contact_m .contact_m_btn {
     background-image: url(../img/mobile/index/5_14.png);
   }
+  #dyop_contact_m .contact_m_btn {
+    background-image: url(../img/mobile/dyop/3_05.png);
+  }
+  /*  */
 }
