@@ -47,8 +47,8 @@
           '" rel="stylesheet" >'
       );
     </script>
-    <script src="{dede:global.cfg_templets_skin/}/js/b.js"></script>
-    <script src="{dede:global.cfg_templets_skin/}/js/b2.js"></script>
+    <!-- <script src="{dede:global.cfg_templets_skin/}/js/b.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/js/b2.js"></script> -->
   </head>
   <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
   <script>
@@ -56,17 +56,17 @@
       '<script src="{dede:global.cfg_templets_skin/}/js/common.js?v=' + new Date().getTime() + '"><\/script>'
     );
   </script>
-  <body
-    class="compress_bgi"
-    style="
-      background-image: url({dede:global.cfg_templets_skin/}/img/ecommerceLive/ditu_02_min.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      background-size: cover;
-    "
-  >
-    <div id="ecommerceLive">
+  <body>
+    <div id="ecommerceLive"
+      class="compress_bgi"
+        style="
+          background-image: url({dede:global.cfg_templets_skin/}/img/ecommerceLive/ditu_02_min.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          background-size: cover;
+        "
+      >
       <!-- header -->
       <div class="header clearfix">
         <a href="/" class="logo fl">
@@ -382,6 +382,114 @@
       <div id="contact">{dede:include filename="contact.html"/}</div>
       <!-- footer -->
       <div id="foot">{dede:include filename="footer.html"/}</div>
+    </div>
+    <!-- 移动端 --> 
+    <div id="mobile">
+      <div class="head_m clearfix">
+        <a href="/" class="logo_m fl">
+          <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png" alt="m-斗量传媒-logo">
+        </a>
+        <img id="navSlideDown" src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png" alt="m-6-2.png">
+      </div>
+      <!-- banner -->
+      <div class="banner_m">
+        <img src="{dede:global.cfg_templets_skin/}/img/mobile/eclv/banner_02.jpg" alt="m-电商直播-banner">
+      </div>
+      <!-- sales_m -->
+      <div class="sales_m">
+        <div class="dyop_title">
+          <div class="title">我们可以做什么 ?</div>
+          <div class="desc">一切都是为了销量</div>
+        </div>
+        <ul class="clearfix">
+          <li>
+            <div class="title">店铺直播代播</div>
+            <div class="content">优选主播 , 为商家提供店铺直播间代播托管服务私域到公域流量双管齐下高效卖货。</div>
+          </li>
+          <li>
+            <div class="title">直播策划及运营</div>
+            <div class="content">直播间活动策划及运营 , 脚本设计、主播话术培训等 , 提升店铺活跃度 , 提高粉丝粘性 , 助力品牌推广。</div>
+          </li>
+        </ul>
+        <ul class="clearfix">
+          <li>
+            <div class="title">专属直播间打造</div>
+            <div class="content">从场地装修到灯光布置、高清专业直播设备等全套解决方案 , 打造线上直播专柜。</div>
+          </li>
+        </ul>
+       <img src="{dede:global.cfg_templets_skin/}/img/mobile/eclv/2-1.png" alt="2-1.png">
+      </div>
+      <!-- satisfy_m -->
+      <div class="satisfy_m">
+        <div class="dyop_title">
+          <div class="title">我们如何满足你 ?</div>
+        </div>
+        <img src="{dede:global.cfg_templets_skin/}/img/mobile/eclv/1.png" alt="1.png">
+        <img src="{dede:global.cfg_templets_skin/}/img/mobile/eclv/2.png" alt="2.png">
+        <img src="{dede:global.cfg_templets_skin/}/img/mobile/eclv/3.png" alt="3.png">
+      </div>
+      <!-- service_m -->
+      <div class="service_m">
+        <div class="dyop_title">
+          <div class="title">服务类型</div>
+        </div>
+        <div class="type_tab">
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/ecommerceLive/3-1.png"
+            alt="ecommerceLive-3-1.png"
+          />
+          <span></span>
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/ecommerceLive/3-2.png"
+            alt="ecommerceLive-3-2.png"
+          />
+        </div>
+        <div class="service_m_main">
+          <div class="content">
+            <div class="title">小时直播</div>
+            <div class="price">
+              <span>200</span>元/小时起
+              <p>Hours to charge</p>
+            </div>
+            <div class="line"></div>
+            <div class="desc">
+              <div>按每小时底薪 + 提成计费</div>
+              <div>优选主播 , 经验丰富</div>
+            </div>
+            <div class="consulting">立即咨询</div>
+          </div>
+        </div>
+      </div>
+      <!-- case_m -->
+      <div class="case_m">
+        <div class="dyop_title">
+          <div class="title">服务案例</div>
+        </div>
+        <ul class="clearfix">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <ul class="clearfix">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- contact_m -->
+      <div id="eclv_contact_m">
+        <div id="contact_m">
+          {dede:include filename="contact_m.html"/}
+        </div>
+      </div>
+      <!-- footer_m -->
+      <div id="foot_m">
+        {dede:include filename="footer_m.html"/}
+      </div>
+    </div>
+    <!-- 移动端导航栏 -->
+    <div id="head_m">
+      {dede:include filename="header_m.html"/}
     </div>
   </body>
 </html>

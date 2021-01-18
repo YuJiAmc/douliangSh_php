@@ -317,3 +317,208 @@
   width: .63rem /* 120/192 */;
   height: .02rem /* 3/192 */;
 }
+
+@media screen and (max-width: 750px) {
+  #ecommerceLive {
+    display: none;
+  }
+  #mobile {
+    display: block;
+    text-align: center;
+    color: #fff;
+  }
+  .banner_m {
+    padding-top: 52.4% /* 393/750 */;
+  }
+  /* 抖音运营 电商直播 */
+  .dyop_title {
+    padding: 0.8rem /* 60/75 */ 0 0.67rem /* 50/75 */ 0;
+  }
+  .dyop_title .title {
+    color: #a2c7ff;
+    font-size: 0.53rem /* 40/75 */;
+    margin-bottom: 10px;
+  }
+  .dyop_title .desc {
+    font-size: 0.27rem /* 20/75 */;
+    line-height: 0.4rem /* 30/75 */;
+    padding: 0 0.53rem /* 40/75 */;
+  }
+  .service_m .dyop_title {
+    padding: 0.8rem /* 60/75 */ 0 .27rem /* 20/75 */ 0;
+  }
+  .case_m .dyop_title {
+    padding: 0.8rem /* 60/75 */ 0 .27rem /* 20/75 */ 0;
+  }
+  /*  */
+  .sales_m {
+    background:url(../img/mobile/eclv/di_02.jpg) no-repeat;
+    height: 11.6rem /* 870/75 */;
+    background-size: cover;
+    position: relative;
+  }
+  .sales_m ul {
+    width: 92%;
+    margin: 0 auto;
+  }
+  .sales_m ul li {
+    float: left;
+    width: 49%;
+    height: 3.73rem /* 280/75 */;
+    background-color: rgba(255, 255, 255, 0.08);
+    margin-right: 2%;
+    margin-top: 2%;
+    padding: 0.43rem /* 32/75 */;
+    padding-top: 0.67rem /* 50/75 */;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .sales_m ul li:nth-child(2) {
+    margin-right: 0;
+  }
+  .sales_m ul:nth-child(2) li {
+    margin-top: 0;
+  }
+  .sales_m ul li .title {
+    color: #a2c7ff;
+    text-align: center;
+    font-size: 0.35rem /* 26/75 */;
+    margin-bottom: 0.13rem /* 10/75 */;
+  }
+  .sales_m ul li .content {
+    font-size: 0.29rem /* 22/75 */;
+    line-height: 0.47rem /* 35/75 */;
+  }
+  .sales_m > img {
+    width: 4.33rem /* 325/75 */;
+    height: 4.73rem /* 355/75 */;
+    position: absolute;
+    bottom: 0px;
+    right: 1.2rem /* 90/75 */;
+  }
+  .satisfy_m > img {
+    width: 100%;
+    margin-bottom: .13rem /* 10/75 */;
+  }
+  .satisfy_m > img:last-child {
+    margin-bottom: .8rem /* 60/75 */;
+  }
+  .service_m {
+    background:url(../img/mobile/eclv/di_04.jpg) no-repeat;
+    height: 9.2rem /* 690/75 */;
+    background-size: cover;
+  }
+  .type_tab{
+    position: relative;
+  }
+  .type_tab span{
+    width: .6rem /* 45/75 */;
+    height: .01rem /* 1/75 */;
+    background-color: #a2c7fe;
+    display: inline-block;
+  }
+  .type_tab img{
+    width: 1.73rem /* 130/75 */;
+    height: .48rem /* 36/75 */;
+  }
+  .type_tab img:first-child {
+    margin-right: -.05rem /* 4/75 */
+  }
+  .type_tab img:last-child {
+    margin-left: -.05rem /* 4/75 */
+  }
+  .service_m_main {
+    margin: 0 auto;
+    margin-top: .67rem /* 50/75 */;
+    background: url(../img/mobile/eclv/1_05.png) no-repeat;
+    width: 9.36rem /* 702/75 */;
+    height: 4.47rem /* 335/75 */;
+    position: relative;
+    text-align: left;
+  }
+  .service_m_main .content {
+    width: 3.33rem /* 250/75 */;
+    height: 3.33rem /* 250/75 */;
+    position: absolute;
+    top: 60px;
+    right: 40px;
+    font-size: .27rem /* 20/75 */;
+    color: #333;
+  }
+  .service_m_main .title {
+    font-size: .35rem /* 26/75 */;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: .33rem /* 25/75 */;
+  }
+  .service_m_main .price span{ 
+    color: #ff4800;
+    font-size: .35rem /* 26/75 */;
+  }
+  .service_m_main .price p{ 
+    color: #818181;
+  }
+  .service_m_main .line { 
+    width: 3.07rem /* 230/75 */;
+    background-color: #a2c7fe;
+    height: .01rem /* 1/75 */;
+    margin: .07rem /* 5/75 */ 0;
+  }
+  .service_m_main .consulting {
+    width: 2.33rem /* 175/75 */;
+    height: .37rem /* 28/75 */;
+    line-height: .37rem /* 28/75 */;
+    color: #fff;
+    text-align: center;
+    border-radius: .2rem /* 15/75 */;
+    background-color: #a2c7fe;
+    margin-top: .27rem /* 20/75 */;
+    cursor: pointer;
+  }
+  .service_m_main .desc > div {
+    background: url(../img/mobile/eclv/quan.png) no-repeat left;
+    background-size: 4%;
+    padding-left: .2rem /* 15/75 */;
+  }
+  .case_m ul{
+    margin:0 auto;
+    margin-bottom: .27rem /* 20/75 */;
+    display: inline-block;
+  }
+  .case_m ul:last-child{
+    margin-bottom: .8rem /* 60/75 */;
+  }
+  .case_m ul li{
+    float: left;
+    width: 2.84rem /* 213/75 */;
+    height: 5.21rem /* 391/75 */;
+    margin-right: .27rem /* 20/75 */;
+  }
+  .case_m ul li:last-child{
+    margin-right: 0
+  }
+  .case_m ul li:first-child{
+    background-image: url(../img/mobile/eclv/anli_23.png);
+  }
+  .case_m ul li:nth-child(2){
+    background-image: url(../img/mobile/eclv/anli_25.png);
+  }
+  .case_m ul li:last-child{
+    background-image: url(../img/mobile/eclv/anli_27.png);
+  }
+  .case_m ul:last-child li:first-child{
+    background-image: url(../img/mobile/eclv/anli_37.png);
+  }
+  .case_m ul:last-child li:nth-child(2){
+    background-image: url(../img/mobile/eclv/anli_39.png);
+  }
+  .case_m ul:last-child li:last-child{
+    background-image: url(../img/mobile/eclv/anli_41.png);
+  }
+  #eclv_contact_m{
+    background:url(../img/mobile/eclv/di_06.jpg) no-repeat;
+    height: 8.8rem /* 660/75 */;
+    background-size: cover;
+    padding-top: .8rem /* 60/75 */;
+  }
+}

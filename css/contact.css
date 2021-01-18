@@ -232,7 +232,7 @@
   .contact_m_label >div{
     text-align: left;
     font-size: .32rem /* 24/75 */;
-    color: #d38a61;
+    color: #fff;
     margin-bottom: .13rem /* 10/75 */;
   }
   /* title颜色区分 */
@@ -249,12 +249,21 @@
   #dyop_contact_m .mt_title {
     color: #d82647;
   }
+  #eclv_contact_m .mt_title {
+    color: #a2c7fe;
+  }
   /*  */
   /* label颜色区分 */
+  #ctus_contact_m .contact_m_label >div{
+    color: #d38a61;
+  }
   #index_contact_m .contact_m_label >div{
     color: #fff;
   }
   #dyop_contact_m .contact_m_label >div{
+    color: #fff;
+  }
+  #eclv_contact_m .mt_title {
     color: #fff;
   }
   /*  */
@@ -270,36 +279,27 @@
   .contact_m_label .name >div{
     width: .43rem /* 32/75 */;
     height: .44rem /* 33/75 */;
-    background-image: url(../img/mobile/ctus/1_15.png)
+    background-image: url(../img/mobile/index/5_03.png)
   }
   .contact_m_label .phone >div{
     width: .32rem /* 24/75 */;
     height: .47rem /* 35/75 */;
-    background-image: url(../img/mobile/ctus/1_19.png)
+    background-image: url(../img/mobile/index/5_07.png)
   }
   .contact_m_label .textarea >div{
     width: .41rem /* 31/75 */;
     height: .41rem /* 31/75 */;
-    background-image: url(../img/mobile/ctus/1_22.png)
+    background-image: url(../img/mobile/index/5_10.png)
   }
   /* label图标区分 */
-  #index_contact_m .contact_m_label .name >div{
-    background-image: url(../img/mobile/index/5_03.png)
+  #ctus_contact_m .contact_m_label .name >div{
+    background-image: url(../img/mobile/ctus/1_15.png)
   }
-  #index_contact_m .contact_m_label .phone >div{
-    background-image: url(../img/mobile/index/5_07.png)
+  #ctus_contact_m .contact_m_label .phone >div{
+    background-image: url(../img/mobile/ctus/1_19.png)
   }
-  #index_contact_m .contact_m_label .textarea >div{
-    background-image: url(../img/mobile/index/5_10.png)
-  }
-  #dyop_contact_m .contact_m_label .name >div{
-    background-image: url(../img/mobile/index/5_03.png)
-  }
-  #dyop_contact_m .contact_m_label .phone >div{
-    background-image: url(../img/mobile/index/5_07.png)
-  }
-  #dyop_contact_m .contact_m_label .textarea >div{
-    background-image: url(../img/mobile/index/5_10.png)
+  #ctus_contact_m .contact_m_label .textarea >div{
+    background-image: url(../img/mobile/ctus/1_22.png)
   }
   /*  */
   .contact_m_label input{
@@ -340,6 +340,9 @@
   }
   #dyop_contact_m .contact_m_btn {
     background-image: url(../img/mobile/dyop/3_05.png);
+  }
+  #eclv_contact_m .contact_m_btn {
+    background-image: url(../img/mobile/eclv/3_51.png);
   }
   /*  */
 }
