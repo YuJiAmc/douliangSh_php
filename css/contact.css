@@ -235,6 +235,9 @@
     color: #fff;
     margin-bottom: .13rem /* 10/75 */;
   }
+  #mgwb_contact_m {
+    margin:  .8rem /* 60/75 */ 0;
+  }
   /* title颜色区分 */
  .mt_title {
     color: #fff;
@@ -255,10 +258,16 @@
   #dypx_contact_m .mt_title {
     color: #f4cf1f;
   }
+  #mgwb_contact_m .mt_title {
+    color: #ffa204;
+  }
   /*  */
   /* label颜色区分 */
   #ctus_contact_m .contact_m_label >div{
     color: #d38a61;
+  }
+  #mgwb_contact_m .contact_m_label >div{
+    color: #ffa204;
   }
   /*  */
   .contact_m_label >div span{
@@ -294,6 +303,15 @@
   }
   #ctus_contact_m .contact_m_label .textarea >div{
     background-image: url(../img/mobile/ctus/1_22.png)
+  }
+  #mgwb_contact_m .contact_m_label .name >div{
+    background-image: url(../img/mobile/mgwb/4_19.png)
+  }
+  #mgwb_contact_m .contact_m_label .phone >div{
+    background-image: url(../img/mobile/mgwb/4_23.png)
+  }
+  #mgwb_contact_m .contact_m_label .textarea >div{
+    background-image: url(../img/mobile/mgwb/4_26.png)
   }
   /*  */
   .contact_m_label input{
@@ -344,6 +362,9 @@
   }
   #dypx_contact_m .contact_m_btn {
     background-image: url(../img/mobile/dypx/1_39.png);
+  }
+  #mgwb_contact_m .contact_m_btn {
+    background-image: url(../img/mobile/mgwb/4_30.png);
   }
   /*  */
 }

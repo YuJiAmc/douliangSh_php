@@ -53,6 +53,7 @@
           '" rel="stylesheet" >'
       );
     </script>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/js/swiper/swiper.min.css">
     <script src="{dede:global.cfg_templets_skin/}/js/b.js"></script>
     <script src="{dede:global.cfg_templets_skin/}/js/b2.js"></script>
   </head>
@@ -586,8 +587,256 @@
       </div>
       <div id="foot">{dede:include filename="footer.html"/}</div>
     </div>
+    <!-- 移动端 -->
+    <div id="mobile">
+      <div class="head_m clearfix">
+        <a href="/" class="logo_m fl">
+          <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png" alt="m-斗量传媒-logo">
+        </a>
+        <img id="navSlideDown" src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png" alt="m-6-2.png">
+      </div>
+      <!-- banner -->
+      <div class="banner_m">
+        <img src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/1_02.png" alt="m-设计外包-banner">
+      </div>
+      <!-- major_m -->
+      <div class="major_m">
+        <div class="mgwb_title">
+          <div class="title">您的店铺是否遇到过这样的问题</div>
+          <div class="desc">找专业的人做专业的事</div>
+        </div>
+        <ul class="clearfix">
+          <li>新店不会装修</li>
+          <li><div><p>视觉设计</p><p>达不到效果</p></div></li>
+          <li>页面没有购买欲</li>
+        </ul>
+      </div>
+      <!-- service_m -->
+      <div class="service_m">
+        <div class="range-bg">
+          <div class="range-title">
+            <div>our services</div>
+            <h2>我们的服务</h2>
+            <span> ... </span>
+          </div>
+          <ul class="clearfix">
+            <li>
+              <div>首页设计</div>
+            </li>
+            <li>
+              <div>详情页设计</div>
+            </li>
+            <li>
+              <div>海报设计</div>
+            </li>
+            <li>
+              <div>活动图设计</div>
+            </li>
+            <li>
+              <div>摄影精修</div>
+            </li>
+            <li>
+              <div>店铺装修</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- advantage_m -->
+      <div class="advantage_m">
+        <div class="mgwb_title">
+          <div class="title">服务优势</div>
+          <div class="desc">好的转化率才是硬道理</div>
+        </div>
+        <div class="advantage_item clearfix">
+          <div class="item_icon"></div>
+          <div class="item_main">
+            <div class="title">降低跳失率</div>
+            <div class="desc">极致视觉，一眼留住你的顾客，促进成交。</div>
+          </div>
+        </div>
+        <div class="advantage_item clearfix">
+          <div class="item_icon"></div>
+          <div class="item_main">
+            <div class="title">打造爆款</div>
+            <div class="desc">专业设计团队，专业美工服务，助您成功。</div>
+          </div>
+        </div>
+        <div class="advantage_item clearfix">
+          <div class="item_icon"></div>
+          <div class="item_main">
+            <div class="title">提升品牌形象</div>
+            <div class="desc">用设计打造产品竞争力，让品牌更有创意，满意为止。</div>
+          </div>
+        </div>
+      </div>
+      <!-- process_m -->
+      <div class="process_m">
+        <div class="mgwb_title">
+          <div class="title">服务流程</div>
+          <div class="desc">完善流程 , 随时把握设计进度</div>
+        </div>
+        <div class="process_content">
+          <div class="bgc">
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/6_05.png"
+              alt="m_process.png"
+            />
+          </div>
+          <div class="process_step">
+            <div>售前沟通</div>
+            <div>确定合作意向</div>
+          </div>
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2_14.png"
+            alt="process-2_14.png"
+          />
+          <div class="process_step">
+            <div>确认基本思路</div>
+            <div>安排设计师</div>
+          </div>
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2_03.png"
+            alt="process-2_03.png"
+          />
+          <div class="process_step">
+            <div>设计初稿</div>
+            <div>不满意可修改</div>
+          </div>
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2_10.png"
+            alt="process-2_10.png"
+          />
+          <div class="process_step">
+            <div>验收稿件</div>
+            <div>确认收货好评</div>
+          </div>
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2_06.png"
+            alt="process-2_06.png"
+          />
+        </div>
+      </div>
+      <!-- case_m -->
+      <div class="case_m">
+        <div class="mgwb_title">
+          <div class="title">部分设计案例</div>
+          <div class="line"></div>
+        </div>
+        <div class="case_swiper_m">
+          <div class="swiper-container1">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/1.jpg" alt="m-mgwb-1.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2.jpg" alt="m-mgwb-2.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/3.jpg" alt="m-mgwb-3.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/4.jpg" alt="m-mgwb-4.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/5.jpg" alt="m-mgwb-5.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/6.jpg" alt="m-mgwb-6.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/27.jpg" alt="m-mgwb-27.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/28.jpg" alt="m-mgwb-28.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/29.jpg" alt="m-mgwb-29.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/30.jpg" alt="m-mgwb-30.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/31.jpg" alt="m-mgwb-31.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/32.jpg" alt="m-mgwb-32.jpg">
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!-- standard_m -->
+      <div class="standard_m">
+        <div class="mgwb_title">
+          <div class="title">服务规范</div>
+          <div class="line"></div>
+        </div>
+        <div class="tab-container">
+          <ul class="tab-header clearfix">
+            <li>设计师服务标准</li>
+            <li>商家协作标准</li>
+          </ul>
+          <ul class="tab-content">
+            <li>
+              <p>
+                ①设计师需根据甲方需求与安排，及时提供设计服务，按时完成；
+              </p>
+              <p>
+                ②商家对设计稿提出修改或建议，需认真听取并做出判断，及时沟通解决；
+              </p>
+              <p>
+                ③设计师职责，工作时间旺旺时刻在线，10分钟内即可响应，特殊情况安排对接，保障商家需求及时得到处理；
+              </p>
+              <p>
+                ④原则上不更换设计师服务，若特别需要，服务商将无条件调整更换；
+              </p>
+              <p>
+                ⑤出现退款请求时，服务商需在24小时内主动联系商家协商处理；
+              </p>
+              <p>
+                ⑥设计师需要端正自身服务态度，在设计服务过程中，需注意文明礼貌用语；
+              </p>
+              <p>
+                ⑦设计师规范，不无故拖欠设计稿，保证原创设计，不使用侵权素材，不泄露客户店铺活动等隐私信息；
+              </p>
+              <p>
+                ⑧设计师要求，注意字体、广告用语等可能违规的事项，提醒并告知商家风险；
+              </p>
+              <p>⑨若客户需求，服务商无条件提供设计源文件。</p>
+            </li>
+            <li>
+              <p>①开始服务后安排专人负责对接，方便及时沟通进度；</p>
+              <p>②及时提供品牌或产品相关的图片及文字资料；</p>
+              <p>③如有相关活动安排，需提前沟通给予设计师准备时间；</p>
+              <p>
+                ④及时提供促销活动相关信息，例如活动主题、目的、时间、优惠方式等；
+              </p>
+              <p>⑤商品变更，店铺主题改变等需及时告知设计师；</p>
+              <p>
+                ⑥首页需提前3个工作日安排并整理资料给设计师，产品详情页需提前1个工作日安排。
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- contact_m -->
+      <div id="mgwb_contact_m">
+        <div id="contact_m">
+          {dede:include filename="contact_m.html"/}
+        </div>
+      </div>
+      <!-- footer_m -->
+      <div id="foot_m">
+        {dede:include filename="footer_m.html"/}
+      </div>
+    </div>
+    <!-- 移动端导航栏 -->
+    <div id="head_m">
+      {dede:include filename="header_m.html"/}
+    </div>
     <script src="{dede:global.cfg_templets_skin/}/js/kwicks/jquery.easing.1.3.js"></script>
     <script src="{dede:global.cfg_templets_skin/}/js/kwicks/jquery.kwicks.min.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/js/swiper/swiper.min.js"></script>
     <script>
       /* OUR SERVICES */
       $(function () {
@@ -680,6 +929,14 @@
       $(".kwicks.graph").kwicks({ ...kwicksOptions, minSize: "5%" });
       $(".kwicks.poster").kwicks({ ...kwicksOptions, minSize: "19.5%" });
       $(".tab-kwicks").addClass("tab-kwicks-ready");
+
+      var mySwiper = new Swiper('.swiper-container1',{
+        loop: true,
+        slidesPerView: 5,
+        centeredSlides: true,
+        slidePrevClass : 'my-slide-prev',
+        slideNextClass : 'my-slide-next',
+      })
     </script>
   </body>
 </html>
