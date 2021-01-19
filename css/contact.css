@@ -252,19 +252,13 @@
   #eclv_contact_m .mt_title {
     color: #a2c7fe;
   }
+  #dypx_contact_m .mt_title {
+    color: #f4cf1f;
+  }
   /*  */
   /* label颜色区分 */
   #ctus_contact_m .contact_m_label >div{
     color: #d38a61;
-  }
-  #index_contact_m .contact_m_label >div{
-    color: #fff;
-  }
-  #dyop_contact_m .contact_m_label >div{
-    color: #fff;
-  }
-  #eclv_contact_m .mt_title {
-    color: #fff;
   }
   /*  */
   .contact_m_label >div span{
@@ -334,7 +328,11 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  /* 提交按钮区分 */
+  /* 提交按钮字体颜色区分 */
+  #dypx_contact_m .contact_m_btn {
+    color: #000;
+  }
+  /* 提交按钮背景图片区分 */
   #index_contact_m .contact_m_btn {
     background-image: url(../img/mobile/index/5_14.png);
   }
@@ -343,6 +341,9 @@
   }
   #eclv_contact_m .contact_m_btn {
     background-image: url(../img/mobile/eclv/3_51.png);
+  }
+  #dypx_contact_m .contact_m_btn {
+    background-image: url(../img/mobile/dypx/1_39.png);
   }
   /*  */
 }

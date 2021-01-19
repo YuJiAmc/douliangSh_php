@@ -465,6 +465,9 @@
     right: 0;
     z-index: -1;
   }
+  .particulars a {
+    color: #fff;
+  }
   .particulars li {
     color: #fff;
     float: left;

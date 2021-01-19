@@ -435,13 +435,12 @@
     height: 4.47rem /* 335/75 */;
     position: relative;
     text-align: left;
+    background-size: cover;
   }
   .service_m_main .content {
-    width: 3.33rem /* 250/75 */;
-    height: 3.33rem /* 250/75 */;
     position: absolute;
-    top: 60px;
-    right: 40px;
+    top: .8rem /* 60/75 */;
+    right: .53rem /* 40/75 */;
     font-size: .27rem /* 20/75 */;
     color: #333;
   }
@@ -493,6 +492,7 @@
     width: 2.84rem /* 213/75 */;
     height: 5.21rem /* 391/75 */;
     margin-right: .27rem /* 20/75 */;
+    background-size: cover;
   }
   .case_m ul li:last-child{
     margin-right: 0

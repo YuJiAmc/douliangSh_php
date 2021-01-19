@@ -17,8 +17,8 @@
     document.write('<link href="{dede:global.cfg_templets_skin/}/css/footer.css?v='+ new Date().getTime()+'" rel="stylesheet" >');
     document.write('<link href="{dede:global.cfg_templets_skin/}/css/tiktokTrain.css?v='+new Date().getTime()+'" rel="stylesheet" >');
   </script>
-   <script src="{dede:global.cfg_templets_skin/}/js/b.js"></script>
-   <script src="{dede:global.cfg_templets_skin/}/js/b2.js"></script>
+   <!-- <script src="{dede:global.cfg_templets_skin/}/js/b.js"></script>
+   <script src="{dede:global.cfg_templets_skin/}/js/b2.js"></script> -->
 </head>
 <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
 <script>
@@ -36,38 +36,38 @@
           <a href="/">首页</a>
         <li>
           {dede:type typeid='4'}
-<a href="[field:typelink /]">抖音运营</a>
-{/dede:type}
+          <a href="[field:typelink /]">抖音运营</a>
+          {/dede:type}
         </li>
         <li>
           {dede:type typeid='5'}
-<a href="[field:typelink /]">电商直播</a>
-{/dede:type}
+          <a href="[field:typelink /]">电商直播</a>
+          {/dede:type}
         </li>
         <li class="active">
           {dede:type typeid='6'}
-<a href="[field:typelink /]">抖音培训</a>
-{/dede:type}
+          <a href="[field:typelink /]">抖音培训</a>
+          {/dede:type}
         </li>
         <li>
           {dede:type typeid='7'}
-<a href="[field:typelink /]">电商运营</a>
-{/dede:type}
+          <a href="[field:typelink /]">电商运营</a>
+          {/dede:type}
         </li>
         <li>
           {dede:type typeid='8'}
-<a href="[field:typelink /]">设计外包</a>
-{/dede:type}
+          <a href="[field:typelink /]">设计外包</a>
+          {/dede:type}
         </li>
         <li>
            {dede:type typeid='1'}
-<a href="[field:typelink /]">新闻资讯</a>
- {/dede:type}
+            <a href="[field:typelink /]">新闻资讯</a>
+            {/dede:type}
         </li>
         <li>
           {dede:type typeid='2'}
-<a href="[field:typelink /]">联系我们</a>
- {/dede:type}
+          <a href="[field:typelink /]">联系我们</a>
+          {/dede:type}
         </li>
       </ul>
     </div>
@@ -311,13 +311,193 @@
     <!-- contact -->
     <div id="contact">
       {dede:include filename="contact.html"/}
-    <div>
-      <img style="width: 100%;" class="compress_img" src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/ditu_06_min.jpg" alt="tiktokTrain-ditu_06.png">
     </div>
+    <img style="width: 100%;" class="compress_img" src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/ditu_06_min.jpg" alt="tiktokTrain-ditu_06.png">
     <!-- footer -->
     <div id="foot">
       {dede:include filename="footer.html"/}
     </div>
+  </div>
+  <!-- 移动端 -->
+  <div id="mobile">
+    <div class="head_m clearfix">
+      <a href="/" class="logo_m fl">
+        <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png" alt="m-斗量传媒-logo">
+      </a>
+      <img id="navSlideDown" src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png" alt="m-6-2.png">
+    </div>
+    <!-- banner -->
+    <div class="banner_m">
+      <img src="{dede:global.cfg_templets_skin/}/img/mobile/dypx/BANNER.jpg" alt="m-抖音培训-banner">
+    </div>
+    <div class="mobile_main">
+      <!-- sales_m -->
+      <div class="sales_m">
+        <div class="dyop_title">
+          <div class="title">我们可以做什么 ?</div>
+          <div class="desc">专属定制课程适合各类人群 , 直击企业、团队及个人自身的需求和痛点。</div>
+        </div>
+        <ul class="clearfix">
+          <li>
+            <div class="title">企业品牌方</div>
+            <div class="content">
+              <p>品牌曝光</p>
+              <p>利用直播带货</p>
+              <p>线下门店线上化</p>
+              <p>营业员直播导购卖货</p>
+            </div>
+          </li>
+          <li>
+            <div class="title">实体商家</div>
+            <div class="content">
+              <p>向实体店引流</p>
+              <p>拓客 , 锁定</p>
+              <p>打造网红店</p>
+              <p>新店加盟</p>
+            </div>
+          </li>
+        </ul>
+        <ul class="clearfix">
+          <li>
+            <div class="title">微商团队</div>
+            <div class="content">
+              <p>个人IP打造</p>
+              <p>直播带货</p>
+              <p>短视频带货</p>
+              <p>团队成员培训</p>
+            </div>
+          </li>
+          <li>
+            <div class="title">个体商家</div>
+            <div class="content">
+              <p>打造个人IP</p>
+              <p>想成为网红</p>
+              <p>利用直播带货</p>
+              <p>利用短视频带货</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- need_m -->
+      <div class="need_m">
+        <div class="sales_m">
+          <div class="dyop_title">
+            <div class="title">您为什么需要我们 ?</div>
+            <div class="desc">短视频平台您是否也在遭遇以下难题</div>
+          </div>
+          <ul class="clearfix">
+            <li>
+              <div>
+                <div class="title">职场新人</div>
+                <div class="content">
+                  刚毕业、工资低、想转行 , 想要通过系统学习短视频内容策划、平台运营和后期执行 , 提升专业技能 , 突破职场瓶颈 , 获得较高收入和更高职位的职场新人。
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="title">传统电商</div>
+                <div class="content">
+                  国内电商平台过度饱和 , 竞争激烈 , 想要通过布局短视频平台 , 抓住新流量风口 , 突破电商创业瓶颈。
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li>
+              <div>
+                <div class="title">新媒体/运营者/</div>
+                <div class="content">
+                  企业、组织、政府等新媒体运营者 , 进入短视频平台的运营新手 , 想要通过系统学习 , 开拓新的流量入口 , 提升品牌知名度和影响力。
+                </div>
+              </div>
+            </li>
+            <li>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- advantage_m -->
+      <div class="advantage_m">
+        <div class="sales_m">
+          <div class="dyop_title">
+            <div class="title">我们如何满足您 ?</div>
+            <div class="desc">打造短视频四大优势</div>
+          </div>
+          <ul class="clearfix">
+            <li>
+              <div class="satisfy_card">
+                <p class="hover_p">01</p>
+                <div class="card_title">
+                 <p>利用流量红利</p>
+                 <p>打破你商业发展天花板</p>
+                </div>
+                <div class="card_content">
+                  通过系统的学习 , 把握短视频营销新风口 , 从而高效布局 , 完善团队搭建 , 打造企业新流量阵地 , 助力企业品效合一。
+                </div>
+                <div class="card_footer"><div></div><p></p></div>
+              </div>
+            </li>
+            <li>
+              <div class="satisfy_card">
+                <p class="hover_p">02</p>
+                <div class="card_title">
+                  <p>通过系统学习提升专业技能</p>
+                  <p>突破职场瓶颈</p>
+                </div>
+                <div class="card_content">
+                  行业转换来去自如 , 开启升职加薪快速上升通道。
+                </div>
+                <div class="card_footer"><div></div><p></p></div>
+              </div>
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li>
+              <div class="satisfy_card">
+                <p class="hover_p">03</p>
+                <div class="card_title">
+                  <p>学会内容策划和后期执行</p>
+                  <p>摸清短视频算法推荐规则</p>
+                </div>
+                <div class="card_content">
+                  分兵布阵增强吸粉体质 , 把握平台运营要塞 , 学会用数据分析调试和优化运营效果 , 成为抖音运营高手和热榜操盘者 , 大大提升品牌知名度和影响力。
+                </div>
+                <div class="card_footer"><div></div><p></p></div>
+              </div>
+            </li>
+            <li>
+              <div class="satisfy_card">
+                <p class="hover_p">04</p>
+                <div class="card_title">
+                  <p>学会用户定位</p>
+                  <p>挖掘粉丝客群</p>
+                </div>
+                <div class="card_content">
+                  懂得内容策划 , 熟悉平台运营 , 用更强大的粉丝聚合和用户粘性 , 更高效的用户转化率 , 布局短视频平台 , 开拓电商新方向。
+                </div>
+                <div class="card_footer"><div></div><p></p></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- contact_m -->
+      <div id="dypx_contact_m">
+        <div id="contact_m">
+          {dede:include filename="contact_m.html"/}
+        </div>
+      </div>
+      <img style="width: 100%; margin-top: .93rem;" src="{dede:global.cfg_templets_skin/}/img/mobile/dypx/2.jpg" alt="m-2.jpg">
+      <!-- footer_m -->
+      <div id="foot_m">
+        {dede:include filename="footer_m.html"/}
+      </div>
+    </div>
+  </div>
+  <!-- 移动端导航栏 -->
+  <div id="head_m">
+    {dede:include filename="header_m.html"/}
   </div>
 </body>
 </html>
