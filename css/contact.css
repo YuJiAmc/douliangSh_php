@@ -236,7 +236,10 @@
     margin-bottom: .13rem /* 10/75 */;
   }
   #mgwb_contact_m {
-    margin:  .8rem /* 60/75 */ 0;
+    margin: .8rem /* 60/75 */ 0;
+  }
+  #ecop_contact_m {
+    padding-bottom: .93rem /* 70/75 */;
   }
   /* title颜色区分 */
  .mt_title {
@@ -260,6 +263,9 @@
   }
   #mgwb_contact_m .mt_title {
     color: #ffa204;
+  }
+  #ecop_contact_m .mt_title{
+    color: #46b4ff;
   }
   /*  */
   /* label颜色区分 */
@@ -343,7 +349,7 @@
     background-image: url(../img/mobile/ctus/2_03.png);
     line-height: .73rem /* 55/75 */;
     font-size: .32rem /* 24/75 */;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
   /* 提交按钮字体颜色区分 */
@@ -365,6 +371,9 @@
   }
   #mgwb_contact_m .contact_m_btn {
     background-image: url(../img/mobile/mgwb/4_30.png);
+  }
+  #ecop_contact_m .contact_m_btn{
+    background-image: url(../img/mobile/ecop/5_35.png);
   }
   /*  */
 }
