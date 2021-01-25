@@ -585,6 +585,9 @@
     background-image:url(../img/mobile/ecop/4_54.png);
     margin-right: 0;
   }
+  .other_m ul:last-child {
+    margin-top: .4rem /* 30/75 */;
+  }
   .other_m ul:last-child li:nth-child(1) {
     background-image:url(../img/mobile/ecop/4_66.png);
   }

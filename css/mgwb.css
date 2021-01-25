@@ -478,9 +478,11 @@
     margin-bottom: .8rem /* 60/75 */;
   }
   .major_m ul li:nth-child(2) {
+    background-size: cover;
     background: url("../img/mobile/mgwb/1_06.png") no-repeat;
   }
   .major_m ul li:nth-child(3) {
+    background-size: cover;
     background: url("../img/mobile/mgwb/1_08.png") no-repeat;
     margin-right: 0;
   }
