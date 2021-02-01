@@ -41,41 +41,42 @@
     ecommerceLive: "电商直播",
     contactUs: "联系我们",
     ecomOperate: "电商运营",
-    "art-design": "设计外包"
-  }
+    "art-design": "设计外包",
+  };
   var dataName = map[type] || "首页";
-  $(".form_btn").click(function(){
+  $(".form_btn").click(function () {
     var name = $("#name").val();
-    var phone = $("#phone").val()
-    var message = $("#textarea").val()
-    if(!name.trim()||!phone.trim()){
-      alert("请填写正确的联系方式，方便我们联系您！")
+    var phone = $("#phone").val();
+    var message = $("#textarea").val();
+    if (!name.trim() || !phone.trim()) {
+      alert("请填写正确的联系方式，方便我们联系您！");
       return false;
     }
-    if(!((/^1[3456789]\d{9}$/).test(phone) )){
-      alert("请正确填写您的手机号码")
+    if (!/^1[3456789]\d{9}$/.test(phone)) {
+      alert("请正确填写您的手机号码");
       return false;
     }
     $.ajax({
-    	type: 'get',
-    	url: 'http://info.wkefu.com/api/activity2018/messageBox',
-    	data: {
-        'name': name+" (来源页面: 斗量传媒(PC端)_"+dataName+")",
-    		'phone': phone,
-    		'note': message,
-        "source": 3,
-    	},
-    	success: function(data) {
-    		if (data.resultCode == '0') {
-    			alert("留言成功，我们的工作人员已收到你的留言信息，将会在尽快时间内联系你！");
-    		}else{
-    			alert("我们的网站可能今天心情不太好，留言暂时发送失败，请稍后再试！");
-    		};
+      type: "get",
+      url: "http://info.wkefu.com/api/activity2018/messageBox",
+      data: {
+        name: name + " (来源页面: 斗量传媒(PC端)_" + dataName + ")",
+        phone: phone,
+        note: message,
+        source: 3,
+      },
+      success: function (data) {
+        if (data.resultCode == "0") {
+          alert(
+            "留言成功，我们的工作人员已收到你的留言信息，将会在尽快时间内联系你！"
+          );
+        } else {
+          alert("我们的网站可能今天心情不太好，留言暂时发送失败，请稍后再试！");
+        }
         $("#name").val("");
         $("#phone").val("");
         $("#textarea").val("");
-    	}
+      },
     });
-  })
- 
+  });
 </script>

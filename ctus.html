@@ -1,230 +1,343 @@
 <!-- 联系我们 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <title>{dede:field.seotitle /}</title>
-  <meta name="keywords" content="{dede:field.keywords/}" />
-  <meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
-  <meta name = "format-detection" content = "telephone=no">
-  <link rel="icon" type="image/png" sizes="32x32" href="{dede:global.cfg_templets_skin/}/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="{dede:global.cfg_templets_skin/}/favicon-16x16.png" />
-  <script src="{dede:global.cfg_templets_skin/}/js/flexible.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>{dede:field.seotitle /}</title>
+    <meta name="keywords" content="{dede:field.keywords/}" />
+    <meta
+      name="description"
+      content="{dede:field.description function='html2text(@me)'/}"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{dede:global.cfg_templets_skin/}/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{dede:global.cfg_templets_skin/}/favicon-16x16.png"
+    />
+    <script src="{dede:global.cfg_templets_skin/}/js/flexible.js"></script>
+    <script>
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/base.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/header.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/contact.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/footer.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/contactUs.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+    </script>
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?e19c16c6dd6add4a3a59afd26f0d155e";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </head>
+  <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
   <script>
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/base.css?v='+ new Date().getTime()+'" rel="stylesheet" >');
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/header.css?v='+ new Date().getTime()+'" rel="stylesheet" >');
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/contact.css?v='+ new Date().getTime()+'" rel="stylesheet" >');
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/footer.css?v='+ new Date().getTime()+'" rel="stylesheet" >');
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/contactUs.css?v='+new Date().getTime()+'" rel="stylesheet" >');
+    document.write(
+      '<script src="{dede:global.cfg_templets_skin/}/js/common.js?v=' +
+        new Date().getTime() +
+        '"><\/script>'
+    );
   </script>
-   <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?e19c16c6dd6add4a3a59afd26f0d155e";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-</head>
-<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
-<script>
-  document.write('<script src="{dede:global.cfg_templets_skin/}/js/common.js?v=' + new Date().getTime() + '"><\/script>')
-</script>
-<body>
-  <div id="contactUs">
-    <!-- header -->
-    <div class="header clearfix">
-      <a href="/" class="logo fl">
-        <img src="{dede:global.cfg_templets_skin/}/img/index/logo.png" alt="斗量传媒-logo">
-      </a>
-      <ul class="header-nav fr">
-        <li>
-          <a href="/">首页</a>
-        </li>
-        <li>
-          {dede:type typeid='4'}
-          <a href="[field:typelink /]">抖音运营</a>
-          {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='5'}
-          <a href="[field:typelink /]">电商直播</a>
-          {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='6'}
-          <a href="[field:typelink /]">抖音培训</a>
-          {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='7'}
-          <a href="[field:typelink /]">电商运营</a>
-          {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='8'}
-          <a href="[field:typelink /]">设计外包</a>
-          {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='1'}
-          <a href="[field:typelink /]">新闻资讯</a>
-          {/dede:type}
-        </li>
-        <li class="active">
-          {dede:type typeid='2'}
-          <a href="[field:typelink /]">联系我们</a>
-          {/dede:type}
-        </li>
-      </ul>
-    </div>
-    <div id="head">
-      {dede:include filename="header.html"/}
-    </div>
-    <!-- banner -->
-    <div class="banner">
-      <img id="banner" class="compress_img" style="width: 100%;" src="{dede:global.cfg_templets_skin/}/img/contactUs/banner_min.jpg" alt="联系我们-banner">
-    </div>
-     <!-- profile -->
-     <div class="need profile">
-      <div class="need_title">
-        <p>Company profile</p>
-        <p>公司简介</p>
+  <body>
+    <div id="contactUs">
+      <!-- header -->
+      <div class="header clearfix">
+        <a href="/" class="logo fl">
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
+            alt="斗量传媒-logo"
+          />
+        </a>
+        <ul class="header-nav fr">
+          <li>
+            <a href="/">首页</a>
+          </li>
+          <li>
+            {dede:type typeid='4'}
+            <a href="[field:typelink /]">抖音运营</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='5'}
+            <a href="[field:typelink /]">电商直播</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='6'}
+            <a href="[field:typelink /]">抖音培训</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='7'}
+            <a href="[field:typelink /]">电商运营</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='8'}
+            <a href="[field:typelink /]">设计外包</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='1'}
+            <a href="[field:typelink /]">新闻资讯</a>
+            {/dede:type}
+          </li>
+          <li class="active">
+            {dede:type typeid='2'}
+            <a href="[field:typelink /]">联系我们</a>
+            {/dede:type}
+          </li>
+        </ul>
       </div>
-      <div class="need_content">
-        <div> 
-          <p style="text-indent:2em;">上海斗量文化传媒有限公司——短视频代运营服务商 , 抖音官方认证 MCN机构。</p>
-          <p>主营业务：创意策划、视频摄制、运营推广、网络直播等短视频代运营服务体系。公司</p>
-          <p>拥有一支富有创造力的核心团队 , 我们奉行“专业”的服务水准和“专注”的服务态</p>
-          <p>度 , 用创新的思维 , 灵动的概念 , 以及成熟的制作力争成为新兴媒体沙漠中璀璨的绿</p>
-          <p>洲。目前已与多行业客户跨界合作 , 并得到客户一致认可。</p>
+      <div id="head">{dede:include filename="header.html"/}</div>
+      <!-- banner -->
+      <div class="banner">
+        <img
+          id="banner"
+          class="compress_img"
+          style="width: 100%"
+          src="{dede:global.cfg_templets_skin/}/img/contactUs/banner_min.jpg"
+          alt="联系我们-banner"
+        />
+      </div>
+      <!-- profile -->
+      <div class="need profile">
+        <div class="need_title">
+          <p>Company profile</p>
+          <p>公司简介</p>
+        </div>
+        <div class="need_content">
+          <div>
+            <p style="text-indent: 2em">
+              上海斗量文化传媒有限公司——短视频代运营服务商 , 抖音官方认证
+              MCN机构。
+            </p>
+            <p>
+              主营业务：创意策划、视频摄制、运营推广、网络直播等短视频代运营服务体系。公司
+            </p>
+            <p>
+              拥有一支富有创造力的核心团队 ,
+              我们奉行“专业”的服务水准和“专注”的服务态
+            </p>
+            <p>
+              度 , 用创新的思维 , 灵动的概念 ,
+              以及成熟的制作力争成为新兴媒体沙漠中璀璨的绿
+            </p>
+            <p>洲。目前已与多行业客户跨界合作 , 并得到客户一致认可。</p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- need -->
-    <div class="need">
-      <div class="need_title">
-        <p>Why need us ?</p>
-        <p>为什么需要我们 ?</p>
-        <p>网红经济 , 这是属于中小企业品牌/产品战略最好的时代</p>
-      </div>
-      <div class="need_content">
-        <div> 
-          <p style="text-indent:2em;">如今 , 传统推广渠道收效甚微 , 原本的行业巨头可能摇摇欲坠 , 而名不见经传的小</p>
-          <p>辈却借力网络营销悄然壮大。所以 , 请不要犹豫。如果您担心营销公司做不到您要的效</p>
-          <p>果 , 团队执行不出您想要的状态；又担心推广费用太高 , 投入产出比是否合算；又因为</p>
-          <p>公司一直在传统领域打拼 , 不熟悉网红直播领域 , 担心推广后维护更新没有保障等。没关</p>
-          <p>系 , 这些问题联系我们一次解决。</p>
+      <!-- need -->
+      <div class="need">
+        <div class="need_title">
+          <p>Why need us ?</p>
+          <p>为什么需要我们 ?</p>
+          <p>网红经济 , 这是属于中小企业品牌/产品战略最好的时代</p>
+        </div>
+        <div class="need_content">
+          <div>
+            <p style="text-indent: 2em">
+              如今 , 传统推广渠道收效甚微 , 原本的行业巨头可能摇摇欲坠 ,
+              而名不见经传的小
+            </p>
+            <p>
+              辈却借力网络营销悄然壮大。所以 ,
+              请不要犹豫。如果您担心营销公司做不到您要的效
+            </p>
+            <p>
+              果 , 团队执行不出您想要的状态；又担心推广费用太高 ,
+              投入产出比是否合算；又因为
+            </p>
+            <p>
+              公司一直在传统领域打拼 , 不熟悉网红直播领域 ,
+              担心推广后维护更新没有保障等。没关
+            </p>
+            <p>系 , 这些问题联系我们一次解决。</p>
+          </div>
         </div>
       </div>
+      <!-- resolve -->
+      <div class="resolve">
+        <p class="resolve_title">有问题要解决?找我们！</p>
+        <ul class="clearfix">
+          <li>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/contactUs/1_14.png"
+              alt="contactUs-1_14.png"
+            />
+            <p>微信</p>
+            <img
+              class="hover_img"
+              src="{dede:global.cfg_templets_skin/}/img/index/erweima.jpg"
+              alt="contactUs-erweima"
+            />
+          </li>
+          <li>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/contactUs/1_16.png"
+              alt="contactUs-1_16.png"
+            />
+            <p>电话</p>
+            <div class="hover_ph">19901638825</div>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
+              ><img
+                src="{dede:global.cfg_templets_skin/}/img/contactUs/1_20.png"
+                alt="contactUs-1_20.png"
+              />
+              <p>客服</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- contact -->
+      <div id="contact">{dede:include filename="contact.html"/}</div>
+      <div>
+        <img
+          class="compress_img"
+          style="width: 100%"
+          src="{dede:global.cfg_templets_skin/}/img/contactUs/1_41_min.jpg"
+          alt="contactUs-1_41.jpg"
+        />
+      </div>
+      <!-- footer -->
+      <div id="foot">{dede:include filename="footer.html"/}</div>
     </div>
-    <!-- resolve -->
-    <div class="resolve">
-      <p class="resolve_title">有问题要解决?找我们！</p>
-      <ul class="clearfix">
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/contactUs/1_14.png" alt="contactUs-1_14.png">
-          <p>微信</p>
-          <img class="hover_img" src="{dede:global.cfg_templets_skin/}/img/index/erweima.jpg" alt="contactUs-erweima">
-        </li>
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/contactUs/1_16.png" alt="contactUs-1_16.png">
-          <p>电话</p>
-          <div class="hover_ph">19901638825</div>
-        </li>
-        <li>
-          <a
-          target="_blank"
-          href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
-          ><img src="{dede:global.cfg_templets_skin/}/img/contactUs/1_20.png" alt="contactUs-1_20.png">
-          <p>客服</p>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- contact -->
-    <div id="contact">
-      {dede:include filename="contact.html"/}
-    </div>
-    <div>
-      <img class="compress_img" style="width: 100%;" src="{dede:global.cfg_templets_skin/}/img/contactUs/1_41_min.jpg" alt="contactUs-1_41.jpg">
-    </div>
-    <!-- footer -->
-    <div id="foot">
-      {dede:include filename="footer.html"/}
-    </div>
-  </div>
 
-  <!-- 移动端 -->
-  <div id="mobile">
-    <div class="head_m clearfix">
-      <a href="/" class="logo_m fl">
-        <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png" alt="m-斗量传媒-logo">
-      </a>
-      <img id="navSlideDown" src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png" alt="m-6-2.png">
-    </div>
-    <!-- banner -->
-    <div class="banner_m">
-      <img src="{dede:global.cfg_templets_skin/}/img/mobile/ctus/1_02.png" alt="m-联系我们-banner">
-    </div>
-    <div class="gsjj">
-      <div class="mt_title">
-        <p>公司简介</p>
+    <!-- 移动端 -->
+    <div id="mobile">
+      <div class="head_m clearfix">
+        <a href="/" class="logo_m fl">
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
+            alt="m-斗量传媒-logo"
+          />
+        </a>
+        <img
+          id="navSlideDown"
+          src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
+          alt="m-6-2.png"
+        />
       </div>
-      <div class="gsjj_content">
-        上海斗量文化传媒有限公司——短视频代运营服务商 , 抖音官方认证 MCN机构。主营业务：创意策划、视频摄制、运营推广、网络直播等短视频代运营服务体系。公司拥有一支富有创造力的核心团队 , 我们奉行“专业”的服务水准和“专注”的服务态度 , 用创新的思维 , 灵动的概念 , 以及成熟的制作力争成为新兴媒体沙漠中璀璨的绿洲。目前已与多行业客户跨界合作 , 并得到客户一致认可。
+      <!-- banner -->
+      <div class="banner_m">
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/mobile/ctus/1_02.png"
+          alt="m-联系我们-banner"
+        />
       </div>
-    </div>
-    <div class="whyneed">
-      <div class="mt_title">
-        <p>为什么需要我们</p>
+      <div class="gsjj">
+        <div class="mt_title">
+          <p>公司简介</p>
+        </div>
+        <div class="gsjj_content">
+          上海斗量文化传媒有限公司——短视频代运营服务商 , 抖音官方认证
+          MCN机构。主营业务：创意策划、视频摄制、运营推广、网络直播等短视频代运营服务体系。公司拥有一支富有创造力的核心团队
+          , 我们奉行“专业”的服务水准和“专注”的服务态度 , 用创新的思维 ,
+          灵动的概念 ,
+          以及成熟的制作力争成为新兴媒体沙漠中璀璨的绿洲。目前已与多行业客户跨界合作
+          , 并得到客户一致认可。
+        </div>
       </div>
-      <div class="gsjj_content">
-        如今 , 传统推广渠道收效甚微 , 原本的行业巨头可能摇摇欲坠 , 而名不见经传的小辈却借力网络营销悄然壮大。所以 ,请不要犹豫。如果您担心营销公司做不到您要的效果 , 团队执行不出您想要的状态；又担心推广费用太高 , 投入产出比是否合算；又因为公司一直在传统领域打拼 , 不熟悉网红直播领域 , 担心推广后维护更新没有保障等。没关系 , 这些问题联系我们一次解决。</p>
+      <div class="whyneed">
+        <div class="mt_title">
+          <p>为什么需要我们</p>
+        </div>
+        <div class="gsjj_content">
+          如今 , 传统推广渠道收效甚微 , 原本的行业巨头可能摇摇欲坠 ,
+          而名不见经传的小辈却借力网络营销悄然壮大。所以
+          ,请不要犹豫。如果您担心营销公司做不到您要的效果 ,
+          团队执行不出您想要的状态；又担心推广费用太高 ,
+          投入产出比是否合算；又因为公司一直在传统领域打拼 , 不熟悉网红直播领域
+          , 担心推广后维护更新没有保障等。没关系 , 这些问题联系我们一次解决。
+        </div>
       </div>
-    </div>
-    <div class="resolve"> 
-      <div class="mt_title">
-        有问题要解决?找我们!
+      <div class="resolve">
+        <div class="mt_title">有问题要解决?找我们!</div>
+        <ul class="clearfix">
+          <li>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/contactUs/1_14.png"
+              alt="contactUs-1_14.png"
+            />
+            <p>微信</p>
+            <img
+              class="hover_img"
+              src="{dede:global.cfg_templets_skin/}/img/index/erweima.jpg"
+              alt="contactUs-erweima"
+            />
+          </li>
+          <li>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/contactUs/1_16.png"
+              alt="contactUs-1_16.png"
+            />
+            <p>电话</p>
+            <div class="hover_ph">19901638825</div>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
+              ><img
+                src="{dede:global.cfg_templets_skin/}/img/contactUs/1_20.png"
+                alt="contactUs-1_20.png"
+              />
+              <p>客服</p>
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="clearfix">
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/contactUs/1_14.png" alt="contactUs-1_14.png">
-          <p>微信</p>
-          <img class="hover_img" src="{dede:global.cfg_templets_skin/}/img/index/erweima.jpg" alt="contactUs-erweima">
-        </li>
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/contactUs/1_16.png" alt="contactUs-1_16.png">
-          <p>电话</p>
-          <div class="hover_ph">19901638825</div>
-        </li>
-        <li>
-          <a
-          target="_blank"
-          href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
-          ><img src="{dede:global.cfg_templets_skin/}/img/contactUs/1_20.png" alt="contactUs-1_20.png">
-          <p>客服</p>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- contact_m -->
-    <div id="ctus_contact_m">
-      <div id="contact_m">
-        {dede:include filename="contact_m.html"/}
+      <!-- contact_m -->
+      <div id="ctus_contact_m">
+        <div id="contact_m">{dede:include filename="contact_m.html"/}</div>
       </div>
+      <img
+        style="width: 100%; margin-top: 0.93rem"
+        src="{dede:global.cfg_templets_skin/}/img/mobile/ctus/1_29.png"
+        alt="1_29.png"
+      />
+      <!-- footer_m -->
+      <div id="foot_m">{dede:include filename="footer_m.html"/}</div>
     </div>
-    <img style="width: 100%; margin-top: .93rem;" src="{dede:global.cfg_templets_skin/}/img/mobile/ctus/1_29.png" alt="1_29.png">
-    <!-- footer_m -->
-    <div id="foot_m">
-      {dede:include filename="footer_m.html"/}
-    </div>
-  </div>
-   <!-- 移动端导航栏 -->
-   <div id="head_m">
-    {dede:include filename="header_m.html"/}
-   </div>
-</body>
+    <!-- 移动端导航栏 -->
+    <div id="head_m">{dede:include filename="header_m.html"/}</div>
+  </body>
 </html>

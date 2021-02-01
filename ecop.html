@@ -1,708 +1,1019 @@
 <!-- 电商运营 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <title>{dede:field.seotitle /}</title>
-  <meta name="keywords" content="{dede:field.keywords/}" />
-  <meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
-  <meta name = "format-detection" content = "telephone=no">
-  <link rel="icon" type="image/png" sizes="32x32" href="{dede:global.cfg_templets_skin/}/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="{dede:global.cfg_templets_skin/}/favicon-16x16.png" />
-  <script src="{dede:global.cfg_templets_skin/}/js/flexible.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>{dede:field.seotitle /}</title>
+    <meta name="keywords" content="{dede:field.keywords/}" />
+    <meta
+      name="description"
+      content="{dede:field.description function='html2text(@me)'/}"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{dede:global.cfg_templets_skin/}/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{dede:global.cfg_templets_skin/}/favicon-16x16.png"
+    />
+    <script src="{dede:global.cfg_templets_skin/}/js/flexible.js"></script>
+    <script>
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/base.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/header.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/contact.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/footer.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/ecomOperate.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+    </script>
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?e19c16c6dd6add4a3a59afd26f0d155e";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </head>
+  <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
   <script>
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/base.css?v='+ new Date().getTime()+'" rel="stylesheet" >');
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/header.css?v='+ new Date().getTime()+'" rel="stylesheet" >');
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/contact.css?v='+ new Date().getTime()+'" rel="stylesheet" >');
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/footer.css?v='+ new Date().getTime()+'" rel="stylesheet" >');
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/ecomOperate.css?v='+new Date().getTime()+'" rel="stylesheet" >');
+    document.write(
+      '<script src="{dede:global.cfg_templets_skin/}/js/common.js?v=' +
+        new Date().getTime() +
+        '"><\/script>'
+    );
   </script>
-   <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?e19c16c6dd6add4a3a59afd26f0d155e";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-</head>
-<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
-<script>
-  document.write('<script src="{dede:global.cfg_templets_skin/}/js/common.js?v=' + new Date().getTime() + '"><\/script>')
-</script>
-<body>
-  <div id="ecomOperate">
-    <!-- header -->
-    <div class="header clearfix">
-      <a href="/" class="logo fl">
-        <img src="{dede:global.cfg_templets_skin/}/img/index/logo.png" alt="斗量传媒-logo">
-      </a>
-      <ul class="header-nav fr">
-        <li>
-          <a href="/">首页</a>
-        </li>
-        <li class="active">
-          {dede:type typeid='4'}
-          <a href="[field:typelink /]">抖音运营</a>
-          {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='5'}
-          <a href="[field:typelink /]">电商直播</a>
-          {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='6'}
-          <a href="[field:typelink /]">抖音培训</a>
-          {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='7'}
-          <a href="[field:typelink /]">电商运营</a>
-          {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='8'}
-          <a href="[field:typelink /]">设计外包</a>
-          {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='1'}
-          <a href="[field:typelink /]">新闻资讯</a>
-          {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='2'}
-          <a href="[field:typelink /]">联系我们</a>
-          {/dede:type}
-        </li>
-      </ul>
-    </div>
-    <div id="head">
-      {dede:include filename="header.html"/}
-    </div>
-    <!-- banner -->
-    <div class="banner">
-      <img id="banner"  class="compress_img" style="width: 100%;" src="{dede:global.cfg_templets_skin/}/img/ecomOperate/banner_01_min.jpg" alt="电商运营-banner">
-    </div>
-    <!-- worry -->
-    <div class="worry">
-      <div class="worry_title">
-        <p>"互联网+" 时代 , 你的电商之路怎么走 ?</p>
-        <div>你有这样的困扰吗 ?</div>
-      </div>
-      <div class="worry_content">
-        <ul>
+  <body>
+    <div id="ecomOperate">
+      <!-- header -->
+      <div class="header clearfix">
+        <a href="/" class="logo fl">
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
+            alt="斗量传媒-logo"
+          />
+        </a>
+        <ul class="header-nav fr">
           <li>
-            <p class="underline">起步难</p>
-            <p>传统企业转电商起步困难</p>
+            <a href="/">首页</a>
+          </li>
+          <li class="active">
+            {dede:type typeid='4'}
+            <a href="[field:typelink /]">抖音运营</a>
+            {/dede:type}
           </li>
           <li>
-            <p class="underline">无团队</p>
-            <p>没有专业的网络运营人才</p>
-            <p>人员流动大</p>
-            <p>团队难组</p>
-          </li>
-        </ul>
-        <div><img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_04.png" alt="ecomOperate-1-04.png"></div>
-        <ul>
-          <li>
-            <p class="underline">无线端</p>
-            <p>无线端用户迅速增长</p>
-            <p>如何抢占无线市场</p>
+            {dede:type typeid='5'}
+            <a href="[field:typelink /]">电商直播</a>
+            {/dede:type}
           </li>
           <li>
-            <p class="underline">无流量</p>
-            <p>如何引流？流量贵 , 有流量无转化</p>
+            {dede:type typeid='6'}
+            <a href="[field:typelink /]">抖音培训</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='7'}
+            <a href="[field:typelink /]">电商运营</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='8'}
+            <a href="[field:typelink /]">设计外包</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='1'}
+            <a href="[field:typelink /]">新闻资讯</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='2'}
+            <a href="[field:typelink /]">联系我们</a>
+            {/dede:type}
           </li>
         </ul>
       </div>
-    </div>
-    <div class="satisfy compress_bgi">
-      <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_05.png" alt="ecomOperate-1-05.png">
-      <div class="public_title">
-        <p>How can we satisfy you</p>
-        <p>我们如何满足您 ?</p>
-        <p>我们的技术实力无可置疑</p>
+      <div id="head">{dede:include filename="header.html"/}</div>
+      <!-- banner -->
+      <div class="banner">
+        <img
+          id="banner"
+          class="compress_img"
+          style="width: 100%"
+          src="{dede:global.cfg_templets_skin/}/img/ecomOperate/banner_01_min.jpg"
+          alt="电商运营-banner"
+        />
       </div>
-      <div class="satisfy_title">服务平台</div>
-      <div class="satisfy_platform">
-        <ul class="clearfix">
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_41.png" alt="ecomOperate-2-41.png">
-            <p>淘宝代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_43.png" alt="ecomOperate-2-43.png">
-            <p>天猫代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_46.png" alt="ecomOperate-2-46.png">
-            <p>京东代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_49.png" alt="ecomOperate-2-49.png">
-            <p>拼多多代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_51.png" alt="ecomOperate-2-51.png">
-            <p>小红书代运营</p>
-          </li>
-        </ul>
-        <ul class="clearfix">
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_67.png" alt="ecomOperate/2_67.png">
-            <p>网易考拉代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_69.png" alt="ecomOperate-2-69.png">
-            <p>微商城代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_72.png" alt="ecomOperate-2-72.png">
-            <p>小程序代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_75.png" alt="ecomOperate-2-75.png">
-            <p>APP代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_77.png" alt="ecomOperate-2-77.png">
-            <p>官网代运营</p>
-          </li>
-        </ul>
-      </div>
-      <div class="satisfy_title sp">
-        <p>一站式托管</p>
-        <p>迅速提升业绩</p>
-      </div>
-      <div class="satisfy_content">
-        <ul class="clearfix">
-          <li>
-            <div class="content_title">
-              <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/13_03.png" alt="ecomOperate-13-03.png">
-              <span>平台入驻</span>
-            </div>
-            <div class="content_desc">
-              <p>提供天猫、京东商城、拼多多入驻服</p>
-              <p>务 , 深谙平台规则 , 快速受理开店 , 最</p>
-              <p>短时间为您铺设销售网络 , 走好网商</p>
-              <p>关键第一步。</p>
-            </div>
-          </li>
-          <li>
-            <div class="content_title">
-              <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/13_05.png" alt="ecomOperate-13-05.png">
-              <span>战略策划</span>
-            </div>
-            <div class="content_desc">
-              <p>凭借多年服务经验 , 数百客户积累 , 总</p>
-              <p>结出从电商平台搭建到营运策略制定的</p>
-              <p>系统服务战略 , 包括店铺定位、产品规</p>
-              <p>划和营销策略 , 形成切实可行的整体运</p>
-              <p>营战略 , 一路为您保驾护航。</p>
-            </div>
-          </li>
-          <li>
-            <div class="content_title">
-              <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/13_07.png" alt="ecomOperate-13-07.png">
-              <span>视觉设计</span>
-            </div>
-            <div class="content_desc">
-              <p>专业的视觉设计团队 , 一流的视觉策略</p>
-              <p>分析 , 完美打造店铺品牌气质格调和客</p>
-              <p>户购物体验 , 力求在视觉上传达给消费</p>
-              <p>者高品质的产品形象 , 提升品牌黏度！</p>
-            </div>
-          </li>
-        </ul>
-        <ul class="clearfix">
-          <li>
-            <div class="content_title">
-              <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/13_13.png" alt="ecomOperate-13-13.png">
-              <span>运营推广</span>
-            </div>
-            <div class="content_desc">
-              <p>整合PC、移动端资源 , 以引入目标</p>
-              <p>流量为核心 , 精准定位,借助付费流</p>
-              <p>量、免费流量、策划活动、全网辅助</p>
-              <p>实现销量和品牌双重提升！</p>
-              <p></p>
-            </div>
-          </li>
-          <li>
-            <div class="content_title">
-              <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/13_16.png" alt="ecomOperate-13-16.png">
-              <span>客服服务</span>
-            </div>
-            <div class="content_desc">
-              <p>淘宝官方认证金牌客服服务商 , 千席专</p>
-              <p>业团队 , 全天15小时在线服务 , 优化</p>
-              <p>接待流程 , 提升客户体验 , 促进咨询</p>
-              <p>转化 , 建立完善的VIP服务体系 , 提</p>
-              <p>升关联购买及复购率。</p>
-            </div>
-          </li>
-          <li>
-            <div class="content_title">
-              <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/13_19.png" alt="ecomOperate-13-19.png">
-              <span>数据分析</span>
-            </div>
-          
-            <div class="content_desc">
-              <p>针对店铺运营 , 实时分析行业数据、客</p>
-              <p>户数据、自有店铺诊断 , 优化调整 , 制</p>
-              <p>订策略 , 最大限度提高产出 , 提升推广</p>
-              <p>效果 , 挖掘顾客的二次需求与粘度 , 大</p>
-              <p>幅度提高客户复购率。</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_05.png" alt="ecomOperate-1-05.png">
-    </div>
-    <!-- process -->
-    <div class="process">
-      <div class="public_title">
-        <p>Service process</p>
-        <p class="c_b">服务流程</p>
-        <p class="c_b underline">专注电商托管服务</p>
-      </div>
-      <ul class="clearfix">  
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_40.png" alt="ecomOperate-1-40.png">
-          <p>沟通需求</p>
-          <div>
-            <p>从客户的需求中了解到客户的店铺</p>
-            <p>及产品问题 , 然后形成初步的方案。</p>
-          </div>
-          <div class="li_arrow"></div>
-        </li>
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_42.png" alt="ecomOperate-1-42.png">
-          <p>签订合同</p>
-          <div>
-            <p>签署合作协议 , 达成合作共识 , </p>
-            <p>确保商家权益。</p>
-          </div>
-          <div class="li_arrow"></div>
-        </li>
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_45.png" alt="ecomOperate-1-05.png">
-          <p>对接服务</p>
-          <div>
-            <p>安排专属团队接手店铺 , 并进行店</p>
-            <p>铺的进一步分析 , 形成落实方案。</p>
-          </div>
-          <div class="li_arrow"></div>
-        </li>
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_48.png" alt="ecomOperate-1-48.png">
-          <p>运营执行</p>
-          <div>
-            <p>专属团队针对所合作服务进行落实</p>
-            <p>执行 , 确保店铺优化进度。</p>
-          </div>
-          <div class="li_arrow"></div>
-        </li>
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_50.png" alt="ecomOperate-1-50.png">
-          <p>汇报总结</p>
-          <div>
-            <p>总结运营数据情况 , 店铺发展和产</p>
-            <p>品优化情况 , 及时沟通对接。</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!-- team -->
-    <div class="team compress_bgi">
-      <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_05.png" alt="ecomOperate-1-05.png">
-      <div class="public_title">
-        <p>Our team</p>
-        <p class="team_p">我们的团队</p>
-      </div>
-      <div class="team_content">
-        <img class="compress_img" src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_03_min.png" alt="ecomOperate-tu-03.png">
-        <ul class="clearfix">
-          <li><img class="compress_img" src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_07_min.png" alt="ecomOperate-tu-07.png"></li>
-          <li><img class="compress_img" src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_09_min.png" alt="ecomOperate-tu-09.png"></li>
-          <li><img class="compress_img" src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_11_min.png" alt="ecomOperate-tu-11.png"></li>
-        </ul>
-      </div>
-      <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_05.png" alt="ecomOperate-1-05.png">
-    </div>
-    <!-- issues -->
-    <div class="issues">
-      <div class="public_title">
-        <p>Other issues</p>
-        <p class="c_b">其他问题</p>
-        <p class="c_b underline">导师在线替你解答</p>
-      </div>
-      <ul class="clearfix">
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_114.png" alt="ecomOperate-tu-114.png">
-          <p>开网店需要多少费用 ?</p>
-          <a
-          target="_blank"
-          href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
-          >
-            <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_03.png" alt="ecomOperate-3-03.png">
-          </a>
-        </li>
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_116.png" alt="ecomOperate-tu-116.png">
-          <p>网店多久能开好</p>
-          <a
-          target="_blank"
-          href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
-          >
-            <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_03.png" alt="ecomOperate-3-03.png">
-          </a>
-        </li>
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_118.png" alt="ecomOperate-tu-118.png">
-          <p>网店无流量怎么办</p>
-          <a
-          target="_blank"
-          href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
-          >
-            <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_03.png" alt="ecomOperate-3-03.png">
-          </a>
-        </li>
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_120.png" alt="ecomOperate-tu-120.png">
-          <p>销量上不去怎么办</p>
-          <a
-          target="_blank"
-          href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
-          >
-            <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_03.png" alt="ecomOperate-3-03.png">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- example -->
-    <div class="example compress_bgi">
-      <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_05.png" alt="ecomOperate-1-05.png">
-      <div class="public_title">
-        <p>店铺运营实例</p>
-        <p>人群流量定位店铺标签</p>
-      </div>
-      <div class="example_ul">
-        <ul>
-          <li>
-            <p>店铺类目属于哪一类决定展现人群流量在哪 , 因此需要精准定位店铺人群。</p>
-          </li>
-          <li>
-            <p>开发新品 , 优化店铺基础信息 , 打造视觉卖点 , 定位产品特性。</p>
-          </li>
-          <li>
-            <p>选出具有潜力的产品进行直通车测款 , 以数据评估布局 , 最后定位人群精准投放推广。</p>
-          </li>
-        </ul>
-      </div>
-      <ul class="clearfix">
-        <li><img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_07.png" alt="ecomOperate-3-07.png"></li>
-        <li><img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_09.png" alt="ecomOperate-3-09.png"></li>
-      </ul>
-      <div class="extension">
-        <p class="extension_tltle">付费推广带动上升</p>
-        <div class="example_ul">
+      <!-- worry -->
+      <div class="worry">
+        <div class="worry_title">
+          <p>"互联网+" 时代 , 你的电商之路怎么走 ?</p>
+          <div>你有这样的困扰吗 ?</div>
+        </div>
+        <div class="worry_content">
           <ul>
             <li>
-              <p>多方引流 , 采用直通车定向人群推广 , 大幅度做手淘首页成交和钻展达摩盘 , 建立新的标签 , 二次拉拢流失买家。</p>
+              <p class="underline">起步难</p>
+              <p>传统企业转电商起步困难</p>
             </li>
             <li>
-              <p>内容区域流量 , 选择微淘上新盖楼。 优惠券、店庆及节日活动加大粉丝活跃度 , 进行老客户唤醒。</p>
+              <p class="underline">无团队</p>
+              <p>没有专业的网络运营人才</p>
+              <p>人员流动大</p>
+              <p>团队难组</p>
+            </li>
+          </ul>
+          <div>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_04.png"
+              alt="ecomOperate-1-04.png"
+            />
+          </div>
+          <ul>
+            <li>
+              <p class="underline">无线端</p>
+              <p>无线端用户迅速增长</p>
+              <p>如何抢占无线市场</p>
+            </li>
+            <li>
+              <p class="underline">无流量</p>
+              <p>如何引流？流量贵 , 有流量无转化</p>
             </li>
           </ul>
         </div>
-        <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_18.png" alt="ecomOperate-3-18.png">
-        <p class="extension_tltle">合作数据</p>
-        <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_21.png" alt="ecomOperate-3-21.png">
       </div>
-      <img src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_05.png" alt="ecomOperate-3-05.png">
-    </div>
-    <!-- contact -->
-    <div id="contact">
-      {dede:include filename="contact.html"/}
-    </div>
-    <!-- footer -->
-    <div id="foot">
-      {dede:include filename="footer.html"/}
-    </div>
-  </div>
-  <!-- 移动端 -->
-  <div id="mobile">
-    <div class="head_m clearfix">
-      <a href="/" class="logo_m fl">
-        <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png" alt="m-斗量传媒-logo">
-      </a>
-      <img id="navSlideDown" src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png" alt="m-6-2.png">
-    </div>
-    <!-- banner -->
-    <div class="banner_m">
-      <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/BANNER.png" alt="m-电商运营-banner">
-    </div>
-    <!-- worry_m -->
-    <div class="worry_m">
-      <div class="worry_m_title">
-        <div class="title">"互联网+" 时代 , 你的电商之路怎么走 ?</div>
-        <div class="desc">你有这样的困扰吗 ?</div>
+      <div class="satisfy compress_bgi">
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_05.png"
+          alt="ecomOperate-1-05.png"
+        />
+        <div class="public_title">
+          <p>How can we satisfy you</p>
+          <p>我们如何满足您 ?</p>
+          <p>我们的技术实力无可置疑</p>
+        </div>
+        <div class="satisfy_title">服务平台</div>
+        <div class="satisfy_platform">
+          <ul class="clearfix">
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_41.png"
+                alt="ecomOperate-2-41.png"
+              />
+              <p>淘宝代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_43.png"
+                alt="ecomOperate-2-43.png"
+              />
+              <p>天猫代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_46.png"
+                alt="ecomOperate-2-46.png"
+              />
+              <p>京东代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_49.png"
+                alt="ecomOperate-2-49.png"
+              />
+              <p>拼多多代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_51.png"
+                alt="ecomOperate-2-51.png"
+              />
+              <p>小红书代运营</p>
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_67.png"
+                alt="ecomOperate/2_67.png"
+              />
+              <p>网易考拉代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_69.png"
+                alt="ecomOperate-2-69.png"
+              />
+              <p>微商城代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_72.png"
+                alt="ecomOperate-2-72.png"
+              />
+              <p>小程序代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_75.png"
+                alt="ecomOperate-2-75.png"
+              />
+              <p>APP代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/2_77.png"
+                alt="ecomOperate-2-77.png"
+              />
+              <p>官网代运营</p>
+            </li>
+          </ul>
+        </div>
+        <div class="satisfy_title sp">
+          <p>一站式托管</p>
+          <p>迅速提升业绩</p>
+        </div>
+        <div class="satisfy_content">
+          <ul class="clearfix">
+            <li>
+              <div class="content_title">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/ecomOperate/13_03.png"
+                  alt="ecomOperate-13-03.png"
+                />
+                <span>平台入驻</span>
+              </div>
+              <div class="content_desc">
+                <p>提供天猫、京东商城、拼多多入驻服</p>
+                <p>务 , 深谙平台规则 , 快速受理开店 , 最</p>
+                <p>短时间为您铺设销售网络 , 走好网商</p>
+                <p>关键第一步。</p>
+              </div>
+            </li>
+            <li>
+              <div class="content_title">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/ecomOperate/13_05.png"
+                  alt="ecomOperate-13-05.png"
+                />
+                <span>战略策划</span>
+              </div>
+              <div class="content_desc">
+                <p>凭借多年服务经验 , 数百客户积累 , 总</p>
+                <p>结出从电商平台搭建到营运策略制定的</p>
+                <p>系统服务战略 , 包括店铺定位、产品规</p>
+                <p>划和营销策略 , 形成切实可行的整体运</p>
+                <p>营战略 , 一路为您保驾护航。</p>
+              </div>
+            </li>
+            <li>
+              <div class="content_title">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/ecomOperate/13_07.png"
+                  alt="ecomOperate-13-07.png"
+                />
+                <span>视觉设计</span>
+              </div>
+              <div class="content_desc">
+                <p>专业的视觉设计团队 , 一流的视觉策略</p>
+                <p>分析 , 完美打造店铺品牌气质格调和客</p>
+                <p>户购物体验 , 力求在视觉上传达给消费</p>
+                <p>者高品质的产品形象 , 提升品牌黏度！</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li>
+              <div class="content_title">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/ecomOperate/13_13.png"
+                  alt="ecomOperate-13-13.png"
+                />
+                <span>运营推广</span>
+              </div>
+              <div class="content_desc">
+                <p>整合PC、移动端资源 , 以引入目标</p>
+                <p>流量为核心 , 精准定位,借助付费流</p>
+                <p>量、免费流量、策划活动、全网辅助</p>
+                <p>实现销量和品牌双重提升！</p>
+                <p></p>
+              </div>
+            </li>
+            <li>
+              <div class="content_title">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/ecomOperate/13_16.png"
+                  alt="ecomOperate-13-16.png"
+                />
+                <span>客服服务</span>
+              </div>
+              <div class="content_desc">
+                <p>淘宝官方认证金牌客服服务商 , 千席专</p>
+                <p>业团队 , 全天15小时在线服务 , 优化</p>
+                <p>接待流程 , 提升客户体验 , 促进咨询</p>
+                <p>转化 , 建立完善的VIP服务体系 , 提</p>
+                <p>升关联购买及复购率。</p>
+              </div>
+            </li>
+            <li>
+              <div class="content_title">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/ecomOperate/13_19.png"
+                  alt="ecomOperate-13-19.png"
+                />
+                <span>数据分析</span>
+              </div>
+
+              <div class="content_desc">
+                <p>针对店铺运营 , 实时分析行业数据、客</p>
+                <p>户数据、自有店铺诊断 , 优化调整 , 制</p>
+                <p>订策略 , 最大限度提高产出 , 提升推广</p>
+                <p>效果 , 挖掘顾客的二次需求与粘度 , 大</p>
+                <p>幅度提高客户复购率。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_05.png"
+          alt="ecomOperate-1-05.png"
+        />
       </div>
-      <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/E1.png" alt="E1.png">
-      <div class="worry_m_content">
-        <div><span>起步难:</span> 传统企业转电商起步困难。</div>
-        <div><span>无团队:</span> 没有专业的网络运营人才 , 人员流动大 , 团队难组 。</div>
-        <div><span>无线端:</span> 无线端用户迅速增长 , 如何抢占无线市场 。</div>
-        <div><span>无流量:</span> 如何引流 ？流量贵 , 有流量无转化。</div>
-      </div>
-    </div>
-    <!-- satisfy_m -->
-    <div class="satisfy_m">
-      <div class="ecop_title">
-        <div class="title">我们如何满足您 ? </div>
-        <div class="desc">我们的技术实力无可置疑</div>
-      </div>
-      <div class="platform_m">
-        <div class="title">服务平台</div>
-        <ul class="clearfix">
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_57.png" alt="m-1_57.png">
-            <p>淘宝代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_59.png" alt="m-1_59.png">
-            <p>天猫代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_61.png" alt="m-1_61.png">
-            <p>京东代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_63.png" alt="m-1_63.png">
-            <p>拼多多代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_65.png" alt="m-1_65.png">
-            <p>小红书代运营</p>
-          </li>
-        </ul>
-        <ul class="clearfix">
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_79.png" alt="m-1_79.png">
-            <p>网易考拉代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_81.png" alt="m-1_81.png">
-            <p>微商城代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_83.png" alt="m-1_83.png">
-            <p>小程序代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_85.png" alt="m-1_85.png">
-            <p>APP代运营</p>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_87.png" alt="m-1_87.png">
-            <p>官网代运营</p>
-          </li>
-        </ul>
-      </div>
-      <div class="trusteeship_m">
-        <div class="title">
-          <div>一站式托管</div>
-          <div>迅速提升业绩</div>
+      <!-- process -->
+      <div class="process">
+        <div class="public_title">
+          <p>Service process</p>
+          <p class="c_b">服务流程</p>
+          <p class="c_b underline">专注电商托管服务</p>
         </div>
         <ul class="clearfix">
           <li>
-            <div class="content_title">
-              <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_03.png" alt="ecomOperate-2_03.png">
-              <span>平台入驻</span>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_40.png"
+              alt="ecomOperate-1-40.png"
+            />
+            <p>沟通需求</p>
+            <div>
+              <p>从客户的需求中了解到客户的店铺</p>
+              <p>及产品问题 , 然后形成初步的方案。</p>
             </div>
-            <div class="content_desc">
-              提供天猫、京东商城、拼多多入驻服务 , 深谙平台规则 , 快速受理开店 , 最短时间为您铺设销售网络 , 走好网商关键第一步。
-            </div>
+            <div class="li_arrow"></div>
           </li>
           <li>
-            <div class="content_title">
-              <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_05.png" alt="ecomOperate-2_05.png">
-              <span>战略策划</span>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_42.png"
+              alt="ecomOperate-1-42.png"
+            />
+            <p>签订合同</p>
+            <div>
+              <p>签署合作协议 , 达成合作共识 ,</p>
+              <p>确保商家权益。</p>
             </div>
-            <div class="content_desc">凭借多年服务经验 , 数百客户积累 , 总结出从电商平台搭建到营运策略制定的系统服务战略 , 包括店铺定位、产品规划和营销策略 , 形成切实可行的整体运营战略 , 一路为您保驾护航。
-            </div>
+            <div class="li_arrow"></div>
           </li>
           <li>
-            <div class="content_title">
-              <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_12.png" alt="ecomOperate-2_12.png">
-              <span>视觉设计</span>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_45.png"
+              alt="ecomOperate-1-05.png"
+            />
+            <p>对接服务</p>
+            <div>
+              <p>安排专属团队接手店铺 , 并进行店</p>
+              <p>铺的进一步分析 , 形成落实方案。</p>
             </div>
-            <div class="content_desc">专业的视觉设计团队 , 一流的视觉策略分析 , 完美打造店铺品牌气质格调和客户购物体验 , 力求在视觉上传达给消费者高品质的产品形象 , 提升品牌黏度！
-            </div>
+            <div class="li_arrow"></div>
           </li>
           <li>
-            <div class="content_title">
-              <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_09.png" alt="ecomOperate-2_09.png">
-              <span>运营推广</span>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_48.png"
+              alt="ecomOperate-1-48.png"
+            />
+            <p>运营执行</p>
+            <div>
+              <p>专属团队针对所合作服务进行落实</p>
+              <p>执行 , 确保店铺优化进度。</p>
             </div>
-            <div class="content_desc">整合PC、移动端资源 , 以引入目标流量为核心 , 精准定位,借助付费流量、免费流量、策划活动、全网辅助实现销量和品牌双重提升！
-            </div>
+            <div class="li_arrow"></div>
           </li>
           <li>
-            <div class="content_title">
-              <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_17.png" alt="ecomOperate-2_17.png">
-              <span>客服服务</span>
-            </div>
-            <div class="content_desc">淘宝官方认证金牌客服服务商 , 千席专业团队 , 全天15小时在线服务 , 优化接待流程 , 提升客户体验 , 促进咨询转化 , 建立完善的VIP服务体系 , 提升关联购买及复购率。
-            </div>
-          </li>
-          <li>
-            <div class="content_title">
-              <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_20.png" alt="ecomOperate-2_20.png">
-              <span>数据分析</span>
-            </div>
-            <div class="content_desc">针对店铺运营 , 实时分析行业数据、客户数据、自有店铺诊断 , 优化调整 , 制订策略 , 最大限度提高产出 , 提升推广效果 , 挖掘顾客的二次需求与粘度 , 大幅度提高客户复购率。
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_50.png"
+              alt="ecomOperate-1-50.png"
+            />
+            <p>汇报总结</p>
+            <div>
+              <p>总结运营数据情况 , 店铺发展和产</p>
+              <p>品优化情况 , 及时沟通对接。</p>
             </div>
           </li>
         </ul>
       </div>
-    </div>
-    <!-- process_m -->
-    <div class="process_m">
-      <div class="ecop_title">
-        <div class="title">服务流程</div>
-        <div class="desc">专注电商托管服务</div>
+      <!-- team -->
+      <div class="team compress_bgi">
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_05.png"
+          alt="ecomOperate-1-05.png"
+        />
+        <div class="public_title">
+          <p>Our team</p>
+          <p class="team_p">我们的团队</p>
+        </div>
+        <div class="team_content">
+          <img
+            class="compress_img"
+            src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_03_min.png"
+            alt="ecomOperate-tu-03.png"
+          />
+          <ul class="clearfix">
+            <li>
+              <img
+                class="compress_img"
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_07_min.png"
+                alt="ecomOperate-tu-07.png"
+              />
+            </li>
+            <li>
+              <img
+                class="compress_img"
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_09_min.png"
+                alt="ecomOperate-tu-09.png"
+              />
+            </li>
+            <li>
+              <img
+                class="compress_img"
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_11_min.png"
+                alt="ecomOperate-tu-11.png"
+              />
+            </li>
+          </ul>
+        </div>
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_05.png"
+          alt="ecomOperate-1-05.png"
+        />
       </div>
-      <ul class="clearfix">
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_34.png" alt="m-2_34.png">
-          <p>沟通需求</p>
-        </li>
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_25.png" alt="m-2_25.png">
-          <p>签订合同</p>
-        </li>
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_27.png" alt="m-2_27.png">
-          <p>对接服务</p>
-        </li>
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_29.png" alt="m-2_29.png">
-          <p>运营执行</p>
-        </li>
-        <li>
-          <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_31.png" alt="m-2_31.png">
-          <p>汇报总结</p>
-        </li>
-      </ul>
+      <!-- issues -->
+      <div class="issues">
+        <div class="public_title">
+          <p>Other issues</p>
+          <p class="c_b">其他问题</p>
+          <p class="c_b underline">导师在线替你解答</p>
+        </div>
+        <ul class="clearfix">
+          <li>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_114.png"
+              alt="ecomOperate-tu-114.png"
+            />
+            <p>开网店需要多少费用 ?</p>
+            <a
+              target="_blank"
+              href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
+            >
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_03.png"
+                alt="ecomOperate-3-03.png"
+              />
+            </a>
+          </li>
+          <li>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_116.png"
+              alt="ecomOperate-tu-116.png"
+            />
+            <p>网店多久能开好</p>
+            <a
+              target="_blank"
+              href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
+            >
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_03.png"
+                alt="ecomOperate-3-03.png"
+              />
+            </a>
+          </li>
+          <li>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_118.png"
+              alt="ecomOperate-tu-118.png"
+            />
+            <p>网店无流量怎么办</p>
+            <a
+              target="_blank"
+              href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
+            >
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_03.png"
+                alt="ecomOperate-3-03.png"
+              />
+            </a>
+          </li>
+          <li>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/ecomOperate/tu_120.png"
+              alt="ecomOperate-tu-120.png"
+            />
+            <p>销量上不去怎么办</p>
+            <a
+              target="_blank"
+              href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
+            >
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_03.png"
+                alt="ecomOperate-3-03.png"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- example -->
+      <div class="example compress_bgi">
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_05.png"
+          alt="ecomOperate-1-05.png"
+        />
+        <div class="public_title">
+          <p>店铺运营实例</p>
+          <p>人群流量定位店铺标签</p>
+        </div>
+        <div class="example_ul">
+          <ul>
+            <li>
+              <p>
+                店铺类目属于哪一类决定展现人群流量在哪 ,
+                因此需要精准定位店铺人群。
+              </p>
+            </li>
+            <li>
+              <p>开发新品 , 优化店铺基础信息 , 打造视觉卖点 , 定位产品特性。</p>
+            </li>
+            <li>
+              <p>
+                选出具有潜力的产品进行直通车测款 , 以数据评估布局 ,
+                最后定位人群精准投放推广。
+              </p>
+            </li>
+          </ul>
+        </div>
+        <ul class="clearfix">
+          <li>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_07.png"
+              alt="ecomOperate-3-07.png"
+            />
+          </li>
+          <li>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_09.png"
+              alt="ecomOperate-3-09.png"
+            />
+          </li>
+        </ul>
+        <div class="extension">
+          <p class="extension_tltle">付费推广带动上升</p>
+          <div class="example_ul">
+            <ul>
+              <li>
+                <p>
+                  多方引流 , 采用直通车定向人群推广 ,
+                  大幅度做手淘首页成交和钻展达摩盘 , 建立新的标签 ,
+                  二次拉拢流失买家。
+                </p>
+              </li>
+              <li>
+                <p>
+                  内容区域流量 , 选择微淘上新盖楼。
+                  优惠券、店庆及节日活动加大粉丝活跃度 , 进行老客户唤醒。
+                </p>
+              </li>
+            </ul>
+          </div>
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_18.png"
+            alt="ecomOperate-3-18.png"
+          />
+          <p class="extension_tltle">合作数据</p>
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/ecomOperate/3_21.png"
+            alt="ecomOperate-3-21.png"
+          />
+        </div>
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/ecomOperate/1_05.png"
+          alt="ecomOperate-3-05.png"
+        />
+      </div>
+      <!-- contact -->
+      <div id="contact">{dede:include filename="contact.html"/}</div>
+      <!-- footer -->
+      <div id="foot">{dede:include filename="footer.html"/}</div>
     </div>
-    <!-- bgm_m -->
-    <div class="bgm_m">
-      <!-- team_m -->
-      <div class="team_m">
+    <!-- 移动端 -->
+    <div id="mobile">
+      <div class="head_m clearfix">
+        <a href="/" class="logo_m fl">
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
+            alt="m-斗量传媒-logo"
+          />
+        </a>
+        <img
+          id="navSlideDown"
+          src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
+          alt="m-6-2.png"
+        />
+      </div>
+      <!-- banner -->
+      <div class="banner_m">
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/BANNER.png"
+          alt="m-电商运营-banner"
+        />
+      </div>
+      <!-- worry_m -->
+      <div class="worry_m">
+        <div class="worry_m_title">
+          <div class="title">"互联网+" 时代 , 你的电商之路怎么走 ?</div>
+          <div class="desc">你有这样的困扰吗 ?</div>
+        </div>
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/E1.png"
+          alt="E1.png"
+        />
+        <div class="worry_m_content">
+          <div><span>起步难:</span> 传统企业转电商起步困难。</div>
+          <div>
+            <span>无团队:</span> 没有专业的网络运营人才 , 人员流动大 , 团队难组
+            。
+          </div>
+          <div>
+            <span>无线端:</span> 无线端用户迅速增长 , 如何抢占无线市场 。
+          </div>
+          <div><span>无流量:</span> 如何引流 ？流量贵 , 有流量无转化。</div>
+        </div>
+      </div>
+      <!-- satisfy_m -->
+      <div class="satisfy_m">
         <div class="ecop_title">
-          <div class="title">我们的团队</div>
+          <div class="title">我们如何满足您 ?</div>
+          <div class="desc">我们的技术实力无可置疑</div>
         </div>
-        <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/3_11.png" alt="m-3_11.png">
-        <ul class="clearfix">
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <div class="platform_m">
+          <div class="title">服务平台</div>
+          <ul class="clearfix">
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_57.png"
+                alt="m-1_57.png"
+              />
+              <p>淘宝代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_59.png"
+                alt="m-1_59.png"
+              />
+              <p>天猫代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_61.png"
+                alt="m-1_61.png"
+              />
+              <p>京东代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_63.png"
+                alt="m-1_63.png"
+              />
+              <p>拼多多代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_65.png"
+                alt="m-1_65.png"
+              />
+              <p>小红书代运营</p>
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_79.png"
+                alt="m-1_79.png"
+              />
+              <p>网易考拉代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_81.png"
+                alt="m-1_81.png"
+              />
+              <p>微商城代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_83.png"
+                alt="m-1_83.png"
+              />
+              <p>小程序代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_85.png"
+                alt="m-1_85.png"
+              />
+              <p>APP代运营</p>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/1_87.png"
+                alt="m-1_87.png"
+              />
+              <p>官网代运营</p>
+            </li>
+          </ul>
+        </div>
+        <div class="trusteeship_m">
+          <div class="title">
+            <div>一站式托管</div>
+            <div>迅速提升业绩</div>
+          </div>
+          <ul class="clearfix">
+            <li>
+              <div class="content_title">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_03.png"
+                  alt="ecomOperate-2_03.png"
+                />
+                <span>平台入驻</span>
+              </div>
+              <div class="content_desc">
+                提供天猫、京东商城、拼多多入驻服务 , 深谙平台规则 , 快速受理开店
+                , 最短时间为您铺设销售网络 , 走好网商关键第一步。
+              </div>
+            </li>
+            <li>
+              <div class="content_title">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_05.png"
+                  alt="ecomOperate-2_05.png"
+                />
+                <span>战略策划</span>
+              </div>
+              <div class="content_desc">
+                凭借多年服务经验 , 数百客户积累 ,
+                总结出从电商平台搭建到营运策略制定的系统服务战略 ,
+                包括店铺定位、产品规划和营销策略 , 形成切实可行的整体运营战略 ,
+                一路为您保驾护航。
+              </div>
+            </li>
+            <li>
+              <div class="content_title">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_12.png"
+                  alt="ecomOperate-2_12.png"
+                />
+                <span>视觉设计</span>
+              </div>
+              <div class="content_desc">
+                专业的视觉设计团队 , 一流的视觉策略分析 ,
+                完美打造店铺品牌气质格调和客户购物体验 ,
+                力求在视觉上传达给消费者高品质的产品形象 , 提升品牌黏度！
+              </div>
+            </li>
+            <li>
+              <div class="content_title">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_09.png"
+                  alt="ecomOperate-2_09.png"
+                />
+                <span>运营推广</span>
+              </div>
+              <div class="content_desc">
+                整合PC、移动端资源 , 以引入目标流量为核心 ,
+                精准定位,借助付费流量、免费流量、策划活动、全网辅助实现销量和品牌双重提升！
+              </div>
+            </li>
+            <li>
+              <div class="content_title">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_17.png"
+                  alt="ecomOperate-2_17.png"
+                />
+                <span>客服服务</span>
+              </div>
+              <div class="content_desc">
+                淘宝官方认证金牌客服服务商 , 千席专业团队 , 全天15小时在线服务 ,
+                优化接待流程 , 提升客户体验 , 促进咨询转化 ,
+                建立完善的VIP服务体系 , 提升关联购买及复购率。
+              </div>
+            </li>
+            <li>
+              <div class="content_title">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_20.png"
+                  alt="ecomOperate-2_20.png"
+                />
+                <span>数据分析</span>
+              </div>
+              <div class="content_desc">
+                针对店铺运营 , 实时分析行业数据、客户数据、自有店铺诊断 ,
+                优化调整 , 制订策略 , 最大限度提高产出 , 提升推广效果 ,
+                挖掘顾客的二次需求与粘度 , 大幅度提高客户复购率。
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <!-- other_m -->
-      <div class="other_m">
+      <!-- process_m -->
+      <div class="process_m">
         <div class="ecop_title">
-          <div class="title">其他问题</div>
-          <div class="desc">导师在线替你解答</div>
+          <div class="title">服务流程</div>
+          <div class="desc">专注电商托管服务</div>
         </div>
         <ul class="clearfix">
           <li>
-            <div>
-              <div class="desc">开网店需要多少费用 ?</div>
-              <div class="btn">立即咨询</div>
-            </div>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_34.png"
+              alt="m-2_34.png"
+            />
+            <p>沟通需求</p>
           </li>
           <li>
-            <div>
-              <div class="desc">网店多久能开好</div>
-              <div class="btn">立即咨询</div>
-            </div>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_25.png"
+              alt="m-2_25.png"
+            />
+            <p>签订合同</p>
+          </li>
+          <li>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_27.png"
+              alt="m-2_27.png"
+            />
+            <p>对接服务</p>
+          </li>
+          <li>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_29.png"
+              alt="m-2_29.png"
+            />
+            <p>运营执行</p>
+          </li>
+          <li>
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/2_31.png"
+              alt="m-2_31.png"
+            />
+            <p>汇报总结</p>
           </li>
         </ul>
-        <ul class="clearfix">
-          <li>
+      </div>
+      <!-- bgm_m -->
+      <div class="bgm_m">
+        <!-- team_m -->
+        <div class="team_m">
+          <div class="ecop_title">
+            <div class="title">我们的团队</div>
+          </div>
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/3_11.png"
+            alt="m-3_11.png"
+          />
+          <ul class="clearfix">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <!-- other_m -->
+        <div class="other_m">
+          <div class="ecop_title">
+            <div class="title">其他问题</div>
+            <div class="desc">导师在线替你解答</div>
+          </div>
+          <ul class="clearfix">
+            <li>
+              <div>
+                <div class="desc">开网店需要多少费用 ?</div>
+                <div class="btn">立即咨询</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="desc">网店多久能开好</div>
+                <div class="btn">立即咨询</div>
+              </div>
+            </li>
+          </ul>
+          <ul class="clearfix">
+            <li>
+              <div>
+                <div class="desc">网店无流量怎么办</div>
+                <div class="btn">立即咨询</div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="desc">销量上不去怎么办</div>
+                <div class="btn">立即咨询</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- example_m -->
+        <div class="example_m">
+          <div class="ecop_title">
+            <div class="title">店铺运营实例</div>
+            <div class="desc">人群流量定位店铺标签</div>
+          </div>
+          <div class="example_m_desc">
             <div>
-              <div class="desc">网店无流量怎么办</div>
-              <div class="btn">立即咨询</div>
+              店铺类目属于哪一类决定展现人群流量在哪 , 故需要精准定位店铺人群。
             </div>
-          </li>
-          <li>
             <div>
-              <div class="desc">销量上不去怎么办</div>
-              <div class="btn">立即咨询</div>
+              开发新品 , 优化店铺基础信息 , 打造视觉卖点 , 定位产品特性。
             </div>
-          </li>
-        </ul>
-      </div>
-      <!-- example_m -->
-      <div class="example_m">
-        <div class="ecop_title">
-          <div class="title">店铺运营实例</div>
-          <div class="desc">人群流量定位店铺标签</div>
-        </div>
-        <div class="example_m_desc">
-          <div>
-            店铺类目属于哪一类决定展现人群流量在哪 , 故需要精准定位店铺人群。
+            <div>
+              选出具有潜力的产品进行直通车测款 , 以数据评估布局 ,
+              最后定位人群精准投放推广。
+            </div>
           </div>
-          <div>
-            开发新品 , 优化店铺基础信息 , 打造视觉卖点 , 定位产品特性。
+          <div class="example_img">
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/5_11.png"
+              alt="m-5_11.png"
+            />
+            <img
+              src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/5_14.png"
+              alt="m-5_14.png"
+            />
           </div>
-          <div>
-            选出具有潜力的产品进行直通车测款 , 以数据评估布局 , 最后定位人群精准投放推广。
+          <div class="example_m_title">付费推广带动上升</div>
+          <div class="example_m_desc">
+            <div>
+              多方引流 , 采用直通车定向人群推广 ,
+              大幅度做手淘首页成交和钻展达摩盘 , 建立新的标签 ,
+              二次拉拢流失买家。
+            </div>
+            <div>
+              内容区域流量 , 选择微淘上新盖楼。
+              优惠券、店庆及节日活动加大粉丝活跃度 , 进行老客户唤醒。
+            </div>
           </div>
+          <img
+            style="margin-top: 0.27rem"
+            src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/5_20.png"
+            alt="m-5_20.png"
+          />
+          <div class="example_m_title">合作数据</div>
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/5_26.png"
+            alt="m-5_26.png"
+          />
         </div>
-        <div class="example_img">
-          <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/5_11.png" alt="m-5_11.png">
-          <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/5_14.png" alt="m-5_14.png">
-        </div>
-        <div class="example_m_title">
-          付费推广带动上升
-        </div>
-        <div class="example_m_desc">
-          <div>
-            多方引流 , 采用直通车定向人群推广 , 大幅度做手淘首页成交和钻展达摩盘 , 建立新的标签 , 二次拉拢流失买家。
-          </div>
-          <div>
-            内容区域流量 , 选择微淘上新盖楼。 优惠券、店庆及节日活动加大粉丝活跃度 , 进行老客户唤醒。
-          </div>
-        </div>
-        <img style="margin-top: .27rem;" src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/5_20.png" alt="m-5_20.png">
-        <div class="example_m_title">
-          合作数据
-        </div>
-        <img src="{dede:global.cfg_templets_skin/}/img/mobile/ecop/5_26.png" alt="m-5_26.png">
-      </div>
-       <!-- contact_m -->
-       <div id="ecop_contact_m">
-        <div id="contact_m">
-          {dede:include filename="contact_m.html"/}
+        <!-- contact_m -->
+        <div id="ecop_contact_m">
+          <div id="contact_m">{dede:include filename="contact_m.html"/}</div>
         </div>
       </div>
+      <!-- footer_m -->
+      <div id="foot_m">{dede:include filename="footer_m.html"/}</div>
     </div>
-    <!-- footer_m -->
-    <div id="foot_m">
-      {dede:include filename="footer_m.html"/}
-    </div>
-  </div>
-  <!-- 移动端导航栏 -->
-  <div id="head_m">
-    {dede:include filename="header_m.html"/}
-  </div>
-</body>
+    <!-- 移动端导航栏 -->
+    <div id="head_m">{dede:include filename="header_m.html"/}</div>
+  </body>
 </html>

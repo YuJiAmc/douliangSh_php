@@ -482,7 +482,6 @@
     box-sizing: border-box;
     font-size: 0.29rem /* 22/75 */;
   }
-
   .particulars .parts_num {
     font-size: 0.53rem /* 40/75 */;
   }
@@ -646,7 +645,7 @@
     overflow: hidden;
     margin-top: 0.16rem /* 12/75 */;
   }
-  .desc_title  div {
+  .desc_title div {
     cursor: pointer;
     color: #f7f7f7;
     float: left;
@@ -654,7 +653,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: .29rem /* 22/75 */;
+    font-size: 0.29rem /* 22/75 */;
   }
   .newest_desc span {
     float: left;
@@ -708,7 +707,7 @@
     -webkit-box-orient: vertical;
   }
   .read_num {
-    font-size: .24rem /* 18/75 */;
+    font-size: 0.24rem /* 18/75 */;
     color: #ddd;
   }
 }

@@ -2,73 +2,72 @@
 .footer {
   background-color: #000;
   color: #949494;
-  font-size: .08rem /* 16/192 */;
+  font-size: 0.08rem /* 16/192 */;
   display: flex;
   display: -ms-flexbox;
   justify-content: center;
-  padding: .26rem /* 50/192 */;
+  padding: 0.26rem /* 50/192 */;
   box-sizing: content-box;
 }
 .footer ul {
-  margin-right: .78rem /* 150/192 */;
+  margin-right: 0.78rem /* 150/192 */;
 }
-.footer ul li{
-  margin-bottom: .06rem /* 12/192 */;
+.footer ul li {
+  margin-bottom: 0.06rem /* 12/192 */;
 }
-.footer ul :last-child{
+.footer ul :last-child {
   margin-bottom: 0;
 }
-.footer ul li a{
+.footer ul li a {
   color: #949494;
 }
 .footer .erweima {
   text-align: center;
-  margin-top: .23rem /* 45/192 */;
+  margin-top: 0.23rem /* 45/192 */;
 }
 .footer .erweima p {
-  margin-top: .05rem /* 10/192 */;
+  margin-top: 0.05rem /* 10/192 */;
 }
 .footer .erweima img {
-  width: .48rem /* 92/192 */;
-  height: .48rem /* 93/192 */;
+  width: 0.48rem /* 92/192 */;
+  height: 0.48rem /* 93/192 */;
 }
 .footer .erweima p:nth-child(2) {
-  font-size: .07rem /* 14/192 */;
+  font-size: 0.07rem /* 14/192 */;
 }
-.footer .line{
-  height: .78rem /* 150/192 */;
-  width: .01rem /* 2/192 */;
+.footer .line {
+  height: 0.78rem /* 150/192 */;
+  width: 0.01rem /* 2/192 */;
   background-color: #949494;
-  margin: 0 .36rem /* 70/192 */;
-  margin-top: .23rem /* 45/192 */;
+  margin: 0 0.36rem /* 70/192 */;
+  margin-top: 0.23rem /* 45/192 */;
 }
-.footer .telephone{
-  margin-top: .2rem /* 38/192 */;
+.footer .telephone {
+  margin-top: 0.2rem /* 38/192 */;
   text-align: center;
 }
-.footer .telephone p:first-child{
-  font-size: .21rem /* 40/192 */;
+.footer .telephone p:first-child {
+  font-size: 0.21rem /* 40/192 */;
   color: #ff3366;
   font-weight: bold;
   font-style: oblique;
 }
-.footer .telephone a{
+.footer .telephone a {
   display: inline-block;
   width: 1.68rem /* 322/192 */;
-  height: .22rem /* 42/192 */;
+  height: 0.22rem /* 42/192 */;
   background: url(../img/index/kuang.png) no-repeat;
   background-size: contain;
-  line-height: .22rem /* 42/192 */;
-  font-size: .11rem /* 22/192 */;
+  line-height: 0.22rem /* 42/192 */;
+  font-size: 0.11rem /* 22/192 */;
   color: #fff;
   cursor: pointer;
-  margin: .09rem /* 18/192 */ 0;
+  margin: 0.09rem /* 18/192 */ 0;
 }
-.footer .telephone p:last-child{
+.footer .telephone p:last-child {
   color: #fff;
-  font-size: .11rem /* 22/192 */;
+  font-size: 0.11rem /* 22/192 */;
 }
-
 
 /* 移动端 */
 @media screen and (max-width: 750px) {
@@ -77,9 +76,9 @@
   }
   .foot_m .foot_nav {
     color: #838383;
-    height: .96rem /* 72/75 */;
-    line-height: .96rem /* 72/75 */;
-    font-size: .24rem /* 18/75 */;
+    height: 0.96rem /* 72/75 */;
+    line-height: 0.96rem /* 72/75 */;
+    font-size: 0.24rem /* 18/75 */;
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid #323232;
@@ -94,31 +93,31 @@
     justify-content: center;
     align-items: center;
   }
-  .information_m .ewm img{
+  .information_m .ewm img {
     width: 1.23rem /* 92/75 */;
     height: 1.24rem /* 93/75 */;
   }
   .information_m .ewm p {
     color: #fff;
-    margin-top: .07rem /* 5/75 */;
-    font-size: .27rem /* 20/75 */;
+    margin-top: 0.07rem /* 5/75 */;
+    font-size: 0.27rem /* 20/75 */;
   }
   .information_m .divid {
     width: 1px;
     height: 1.67rem /* 125/75 */;
     background-color: #323232;
-    margin: 0 .67rem /* 50/75 */;
+    margin: 0 0.67rem /* 50/75 */;
   }
-  .information_m .consult{
+  .information_m .consult {
     color: #fff;
-    font-size: .27rem /* 20/75 */;
+    font-size: 0.27rem /* 20/75 */;
     text-align: left;
   }
-  .information_m .consult p{
-    line-height: .56rem /* 42/75 */;
+  .information_m .consult p {
+    line-height: 0.56rem /* 42/75 */;
   }
-  .information_m .consult span{
-    font-size: .37rem /* 28/75 */;
+  .information_m .consult span {
+    font-size: 0.37rem /* 28/75 */;
     color: #ff3366;
     font-weight: bold;
     font-style: oblique;

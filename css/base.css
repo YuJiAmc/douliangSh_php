@@ -1,25 +1,39 @@
-body,ul,li,ol,dl,dd,h1,h2,h3,h4,h5,h6,input,p { 
-  margin:0;
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+p {
+  margin: 0;
 }
-ul,ol {
-  padding:0;
+ul,
+ol {
+  padding: 0;
 }
 .clear:after {
-  display:block;
-  content:"";
-  clear:both; 
-  visibility:hidden; 
-  height:0;
+  display: block;
+  content: "";
+  clear: both;
+  visibility: hidden;
+  height: 0;
 }
 .clear {
-  zoom:1;
+  zoom: 1;
 }
 a {
   color: #333;
-  text-decoration:none;
+  text-decoration: none;
 }
 li {
-  list-style:none;
+  list-style: none;
 }
 img {
   border: 0;
@@ -33,25 +47,26 @@ body {
   font-size: 12px;
   color: #333;
 }
-.clearfix:before,.clearfix:after {
-  content:"";
-  display:table;
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
 }
 .clearfix:after {
-  clear:both;
-  overflow:hidden;
+  clear: both;
+  overflow: hidden;
 }
 .clearfix {
-  zoom:1;
+  zoom: 1;
 }
-.fl{
-	float: left;
+.fl {
+  float: left;
 }
-.fr{
-	float: right;
+.fr {
+  float: right;
 }
 
-#mobile{
+#mobile {
   display: none;
   text-align: center;
 }
@@ -65,7 +80,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-.banner_m img{
+.banner_m img {
   position: absolute;
   top: 0;
   left: 0;

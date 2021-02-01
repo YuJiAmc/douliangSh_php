@@ -1,146 +1,492 @@
 <!-- 抖音培训 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <title>{dede:field.seotitle /}</title>
-  <meta name="keywords" content="{dede:field.keywords/}" />
-  <meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
-  <meta name = "format-detection" content = "telephone=no">
-  <link rel="icon" type="image/png" sizes="32x32" href="{dede:global.cfg_templets_skin/}/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="{dede:global.cfg_templets_skin/}/favicon-16x16.png" />
-  <script src="{dede:global.cfg_templets_skin/}/js/flexible.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>{dede:field.seotitle /}</title>
+    <meta name="keywords" content="{dede:field.keywords/}" />
+    <meta
+      name="description"
+      content="{dede:field.description function='html2text(@me)'/}"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{dede:global.cfg_templets_skin/}/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{dede:global.cfg_templets_skin/}/favicon-16x16.png"
+    />
+    <script src="{dede:global.cfg_templets_skin/}/js/flexible.js"></script>
+    <script>
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/base.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/header.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/contact.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/footer.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+      document.write(
+        '<link href="{dede:global.cfg_templets_skin/}/css/tiktokTrain.css?v=' +
+          new Date().getTime() +
+          '" rel="stylesheet" >'
+      );
+    </script>
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?e19c16c6dd6add4a3a59afd26f0d155e";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </head>
+  <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
   <script>
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/base.css?v='+ new Date().getTime()+'" rel="stylesheet" >');
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/header.css?v='+ new Date().getTime()+'" rel="stylesheet" >');
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/contact.css?v='+ new Date().getTime()+'" rel="stylesheet" >');
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/footer.css?v='+ new Date().getTime()+'" rel="stylesheet" >');
-    document.write('<link href="{dede:global.cfg_templets_skin/}/css/tiktokTrain.css?v='+new Date().getTime()+'" rel="stylesheet" >');
+    document.write(
+      '<script src="{dede:global.cfg_templets_skin/}/js/common.js?v=' +
+        new Date().getTime() +
+        '"><\/script>'
+    );
   </script>
-   <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?e19c16c6dd6add4a3a59afd26f0d155e";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-</head>
-<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
-<script>
-  document.write('<script src="{dede:global.cfg_templets_skin/}/js/common.js?v=' + new Date().getTime() + '"><\/script>')
-</script>
-<body>
-  <div id="tiktokTrain">
-    <!-- head -->
-    <div class="header clearfix">
-      <a href="/" class="logo fl">
-        <img src="{dede:global.cfg_templets_skin/}/img/index/logo.png" alt="斗量传媒-logo">
-      </a>
-      <ul class="header-nav fr">
-        <li>
-          <a href="/">首页</a>
-        <li>
-          {dede:type typeid='4'}
-          <a href="[field:typelink /]">抖音运营</a>
-          {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='5'}
-          <a href="[field:typelink /]">电商直播</a>
-          {/dede:type}
-        </li>
-        <li class="active">
-          {dede:type typeid='6'}
-          <a href="[field:typelink /]">抖音培训</a>
-          {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='7'}
-          <a href="[field:typelink /]">电商运营</a>
-          {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='8'}
-          <a href="[field:typelink /]">设计外包</a>
-          {/dede:type}
-        </li>
-        <li>
-           {dede:type typeid='1'}
+  <body>
+    <div id="tiktokTrain">
+      <!-- head -->
+      <div class="header clearfix">
+        <a href="/" class="logo fl">
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
+            alt="斗量传媒-logo"
+          />
+        </a>
+        <ul class="header-nav fr">
+          <li>
+            <a href="/">首页</a>
+          </li>
+
+          <li>
+            {dede:type typeid='4'}
+            <a href="[field:typelink /]">抖音运营</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='5'}
+            <a href="[field:typelink /]">电商直播</a>
+            {/dede:type}
+          </li>
+          <li class="active">
+            {dede:type typeid='6'}
+            <a href="[field:typelink /]">抖音培训</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='7'}
+            <a href="[field:typelink /]">电商运营</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='8'}
+            <a href="[field:typelink /]">设计外包</a>
+            {/dede:type}
+          </li>
+          <li>
+            {dede:type typeid='1'}
             <a href="[field:typelink /]">新闻资讯</a>
             {/dede:type}
-        </li>
-        <li>
-          {dede:type typeid='2'}
-          <a href="[field:typelink /]">联系我们</a>
-          {/dede:type}
-        </li>
-      </ul>
-    </div>
-    <div id="head">
-      {dede:include filename="header.html"/}
-    </div>
-    <!-- banner -->
-    <div class="banner">
-      <img id="banner" class="compress_img" style="width: 100%;" src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/banner_01_min.jpg" alt="抖音培训-banner">
-    </div>
-    <!-- scope -->
-    <div class="scope compress_bgi clearfix">
-      <div class="scope_l">
-        <div class="scope_l_column">
-          <div class="scope_l_content">
-            <p>Why join us ?</p>
-            <p>我们可以做什么</p>
-            <div>
-              <p class="underline">专属定制课程适合各类人群 ,</p>
-            </div>
-            <div>
-              <p class="underline">直击企业、团队及个人自身的需求和痛点。</p>
+          </li>
+          <li>
+            {dede:type typeid='2'}
+            <a href="[field:typelink /]">联系我们</a>
+            {/dede:type}
+          </li>
+        </ul>
+      </div>
+      <div id="head">{dede:include filename="header.html"/}</div>
+      <!-- banner -->
+      <div class="banner">
+        <img
+          id="banner"
+          class="compress_img"
+          style="width: 100%"
+          src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/banner_01_min.jpg"
+          alt="抖音培训-banner"
+        />
+      </div>
+      <!-- scope -->
+      <div class="scope compress_bgi clearfix">
+        <div class="scope_l">
+          <div class="scope_l_column">
+            <div class="scope_l_content">
+              <p>Why join us ?</p>
+              <p>我们可以做什么</p>
+              <div>
+                <p class="underline">专属定制课程适合各类人群 ,</p>
+              </div>
+              <div>
+                <p class="underline">直击企业、团队及个人自身的需求和痛点。</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="scope_r">
-        <div>
+        <div class="scope_r">
+          <div>
+            <ul>
+              <li class="clearfix">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_3.png"
+                  alt="tiktokTrain-1_3.png"
+                />
+                <div class="scope_r_content">
+                  <div>企业品牌方<span class="sp"></span></div>
+                  <p>品牌曝光</p>
+                  <p>利用直播带货</p>
+                  <p>线下门店线上化</p>
+                  <p>营业员直播导购卖货</p>
+                </div>
+              </li>
+              <li class="clearfix">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_4.png"
+                  alt="tiktokTrain-1_4.png"
+                />
+                <div class="scope_r_content">
+                  <div>微商团队<span></span></div>
+                  <p>个人IP打造</p>
+                  <p>直播带货</p>
+                  <p>短视频带货</p>
+                  <p>团队成员培训</p>
+                </div>
+              </li>
+            </ul>
+            <ul>
+              <li class="clearfix">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_6.png"
+                  alt="tiktokTrain-1_6.png"
+                />
+                <div class="scope_r_content">
+                  <div>实体商家<span></span></div>
+                  <p>向实体店引流</p>
+                  <p>拓客 , 锁定</p>
+                  <p>打造网红店</p>
+                  <p>新店加盟</p>
+                </div>
+              </li>
+              <li class="clearfix">
+                <img
+                  src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_5.png"
+                  alt="tiktokTrain-1_5.png"
+                />
+                <div class="scope_r_content">
+                  <div>个体商家<span></span></div>
+                  <p>打造个人IP</p>
+                  <p>想成为网红</p>
+                  <p>利用直播带货</p>
+                  <p>利用短视频带货</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="scope_step">
           <ul>
-            <li class="clearfix">
-              <img src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_3.png" alt="tiktokTrain-1_3.png">
-              <div class="scope_r_content">
-                <div>企业品牌方<span class="sp"></span></div>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png"
+                alt="tiktokTrain-1_1.png"
+              />
+              <div class="step_line"></div>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_2.png"
+                alt="tiktokTrain-1_2.png"
+              />
+              <div class="step_line"></div>
+            </li>
+            <li>
+              <img
+                src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_2.png"
+                alt="tiktokTrain-1_2.png"
+              />
+              <div class="step_line"></div>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+      <!-- need -->
+      <div class="need compress_bgi clearfix">
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png"
+          alt="tiktokTrain-1_1.png"
+        />
+        <div class="need_l">
+          <div class="scope_l_column">
+            <div class="scope_l_content">
+              <p>The audience</p>
+              <div>
+                <p class="underline">短视频风生水起 ,</p>
+              </div>
+              <div>
+                <p class="underline">你还在 "摸石头过河" ?</p>
+              </div>
+            </div>
+            <div>
+              <img
+                class="compress_img"
+                src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/renwu_11_min.png"
+                alt="tiktokTrain-renwu_11.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="need_r">
+          <ul>
+            <li>
+              <div class="card_title">
+                <p>职场新人</p>
+              </div>
+              <div class="card_hover">
+                <p>职场新人</p>
+                <div class="card_hover_content">
+                  <div>
+                    <p>刚毕业、工资低、想转行 , 想要通过系统学习短</p>
+                    <p>视频内容策划、平台运营和后期执行 , 提升专业</p>
+                    <p>技能 , 突破职场瓶颈 , 获得较高收入和更高职位</p>
+                    <p>的职场新人。</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card_title">
+                <p>传统电商</p>
+                <p>厂家</p>
+                <p>实体店</p>
+                <p>创业者</p>
+              </div>
+              <div class="card_hover">
+                <p>传统电商</p>
+                <div class="card_hover_content">
+                  <div>
+                    <p>国内电商平台过度饱和 , 竞争激烈 , 想要通过布</p>
+                    <p>局短视频平台 , 抓住新流量风口 , 突破电商创业</p>
+                    <p>瓶颈。</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="card_title">
+                <p>新媒体/运营者</p>
+              </div>
+              <div class="card_hover">
+                <p>新媒体/运营者</p>
+                <div class="card_hover_content">
+                  <div>
+                    <p>企业、组织、政府等新媒体运营者 , 进入短视频</p>
+                    <p>平台的运营新手 , 想要通过系统学习 , 开拓新的</p>
+                    <p>流量入口 , 提升品牌知名度和影响力。</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--  satisfy  -->
+      <div class="satisfy compress_bgi">
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png"
+          alt="tiktokTrain-1_1.png"
+        />
+        <div class="public_title">
+          <p>How can we satisfy you</p>
+          <p>我们如何满足您 ?</p>
+          <p>打造视频四大优势</p>
+        </div>
+        <ul class="clearfix">
+          <li>
+            <div class="satisfy_card">
+              <p class="static_p">01</p>
+              <p class="hover_p">01</p>
+              <div class="card_title">
+                <p>利用流量红利</p>
+                <p>打破你商业发展天花板</p>
+              </div>
+              <div class="card_content">
+                <p>通过系统的学习 , 把握短视频营销新风口 ,</p>
+                <p>从而高效布局 , 完善团队搭建 , 打造企业</p>
+                <p>新流量阵地 , 助力企业品效合一。</p>
+              </div>
+              <div class="card_footer">
+                <div></div>
+                <p></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="satisfy_card">
+              <p class="static_p">02</p>
+              <p class="hover_p">02</p>
+              <div class="card_title">
+                <p>通过系统学习提升专业技能</p>
+                <p>突破职场瓶颈</p>
+              </div>
+              <div class="card_content">
+                <p>行业转换来去自如 , 开启升职加薪快速上</p>
+                <p>升通道。</p>
+              </div>
+              <div class="card_footer">
+                <div></div>
+                <p></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="satisfy_card">
+              <p class="static_p">03</p>
+              <p class="hover_p">03</p>
+              <div class="card_title">
+                <p>学会内容策划和后期执行</p>
+                <p>摸清短视频算法推荐规则</p>
+              </div>
+              <div class="card_content">
+                <p>分兵布阵增强吸粉体质 , 把握平台运营</p>
+                <p>要塞 , 学会用数据分析调试和优化运营效</p>
+                <p>果 , 成为抖音运营高手和热榜操盘者 , 大</p>
+                <p>大提升品牌知名度和影响力。</p>
+              </div>
+              <div class="card_footer">
+                <div></div>
+                <p></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="satisfy_card">
+              <p class="static_p">04</p>
+              <p class="hover_p">04</p>
+              <div class="card_title">
+                <p>学会用户定位</p>
+                <p>挖掘粉丝客群</p>
+              </div>
+              <div class="card_content">
+                <p>懂得内容策划 , 熟悉平台运营 , 用更强大</p>
+                <p>的粉丝聚合和用户粘性 , 更高效的用户转</p>
+                <p>化率 , 布局短视频平台 , 开拓电商新方向。</p>
+              </div>
+              <div class="card_footer">
+                <div></div>
+                <p></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png"
+          alt="tiktokTrain-1_1.png"
+        />
+      </div>
+      <!-- contact -->
+      <div id="contact">{dede:include filename="contact.html"/}</div>
+      <img
+        style="width: 100%"
+        class="compress_img"
+        src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/ditu_06_min.jpg"
+        alt="tiktokTrain-ditu_06.png"
+      />
+      <!-- footer -->
+      <div id="foot">{dede:include filename="footer.html"/}</div>
+    </div>
+    <!-- 移动端 -->
+    <div id="mobile">
+      <div class="head_m clearfix">
+        <a href="/" class="logo_m fl">
+          <img
+            src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
+            alt="m-斗量传媒-logo"
+          />
+        </a>
+        <img
+          id="navSlideDown"
+          src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
+          alt="m-6-2.png"
+        />
+      </div>
+      <!-- banner -->
+      <div class="banner_m">
+        <img
+          src="{dede:global.cfg_templets_skin/}/img/mobile/dypx/BANNER.jpg"
+          alt="m-抖音培训-banner"
+        />
+      </div>
+      <div class="mobile_main">
+        <!-- sales_m -->
+        <div class="sales_m">
+          <div class="dyop_title">
+            <div class="title">我们可以做什么 ?</div>
+            <div class="desc">
+              专属定制课程适合各类人群 , 直击企业、团队及个人自身的需求和痛点。
+            </div>
+          </div>
+          <ul class="clearfix">
+            <li>
+              <div class="title">企业品牌方</div>
+              <div class="content">
                 <p>品牌曝光</p>
                 <p>利用直播带货</p>
                 <p>线下门店线上化</p>
                 <p>营业员直播导购卖货</p>
               </div>
             </li>
-            <li class="clearfix">
-              <img src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_4.png" alt="tiktokTrain-1_4.png">
-              <div class="scope_r_content">
-                <div>微商团队<span></span></div>
-                <p>个人IP打造</p>
-                <p>直播带货</p>
-                <p>短视频带货</p>
-                <p>团队成员培训</p>
-              </div>
-            </li>
-          </ul>
-          <ul>
-            <li class="clearfix">
-              <img src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_6.png" alt="tiktokTrain-1_6.png">
-              <div class="scope_r_content">
-                <div>实体商家<span></span></div>
+            <li>
+              <div class="title">实体商家</div>
+              <div class="content">
                 <p>向实体店引流</p>
                 <p>拓客 , 锁定</p>
                 <p>打造网红店</p>
                 <p>新店加盟</p>
               </div>
             </li>
-            <li class="clearfix">
-              <img src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_5.png" alt="tiktokTrain-1_5.png">
-              <div class="scope_r_content">
-                <div>个体商家<span></span></div>
+          </ul>
+          <ul class="clearfix">
+            <li>
+              <div class="title">微商团队</div>
+              <div class="content">
+                <p>个人IP打造</p>
+                <p>直播带货</p>
+                <p>短视频带货</p>
+                <p>团队成员培训</p>
+              </div>
+            </li>
+            <li>
+              <div class="title">个体商家</div>
+              <div class="content">
                 <p>打造个人IP</p>
                 <p>想成为网红</p>
                 <p>利用直播带货</p>
@@ -149,363 +495,145 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="scope_step">
-        <ul>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png" alt="tiktokTrain-1_1.png">
-            <div class="step_line"></div>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_2.png" alt="tiktokTrain-1_2.png">
-            <div class="step_line"></div>
-          </li>
-          <li>
-            <img src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_2.png" alt="tiktokTrain-1_2.png">
-            <div class="step_line"></div>
-          </li>
-          <li>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- need -->
-    <div class="need compress_bgi clearfix">
-      <img src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png" alt="tiktokTrain-1_1.png">
-      <div class="need_l"> 
-        <div class="scope_l_column">
-          <div class="scope_l_content">
-            <p>The audience</p>
-            <div>
-              <p class="underline">短视频风生水起 ,</p>
+        <!-- need_m -->
+        <div class="need_m">
+          <div class="sales_m">
+            <div class="dyop_title">
+              <div class="title">您为什么需要我们 ?</div>
+              <div class="desc">短视频平台您是否也在遭遇以下难题</div>
             </div>
-            <div>
-              <p class="underline">你还在 "摸石头过河" ?</p>
-            </div>
-          </div>
-          <div><img class="compress_img" src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/renwu_11_min.png" alt="tiktokTrain-renwu_11.png"></div>
-        </div>
-      </div>
-      <div class="need_r">
-        <ul>
-          <li>
-            <div class="card_title">
-              <p>职场新人</p>
-            </div>
-            <div class="card_hover">
-              <p>职场新人</p>
-              <div class="card_hover_content">
+            <ul class="clearfix">
+              <li>
                 <div>
-                  <p>刚毕业、工资低、想转行 , 想要通过系统学习短</p>
-                  <p>视频内容策划、平台运营和后期执行 , 提升专业</p>
-                  <p>技能 , 突破职场瓶颈 , 获得较高收入和更高职位</p>
-                  <p>的职场新人。</p>
+                  <div class="title">职场新人</div>
+                  <div class="content">
+                    刚毕业、工资低、想转行 ,
+                    想要通过系统学习短视频内容策划、平台运营和后期执行 ,
+                    提升专业技能 , 突破职场瓶颈 ,
+                    获得较高收入和更高职位的职场新人。
+                  </div>
                 </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card_title">
-              <p>传统电商</p>
-              <p>厂家</p>
-              <p>实体店</p>
-              <p>创业者</p>
-            </div>
-            <div class="card_hover">
-              <p>传统电商</p>
-              <div class="card_hover_content">
+              </li>
+              <li>
                 <div>
-                  <p>国内电商平台过度饱和 , 竞争激烈 , 想要通过布</p>
-                  <p>局短视频平台 , 抓住新流量风口 , 突破电商创业</p>
-                  <p>瓶颈。</p>
+                  <div class="title">传统电商</div>
+                  <div class="content">
+                    国内电商平台过度饱和 , 竞争激烈 , 想要通过布局短视频平台 ,
+                    抓住新流量风口 , 突破电商创业瓶颈。
+                  </div>
                 </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card_title">
-              <p>新媒体/运营者</p>
-            </div>
-            <div class="card_hover">
-              <p>新媒体/运营者</p>
-              <div class="card_hover_content">
+              </li>
+            </ul>
+            <ul class="clearfix">
+              <li>
                 <div>
-                  <p>企业、组织、政府等新媒体运营者 , 进入短视频</p>
-                  <p>平台的运营新手 , 想要通过系统学习 , 开拓新的</p>
-                  <p>流量入口 , 提升品牌知名度和影响力。</p>
+                  <div class="title">新媒体/运营者/</div>
+                  <div class="content">
+                    企业、组织、政府等新媒体运营者 , 进入短视频平台的运营新手 ,
+                    想要通过系统学习 , 开拓新的流量入口 ,
+                    提升品牌知名度和影响力。
+                  </div>
                 </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!--  satisfy  -->
-    <div class="satisfy compress_bgi">
-      <img src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png" alt="tiktokTrain-1_1.png">
-      <div class="public_title">
-        <p>How can we satisfy you</p>
-        <p>我们如何满足您 ?</p>
-        <p>打造视频四大优势</p>
-      </div>
-      <ul class="clearfix">
-        <li>
-          <div class="satisfy_card">
-            <p class="static_p">01</p>
-            <p class="hover_p">01</p>
-            <div class="card_title">
-              <p>利用流量红利</p>
-              <p>打破你商业发展天花板</p>
-            </div>
-            <div class="card_content">
-              <p>通过系统的学习 , 把握短视频营销新风口 , </p>
-              <p>从而高效布局 , 完善团队搭建 , 打造企业</p>
-              <p>新流量阵地 , 助力企业品效合一。</p>
-            </div>
-            <div class="card_footer"><div></div><p></p></div>
+              </li>
+              <li></li>
+            </ul>
           </div>
-        </li>
-        <li>
-          <div class="satisfy_card">
-            <p class="static_p">02</p>
-            <p class="hover_p">02</p>
-            <div class="card_title">
-              <p>通过系统学习提升专业技能</p>
-              <p>突破职场瓶颈</p>
-            </div>
-            <div class="card_content">
-              <p>行业转换来去自如 , 开启升职加薪快速上</p>
-              <p>升通道。</p>
-            </div>
-            <div class="card_footer"><div></div><p></p></div>
-          </div>
-        </li>
-        <li>
-          <div class="satisfy_card">
-            <p class="static_p">03</p>
-            <p class="hover_p">03</p>
-            <div class="card_title">
-              <p>学会内容策划和后期执行</p>
-              <p>摸清短视频算法推荐规则</p>
-            </div>
-            <div class="card_content">
-              <p>分兵布阵增强吸粉体质 , 把握平台运营</p>
-              <p>要塞 , 学会用数据分析调试和优化运营效</p>
-              <p>果 , 成为抖音运营高手和热榜操盘者 , 大</p>
-              <p>大提升品牌知名度和影响力。</p>
-            </div>
-            <div class="card_footer"><div></div><p></p></div>
-          </div>
-        </li>
-        <li>
-          <div class="satisfy_card">
-            <p class="static_p">04</p>
-            <p class="hover_p">04</p>
-            <div class="card_title">
-              <p>学会用户定位</p>
-              <p>挖掘粉丝客群</p>
-            </div>
-            <div class="card_content">
-              <p>懂得内容策划 , 熟悉平台运营 , 用更强大</p>
-              <p>的粉丝聚合和用户粘性 , 更高效的用户转</p>
-              <p>化率 , 布局短视频平台 , 开拓电商新方向。</p>
-            </div>
-            <div class="card_footer"><div></div><p></p></div>
-          </div>
-        </li>
-      </ul>
-      <img src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png" alt="tiktokTrain-1_1.png">
-    </div>
-    <!-- contact -->
-    <div id="contact">
-      {dede:include filename="contact.html"/}
-    </div>
-    <img style="width: 100%;" class="compress_img" src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/ditu_06_min.jpg" alt="tiktokTrain-ditu_06.png">
-    <!-- footer -->
-    <div id="foot">
-      {dede:include filename="footer.html"/}
-    </div>
-  </div>
-  <!-- 移动端 -->
-  <div id="mobile">
-    <div class="head_m clearfix">
-      <a href="/" class="logo_m fl">
-        <img src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png" alt="m-斗量传媒-logo">
-      </a>
-      <img id="navSlideDown" src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png" alt="m-6-2.png">
-    </div>
-    <!-- banner -->
-    <div class="banner_m">
-      <img src="{dede:global.cfg_templets_skin/}/img/mobile/dypx/BANNER.jpg" alt="m-抖音培训-banner">
-    </div>
-    <div class="mobile_main">
-      <!-- sales_m -->
-      <div class="sales_m">
-        <div class="dyop_title">
-          <div class="title">我们可以做什么 ?</div>
-          <div class="desc">专属定制课程适合各类人群 , 直击企业、团队及个人自身的需求和痛点。</div>
         </div>
-        <ul class="clearfix">
-          <li>
-            <div class="title">企业品牌方</div>
-            <div class="content">
-              <p>品牌曝光</p>
-              <p>利用直播带货</p>
-              <p>线下门店线上化</p>
-              <p>营业员直播导购卖货</p>
+        <!-- advantage_m -->
+        <div class="advantage_m">
+          <div class="sales_m">
+            <div class="dyop_title">
+              <div class="title">我们如何满足您 ?</div>
+              <div class="desc">打造短视频四大优势</div>
             </div>
-          </li>
-          <li>
-            <div class="title">实体商家</div>
-            <div class="content">
-              <p>向实体店引流</p>
-              <p>拓客 , 锁定</p>
-              <p>打造网红店</p>
-              <p>新店加盟</p>
-            </div>
-          </li>
-        </ul>
-        <ul class="clearfix">
-          <li>
-            <div class="title">微商团队</div>
-            <div class="content">
-              <p>个人IP打造</p>
-              <p>直播带货</p>
-              <p>短视频带货</p>
-              <p>团队成员培训</p>
-            </div>
-          </li>
-          <li>
-            <div class="title">个体商家</div>
-            <div class="content">
-              <p>打造个人IP</p>
-              <p>想成为网红</p>
-              <p>利用直播带货</p>
-              <p>利用短视频带货</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <!-- need_m -->
-      <div class="need_m">
-        <div class="sales_m">
-          <div class="dyop_title">
-            <div class="title">您为什么需要我们 ?</div>
-            <div class="desc">短视频平台您是否也在遭遇以下难题</div>
+            <ul class="clearfix">
+              <li>
+                <div class="satisfy_card">
+                  <p class="hover_p">01</p>
+                  <div class="card_title">
+                    <p>利用流量红利</p>
+                    <p>打破你商业发展天花板</p>
+                  </div>
+                  <div class="card_content">
+                    通过系统的学习 , 把握短视频营销新风口 , 从而高效布局 ,
+                    完善团队搭建 , 打造企业新流量阵地 , 助力企业品效合一。
+                  </div>
+                  <div class="card_footer">
+                    <div></div>
+                    <p></p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="satisfy_card">
+                  <p class="hover_p">02</p>
+                  <div class="card_title">
+                    <p>通过系统学习提升专业技能</p>
+                    <p>突破职场瓶颈</p>
+                  </div>
+                  <div class="card_content">
+                    行业转换来去自如 , 开启升职加薪快速上升通道。
+                  </div>
+                  <div class="card_footer">
+                    <div></div>
+                    <p></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="clearfix">
+              <li>
+                <div class="satisfy_card">
+                  <p class="hover_p">03</p>
+                  <div class="card_title">
+                    <p>学会内容策划和后期执行</p>
+                    <p>摸清短视频算法推荐规则</p>
+                  </div>
+                  <div class="card_content">
+                    分兵布阵增强吸粉体质 , 把握平台运营要塞 ,
+                    学会用数据分析调试和优化运营效果 ,
+                    成为抖音运营高手和热榜操盘者 , 大大提升品牌知名度和影响力。
+                  </div>
+                  <div class="card_footer">
+                    <div></div>
+                    <p></p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="satisfy_card">
+                  <p class="hover_p">04</p>
+                  <div class="card_title">
+                    <p>学会用户定位</p>
+                    <p>挖掘粉丝客群</p>
+                  </div>
+                  <div class="card_content">
+                    懂得内容策划 , 熟悉平台运营 , 用更强大的粉丝聚合和用户粘性 ,
+                    更高效的用户转化率 , 布局短视频平台 , 开拓电商新方向。
+                  </div>
+                  <div class="card_footer">
+                    <div></div>
+                    <p></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <ul class="clearfix">
-            <li>
-              <div>
-                <div class="title">职场新人</div>
-                <div class="content">
-                  刚毕业、工资低、想转行 , 想要通过系统学习短视频内容策划、平台运营和后期执行 , 提升专业技能 , 突破职场瓶颈 , 获得较高收入和更高职位的职场新人。
-                </div>
-              </div>
-            </li>
-            <li>
-              <div>
-                <div class="title">传统电商</div>
-                <div class="content">
-                  国内电商平台过度饱和 , 竞争激烈 , 想要通过布局短视频平台 , 抓住新流量风口 , 突破电商创业瓶颈。
-                </div>
-              </div>
-            </li>
-          </ul>
-          <ul class="clearfix">
-            <li>
-              <div>
-                <div class="title">新媒体/运营者/</div>
-                <div class="content">
-                  企业、组织、政府等新媒体运营者 , 进入短视频平台的运营新手 , 想要通过系统学习 , 开拓新的流量入口 , 提升品牌知名度和影响力。
-                </div>
-              </div>
-            </li>
-            <li>
-            </li>
-          </ul>
         </div>
-      </div>
-      <!-- advantage_m -->
-      <div class="advantage_m">
-        <div class="sales_m">
-          <div class="dyop_title">
-            <div class="title">我们如何满足您 ?</div>
-            <div class="desc">打造短视频四大优势</div>
-          </div>
-          <ul class="clearfix">
-            <li>
-              <div class="satisfy_card">
-                <p class="hover_p">01</p>
-                <div class="card_title">
-                 <p>利用流量红利</p>
-                 <p>打破你商业发展天花板</p>
-                </div>
-                <div class="card_content">
-                  通过系统的学习 , 把握短视频营销新风口 , 从而高效布局 , 完善团队搭建 , 打造企业新流量阵地 , 助力企业品效合一。
-                </div>
-                <div class="card_footer"><div></div><p></p></div>
-              </div>
-            </li>
-            <li>
-              <div class="satisfy_card">
-                <p class="hover_p">02</p>
-                <div class="card_title">
-                  <p>通过系统学习提升专业技能</p>
-                  <p>突破职场瓶颈</p>
-                </div>
-                <div class="card_content">
-                  行业转换来去自如 , 开启升职加薪快速上升通道。
-                </div>
-                <div class="card_footer"><div></div><p></p></div>
-              </div>
-            </li>
-          </ul>
-          <ul class="clearfix">
-            <li>
-              <div class="satisfy_card">
-                <p class="hover_p">03</p>
-                <div class="card_title">
-                  <p>学会内容策划和后期执行</p>
-                  <p>摸清短视频算法推荐规则</p>
-                </div>
-                <div class="card_content">
-                  分兵布阵增强吸粉体质 , 把握平台运营要塞 , 学会用数据分析调试和优化运营效果 , 成为抖音运营高手和热榜操盘者 , 大大提升品牌知名度和影响力。
-                </div>
-                <div class="card_footer"><div></div><p></p></div>
-              </div>
-            </li>
-            <li>
-              <div class="satisfy_card">
-                <p class="hover_p">04</p>
-                <div class="card_title">
-                  <p>学会用户定位</p>
-                  <p>挖掘粉丝客群</p>
-                </div>
-                <div class="card_content">
-                  懂得内容策划 , 熟悉平台运营 , 用更强大的粉丝聚合和用户粘性 , 更高效的用户转化率 , 布局短视频平台 , 开拓电商新方向。
-                </div>
-                <div class="card_footer"><div></div><p></p></div>
-              </div>
-            </li>
-          </ul>
+        <!-- contact_m -->
+        <div id="dypx_contact_m">
+          <div id="contact_m">{dede:include filename="contact_m.html"/}</div>
         </div>
-      </div>
-      <!-- contact_m -->
-      <div id="dypx_contact_m">
-        <div id="contact_m">
-          {dede:include filename="contact_m.html"/}
-        </div>
-      </div>
-      <img style="width: 100%; margin-top: .93rem;" src="{dede:global.cfg_templets_skin/}/img/mobile/dypx/2.jpg" alt="m-2.jpg">
-      <!-- footer_m -->
-      <div id="foot_m">
-        {dede:include filename="footer_m.html"/}
+        <img
+          style="width: 100%; margin-top: 0.93rem"
+          src="{dede:global.cfg_templets_skin/}/img/mobile/dypx/2.jpg"
+          alt="m-2.jpg"
+        />
+        <!-- footer_m -->
+        <div id="foot_m">{dede:include filename="footer_m.html"/}</div>
       </div>
     </div>
-  </div>
-  <!-- 移动端导航栏 -->
-  <div id="head_m">
-    {dede:include filename="header_m.html"/}
-  </div>
-</body>
+    <!-- 移动端导航栏 -->
+    <div id="head_m">{dede:include filename="header_m.html"/}</div>
+  </body>
 </html>
