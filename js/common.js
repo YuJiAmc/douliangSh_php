@@ -32,3 +32,20 @@ $(function () {
     };
   });
 });
+function acrossOrVertical() {
+  $(".head_m").css("position", "fixed");
+  $(".nav_head").css("position", "fixed");
+  if (window.orientation == 90 || window.orientation == -90) {
+    $(".head_m").css("position", "absolute");
+    $(".nav_head").css("position", "absolute");
+    $(window).scroll(function () {
+      $("#nb_invite_wrap").hide();
+    });
+  }
+}
+acrossOrVertical();
+window.addEventListener(
+  "onorientationchange" in window ? "orientationchange" : "resize",
+  acrossOrVertical,
+  false
+);
