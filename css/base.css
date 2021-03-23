@@ -74,13 +74,15 @@ body {
   display: none;
 }
 /* banner加载前预留高度 */
-.banner_m {
+.banner_m,.banner {
   width: 100%;
-  margin-top: 1.73rem /* 130/75 */;
   position: relative;
   overflow: hidden;
 }
-.banner_m img {
+.banner_m {
+  margin-top: 1.73rem /* 130/75 */;
+}
+.banner_m img,.banner img {
   position: absolute;
   top: 0;
   left: 0;

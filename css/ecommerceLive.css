@@ -318,7 +318,9 @@
   width: 0.63rem /* 120/192 */;
   height: 0.02rem /* 3/192 */;
 }
-
+.banner {
+  padding-top: 51% /*980/1920*/
+}
 @media screen and (max-width: 750px) {
   #ecommerceLive {
     display: none;

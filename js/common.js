@@ -17,7 +17,7 @@ $(function () {
   // 替换img
   var test = /_min\./;
   $(".compress_img").each(function () {
-    var reSrc = $(this).attr("data-src").replace(test, ".");
+    var reSrc = $(this).attr("src").replace(test, ".");
     $(this).attr("src", reSrc);
   });
   // 替换背景图

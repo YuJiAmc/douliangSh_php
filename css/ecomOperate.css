@@ -383,6 +383,9 @@
   bottom: -0.34rem /* 65/192 */;
 }
 
+.banner {
+  padding-top: 51% /*980/1920*/
+}
 @media screen and (max-width: 750px) {
   #ecomOperate {
     display: none;

@@ -175,6 +175,10 @@
   color: #888;
 }
 
+.banner {
+  padding-top: 52% /*990/1920*/
+}
+
 @media screen and (max-width: 750px) {
   #newsCenter {
     display: none;
