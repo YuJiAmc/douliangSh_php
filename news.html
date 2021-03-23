@@ -36,22 +36,22 @@
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/base.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/header.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/footer.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/newsCenter.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
     </script>
     <script>
@@ -65,7 +65,7 @@
     </script>
     <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
     <script src="{dede:global.cfg_templets_skin/}/js/jquery-ias.min.js"></script>
-
+    <script src="{dede:global.cfg_templets_skin/}/js/lazyload.min.js"></script>
     <script src="{dede:global.cfg_templets_skin/}/js/bootstrap/bootstrap.js"></script>
   </head>
   <body>
@@ -83,7 +83,7 @@
       <div class="header clearfix">
         <a href="/" class="logo fl">
           <img
-            src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
+            data-src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
             alt="斗量传媒-logo"
           />
         </a>
@@ -133,7 +133,7 @@
         <img
           id="banner"
           style="width: 100%"
-          src="{dede:global.cfg_templets_skin/}/img/newsCenter/banner.jpg"
+          data-src="{dede:global.cfg_templets_skin/}/img/newsCenter/banner.jpg"
           alt="新闻中心-banner"
         />
       </div>
@@ -189,20 +189,20 @@
       <div class="head_m clearfix">
         <a href="/" class="logo_m fl">
           <img
-            src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
+            data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
             alt="m-斗量传媒-logo"
           />
         </a>
         <img
           id="navSlideDown"
-          src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
           alt="m-6-2.png"
         />
       </div>
       <!-- banner -->
       <div class="banner_m">
         <img
-          src="{dede:global.cfg_templets_skin/}/img/mobile/news/banner.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/mobile/news/banner.png"
           alt="m-news-banner"
         />
       </div>

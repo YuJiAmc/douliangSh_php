@@ -17,7 +17,7 @@ $(function () {
   // 替换img
   var test = /_min\./;
   $(".compress_img").each(function () {
-    var reSrc = $(this).attr("src").replace(test, ".");
+    var reSrc = $(this).attr("data-src").replace(test, ".");
     $(this).attr("src", reSrc);
   });
   // 替换背景图
@@ -32,6 +32,7 @@ $(function () {
     };
   });
 });
+// 移动端横屏
 function acrossOrVertical() {
   $(".head_m").css("position", "fixed");
   $(".nav_head").css("position", "fixed");
@@ -49,3 +50,5 @@ window.addEventListener(
   acrossOrVertical,
   false
 );
+// 图片懒加载
+$("img").lazyload();

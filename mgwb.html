@@ -36,27 +36,27 @@
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/base.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/header.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/contact.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/footer.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/mgwb.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
     </script>
     <link
@@ -74,13 +74,14 @@
     </script>
   </head>
   <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/js/lazyload.min.js"></script>
   <body>
     <div id="mgwb">
       <!-- header -->
       <div class="header clearfix">
         <a href="/" class="logo fl">
           <img
-            src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
+            data-src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
             alt="斗量传媒-logo"
           />
         </a>
@@ -132,7 +133,7 @@
           id="banner"
           class="compress_img"
           style="width: 100%"
-          src="{dede:global.cfg_templets_skin/}/img/mgwb/banner_01.jpg"
+          data-src="{dede:global.cfg_templets_skin/}/img/mgwb/banner_01.jpg"
           alt="设计外包-banner"
         />
       </div>
@@ -208,7 +209,8 @@
             <div class="adv_column">
               <div class="adv_icon">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mgwb/advantage_1.png"
+                  class="lazy_img"
+                  data-src="{dede:global.cfg_templets_skin/}/img/mgwb/advantage_1.png"
                   alt="advantage-1.png"
                 />
               </div>
@@ -220,7 +222,8 @@
             <div class="adv_column">
               <div class="adv_icon">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mgwb/advantage_2.png"
+                  class="lazy_img"
+                  data-src="{dede:global.cfg_templets_skin/}/img/mgwb/advantage_2.png"
                   alt="advantage-2.png"
                 />
               </div>
@@ -232,7 +235,7 @@
             <div class="adv_column">
               <div class="adv_icon">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mgwb/advantage_3.png"
+                data-src="{dede:global.cfg_templets_skin/}/img/mgwb/advantage_3.png"
                   alt="advantage-3.png"
                 />
               </div>
@@ -252,7 +255,7 @@
             <div class="process_content">
               <div class="bgc">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mgwb/process.png"
+                data-src="{dede:global.cfg_templets_skin/}/img/mgwb/process.png"
                   alt="process.png"
                 />
               </div>
@@ -261,7 +264,8 @@
                 <div>确定合作意向</div>
               </div>
               <img
-                src="{dede:global.cfg_templets_skin/}/img/mgwb/17.png"
+                class="lazy_img"
+                data-src="{dede:global.cfg_templets_skin/}/img/mgwb/17.png"
                 alt="process-17.png"
               />
               <div class="process_step">
@@ -269,7 +273,8 @@
                 <div>安排设计师</div>
               </div>
               <img
-                src="{dede:global.cfg_templets_skin/}/img/mgwb/14.png"
+              class="lazy_img"
+              data-src="{dede:global.cfg_templets_skin/}/img/mgwb/14.png"
                 alt="process-14.png"
               />
               <div class="process_step">
@@ -277,7 +282,8 @@
                 <div>不满意可修改</div>
               </div>
               <img
-                src="{dede:global.cfg_templets_skin/}/img/mgwb/16.png"
+              class="lazy_img"
+              data-src="{dede:global.cfg_templets_skin/}/img/mgwb/16.png"
                 alt="process-16.png"
               />
               <div class="process_step">
@@ -285,7 +291,8 @@
                 <div>确认收货好评</div>
               </div>
               <img
-                src="{dede:global.cfg_templets_skin/}/img/mgwb/15.png"
+              class="lazy_img"
+              data-src="{dede:global.cfg_templets_skin/}/img/mgwb/15.png"
                 alt="process-15.png"
               />
             </div>
@@ -312,7 +319,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/case_15.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_1.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_1.jpg"
                           alt="case-1.jpg"
                         />
                       </a>
@@ -322,7 +329,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/case_16.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_2.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_2.jpg"
                           alt="case-2.jpg"
                         />
                       </a>
@@ -332,7 +339,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/case_17.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_3.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_3.jpg"
                           alt="case-3.jpg"
                         />
                       </a>
@@ -342,7 +349,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/case_18.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_4.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_4.jpg"
                           alt="case-4.jpg"
                         />
                       </a>
@@ -352,7 +359,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/case_19.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_5.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_5.jpg"
                           alt="case-5.jpg"
                         />
                       </a>
@@ -362,7 +369,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/case_20.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_6.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_6.jpg"
                           alt="case-6.jpg"
                         />
                       </a>
@@ -376,7 +383,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/case_21.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_7.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_7.jpg"
                           alt="case-7.jpg"
                         />
                       </a>
@@ -386,7 +393,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/case_22.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_8.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_8.jpg"
                           alt="case-8.jpg"
                         />
                       </a>
@@ -396,7 +403,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/case_23.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_9.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_9.jpg"
                           alt="case-9.jpg"
                         />
                       </a>
@@ -406,7 +413,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/case_24.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_10.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_10.jpg"
                           alt="case-10.jpg"
                         />
                       </a>
@@ -416,7 +423,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/case_25.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_11.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_11.jpg"
                           alt="case-11.jpg"
                         />
                       </a>
@@ -426,7 +433,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/case_26.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_12.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_12.jpg"
                           alt="case-12.jpg"
                         />
                       </a>
@@ -437,37 +444,37 @@
                   <ul class="kwicks graph">
                     <li>
                       <img
-                        src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_13.jpg"
+                      data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_13.jpg"
                         alt="case-13.jpg"
                       />
                     </li>
                     <li>
                       <img
-                        src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_14.jpg"
+                      data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_14.jpg"
                         alt="case-14.jpg"
                       />
                     </li>
                     <li>
                       <img
-                        src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_15.jpg"
+                      data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_15.jpg"
                         alt="case-15.jpg"
                       />
                     </li>
                     <li>
                       <img
-                        src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_16.jpg"
+                      data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_16.jpg"
                         alt="case-16.jpg"
                       />
                     </li>
                     <li>
                       <img
-                        src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_17.jpg"
+                      data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_17.jpg"
                         alt="case-17.jpg"
                       />
                     </li>
                     <li>
                       <img
-                        src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_18.jpg"
+                      data-src="{dede:global.cfg_templets_skin/}/img/mgwb/normal_18.jpg"
                         alt="case-18.jpg"
                       />
                     </li>
@@ -480,7 +487,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/poster_1.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/poster_normal_1.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/poster_normal_1.jpg"
                           alt="poster-1.jpg"
                         />
                       </a>
@@ -490,7 +497,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/poster_2.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/poster_normal_2.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/poster_normal_2.jpg"
                           alt="poster-2.jpg"
                         />
                       </a>
@@ -500,7 +507,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/poster_3.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/poster_normal_3.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/poster_normal_3.jpg"
                           alt="poster-3.jpg"
                         />
                       </a>
@@ -510,7 +517,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/poster_4.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/poster_normal_4.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/poster_normal_4.jpg"
                           alt="poster-4.jpg"
                         />
                       </a>
@@ -520,7 +527,7 @@
                         href="{dede:global.cfg_templets_skin/}/img/mgwb/poster_5.jpg"
                       >
                         <img
-                          src="{dede:global.cfg_templets_skin/}/img/mgwb/poster_normal_5.jpg"
+                        data-src="{dede:global.cfg_templets_skin/}/img/mgwb/poster_normal_5.jpg"
                           alt="poster-5.jpg"
                         />
                       </a>
@@ -591,7 +598,7 @@
       <div id="zoom-layer">
         <div class="holder-zoom" onclick="closeLayer()">
           <div class="close-icon"></div>
-          <img id="image" src=""" alt="zoom-layer-image"/>
+          <img id="image" data-src=""" alt="zoom-layer-image"/>
         </div>
       </div>
       <div id="foot">{dede:include filename="footer.html"/}</div>
@@ -601,20 +608,20 @@
       <div class="head_m clearfix">
         <a href="/" class="logo_m fl">
           <img
-            src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
+            data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
             alt="m-斗量传媒-logo"
           />
         </a>
         <img
           id="navSlideDown"
-          src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
           alt="m-6-2.png"
         />
       </div>
       <!-- banner -->
       <div class="banner_m">
         <img
-          src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/1_02.png"
+        data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/1_02.png"
           alt="m-设计外包-banner"
         />
       </div>
@@ -704,7 +711,7 @@
         <div class="process_content">
           <div class="bgc">
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/6_05.png"
+            data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/6_05.png"
               alt="m_process.png"
             />
           </div>
@@ -713,7 +720,7 @@
             <div>确定合作意向</div>
           </div>
           <img
-            src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2_14.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2_14.png"
             alt="process-2_14.png"
           />
           <div class="process_step">
@@ -721,7 +728,7 @@
             <div>安排设计师</div>
           </div>
           <img
-            src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2_03.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2_03.png"
             alt="process-2_03.png"
           />
           <div class="process_step">
@@ -729,7 +736,7 @@
             <div>不满意可修改</div>
           </div>
           <img
-            src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2_10.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2_10.png"
             alt="process-2_10.png"
           />
           <div class="process_step">
@@ -737,7 +744,7 @@
             <div>确认收货好评</div>
           </div>
           <img
-            src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2_06.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2_06.png"
             alt="process-2_06.png"
           />
         </div>
@@ -753,73 +760,73 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/1.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/1.jpg"
                   alt="m-mgwb-1.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/2.jpg"
                   alt="m-mgwb-2.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/3.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/3.jpg"
                   alt="m-mgwb-3.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/4.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/4.jpg"
                   alt="m-mgwb-4.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/5.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/5.jpg"
                   alt="m-mgwb-5.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/6.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/6.jpg"
                   alt="m-mgwb-6.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/27.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/27.jpg"
                   alt="m-mgwb-27.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/28.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/28.jpg"
                   alt="m-mgwb-28.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/29.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/29.jpg"
                   alt="m-mgwb-29.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/30.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/30.jpg"
                   alt="m-mgwb-30.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/31.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/31.jpg"
                   alt="m-mgwb-31.jpg"
                 />
               </div>
               <div class="swiper-slide">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/32.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/mgwb/32.jpg"
                   alt="m-mgwb-32.jpg"
                 />
               </div>

@@ -31,27 +31,27 @@
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/base.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/header.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/contact.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/footer.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/contactUs.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '" rel="stylesheet">'
       );
     </script>
     <script>
@@ -65,6 +65,7 @@
     </script>
   </head>
   <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/js/lazyload.min.js"></script>
 
   <body>
     <div id="contactUs">
@@ -72,7 +73,7 @@
       <div class="header clearfix">
         <a href="/" class="logo fl">
           <img
-            src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
+            data-src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
             alt="斗量传媒-logo"
           />
         </a>
@@ -122,9 +123,9 @@
       <div class="banner">
         <img
           id="banner"
-          class="compress_img"
+          class="compress_img lazy_img"
           style="width: 100%"
-          src="{dede:global.cfg_templets_skin/}/img/contactUs/banner_min.jpg"
+          data-src="{dede:global.cfg_templets_skin/}/img/contactUs/banner_min.jpg"
           alt="联系我们-banner"
         />
       </div>
@@ -190,19 +191,21 @@
         <ul class="clearfix">
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/contactUs/1_14.png"
+              class="lazy_img"
+              data-src="{dede:global.cfg_templets_skin/}/img/contactUs/1_14.png"
               alt="contactUs-1_14.png"
             />
             <p>微信</p>
             <img
-              class="hover_img"
-              src="{dede:global.cfg_templets_skin/}/img/index/erweima.jpg"
+              class="hover_img lazy_img"
+              data-src="{dede:global.cfg_templets_skin/}/img/index/erweima.jpg"
               alt="contactUs-erweima"
             />
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/contactUs/1_16.png"
+              class="lazy_img"
+              data-src="{dede:global.cfg_templets_skin/}/img/contactUs/1_16.png"
               alt="contactUs-1_16.png"
             />
             <p>电话</p>
@@ -213,7 +216,8 @@
               target="_blank"
               href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
               ><img
-                src="{dede:global.cfg_templets_skin/}/img/contactUs/1_20.png"
+                class="lazy_img"
+                data-src="{dede:global.cfg_templets_skin/}/img/contactUs/1_20.png"
                 alt="contactUs-1_20.png"
               />
               <p>客服</p>
@@ -225,10 +229,10 @@
       <div id="contact">{dede:include filename="contact.html"/}</div>
       <div>
         <img
-          class="compress_img"
+          class="compress_img lazy_img"
           style="width: 100%"
-          src="{dede:global.cfg_templets_skin/}/img/contactUs/1_41_min.jpg"
           alt="contactUs-1_41.jpg"
+          data-src="{dede:global.cfg_templets_skin/}/img/contactUs/1_41_min.jpg"
         />
       </div>
       <!-- footer -->
@@ -240,20 +244,20 @@
       <div class="head_m clearfix">
         <a href="/" class="logo_m fl">
           <img
-            src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
+            data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
             alt="m-斗量传媒-logo"
           />
         </a>
         <img
           id="navSlideDown"
-          src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
           alt="m-6-2.png"
         />
       </div>
       <!-- banner -->
       <div class="banner_m">
         <img
-          src="{dede:global.cfg_templets_skin/}/img/mobile/ctus/1_02.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/mobile/ctus/1_02.png"
           alt="m-联系我们-banner"
         />
       </div>
@@ -288,19 +292,21 @@
         <ul class="clearfix">
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/contactUs/1_14.png"
+              class="lazy_img"
+              data-src="{dede:global.cfg_templets_skin/}/img/contactUs/1_14.png"
               alt="contactUs-1_14.png"
             />
             <p>微信</p>
             <img
-              class="hover_img"
-              src="{dede:global.cfg_templets_skin/}/img/index/erweima.jpg"
+              class="hover_img lazy_img"
+              data-src="{dede:global.cfg_templets_skin/}/img/index/erweima.jpg"
               alt="contactUs-erweima"
             />
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/contactUs/1_16.png"
+              class="lazy_img"
+              data-src="{dede:global.cfg_templets_skin/}/img/contactUs/1_16.png"
               alt="contactUs-1_16.png"
             />
             <p>电话</p>
@@ -311,7 +317,8 @@
               target="_blank"
               href="http://wpa.qq.com/msgrd?v=3&uin=2885834575&site=qq&menu=yes"
               ><img
-                src="{dede:global.cfg_templets_skin/}/img/contactUs/1_20.png"
+                class="lazy_img"
+                data-src="{dede:global.cfg_templets_skin/}/img/contactUs/1_20.png"
                 alt="contactUs-1_20.png"
               />
               <p>客服</p>
@@ -324,8 +331,9 @@
         <div id="contact_m">{dede:include filename="contact_m.html"/}</div>
       </div>
       <img
+        class="lazy_img"
         style="width: 100%; margin-top: 0.93rem"
-        src="{dede:global.cfg_templets_skin/}/img/mobile/ctus/1_29.png"
+        data-src="{dede:global.cfg_templets_skin/}/img/mobile/ctus/1_29.png"
         alt="1_29.png"
       />
       <!-- footer_m -->

@@ -32,27 +32,27 @@
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/base.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/header.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/contact.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/footer.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/index.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
     </script>
     <script>
@@ -66,6 +66,7 @@
     </script>
   </head>
   <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/js/lazyload.min.js"></script>
 
   <body>
     <div
@@ -83,7 +84,7 @@
       <div class="header clearfix">
         <a href="/" class="logo fl">
           <img
-            src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
+            data-src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
             alt="斗量传媒-logo"
           />
         </a>
@@ -134,14 +135,14 @@
           id="banner"
           class="compress_img"
           style="width: 100%"
-          src="{dede:global.cfg_templets_skin/}/img/index/BANNER_min.jpg"
+          data-src="{dede:global.cfg_templets_skin/}/img/index/BANNER_min.jpg"
           alt="首页-banner"
         />
       </div>
       <div>
         <img
           style="width: 100%"
-          src="{dede:global.cfg_templets_skin/}/img/index/biaoyu.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/index/biaoyu.png"
           alt="我们只做真实数据.png"
         />
       </div>
@@ -247,7 +248,7 @@
           <li>
             <img
               class="compress_img"
-              src="{dede:global.cfg_templets_skin/}/img/index/3_11_min.jpg"
+              data-src="{dede:global.cfg_templets_skin/}/img/index/3_11_min.jpg"
               alt="丰富的短视频代运营经验.jpg"
             />
             <p>丰富的短视频代运营经验</p>
@@ -255,7 +256,7 @@
           <li>
             <img
               class="compress_img"
-              src="{dede:global.cfg_templets_skin/}/img/index/1_07_min.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/index/1_07_min.png"
               alt="专业短视频MCN机构.jpg"
             />
             <p>专业短视频MCN机构</p>
@@ -263,7 +264,7 @@
           <li>
             <img
               class="compress_img"
-              src="{dede:global.cfg_templets_skin/}/img/index/3_15_min.jpg"
+              data-src="{dede:global.cfg_templets_skin/}/img/index/3_15_min.jpg"
               alt="专业电商直播代运营.jpg"
             />
             <p>专业电商直播代运营</p>
@@ -361,7 +362,7 @@
               <div class="swiper-slide">
                 <div class="img">
                   <img
-                    src="{dede:global.cfg_templets_skin/}/img/index/case1.png"
+                    data-src="{dede:global.cfg_templets_skin/}/img/index/case1.png"
                     alt="tiktokOperate-case1.png"
                   />
                 </div>
@@ -369,7 +370,7 @@
               <div class="swiper-slide">
                 <div class="img">
                   <img
-                    src="{dede:global.cfg_templets_skin/}/img/index/case2.png"
+                    data-src="{dede:global.cfg_templets_skin/}/img/index/case2.png"
                     alt="tiktokOperate-case2.png"
                   />
                 </div>
@@ -377,7 +378,7 @@
               <div class="swiper-slide">
                 <div class="img">
                   <img
-                    src="{dede:global.cfg_templets_skin/}/img/index/case3.png"
+                    data-src="{dede:global.cfg_templets_skin/}/img/index/case3.png"
                     alt="tiktokOperate-case3.png"
                   />
                 </div>
@@ -385,7 +386,7 @@
               <div class="swiper-slide">
                 <div class="img">
                   <img
-                    src="{dede:global.cfg_templets_skin/}/img/index/case4.png"
+                    data-src="{dede:global.cfg_templets_skin/}/img/index/case4.png"
                     alt="tiktokOperate-case4.png"
                   />
                 </div>
@@ -393,7 +394,7 @@
               <div class="swiper-slide">
                 <div class="img">
                   <img
-                    src="{dede:global.cfg_templets_skin/}/img/index/case5.png"
+                    data-src="{dede:global.cfg_templets_skin/}/img/index/case5.png"
                     alt="tiktokOperate-case5.png"
                   />
                 </div>
@@ -401,7 +402,7 @@
               <div class="swiper-slide">
                 <div class="img">
                   <img
-                    src="{dede:global.cfg_templets_skin/}/img/index/case6.png"
+                    data-src="{dede:global.cfg_templets_skin/}/img/index/case6.png"
                     alt="tiktokOperate-case6.png"
                   />
                 </div>
@@ -409,7 +410,7 @@
               <div class="swiper-slide">
                 <div class="img">
                   <img
-                    src="{dede:global.cfg_templets_skin/}/img/index/case7.png"
+                    data-src="{dede:global.cfg_templets_skin/}/img/index/case7.png"
                     alt="tiktokOperate-case7.png"
                   />
                 </div>
@@ -430,7 +431,7 @@
           <div class="content_newest">
             {dede:arclist titlelen='90' limit='0,1' }
             <div class="newest_imgs">
-              <img src="[field:picname /]" alt="封面" />
+              <img data-src="[field:picname /]" alt="封面" />
             </div>
             <div class="newest_desc">
               <div class="desc_title">
@@ -480,26 +481,26 @@
       <div class="head_m clearfix">
         <a href="/" class="logo_m fl">
           <img
-            src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
+            data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
             alt="m-斗量传媒-logo"
           />
         </a>
         <img
           id="navSlideDown"
-          src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
           alt="m-6-2.png"
         />
       </div>
       <!-- banner -->
       <div class="banner_m">
         <img
-          src="{dede:global.cfg_templets_skin/}/img/mobile/index/banner.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/banner.png"
           alt="m-首页-banner"
         />
       </div>
       <img
         style="width: 100%"
-        src="{dede:global.cfg_templets_skin/}/img/mobile/index/12_02.png"
+        data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/12_02.png"
         alt="m-12_02.png"
       />
       <!-- particulars -->
@@ -546,7 +547,7 @@
           <div class="advantage_des">专业短视频MCN机构</div>
           <img
             style="width: 100%"
-            src="{dede:global.cfg_templets_skin/}/img/mobile/index/3_02.png"
+            data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/3_02.png"
             alt="m-3_02.png"
           />
         </div>
@@ -554,7 +555,7 @@
           <div class="advantage_des">丰富的短视频代运营经验</div>
           <img
             style="width: 100%"
-            src="{dede:global.cfg_templets_skin/}/img/mobile/index/3_04.png"
+            data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/3_04.png"
             alt="m-3_02.png"
           />
         </div>
@@ -562,7 +563,7 @@
           <div class="advantage_des">专业电商直播代运营</div>
           <img
             style="width: 100%"
-            src="{dede:global.cfg_templets_skin/}/img/mobile/index/3_05.png"
+            data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/3_05.png"
             alt="m-3_02.png"
           />
         </div>
@@ -572,28 +573,28 @@
         <ul class="clearfix">
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_56.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_56.png"
               alt="m-4_56.png"
             />
             <p>抖音</p>
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_58.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_58.png"
               alt="m-4_58.png"
             />
             <p>淘宝</p>
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_60.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_60.png"
               alt="m-4_60.png"
             />
             <p>天猫</p>
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_62.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_62.png"
               alt="m-4_62.png"
             />
             <p>京东</p>
@@ -602,28 +603,28 @@
         <ul class="clearfix">
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_74.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_74.png"
               alt="m-4_74.png"
             />
             <p>微信</p>
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_76.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_76.png"
               alt="m-4_76.png"
             />
             <p>微博</p>
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_78.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_78.png"
               alt="m-4_78.png"
             />
             <p>西瓜视频</p>
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_80.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_80.png"
               alt="m-4_80.png"
             />
             <p>火山视频</p>
@@ -632,28 +633,28 @@
         <ul class="clearfix">
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_92.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_92.png"
               alt="m-4_92.png"
             />
             <p>快手</p>
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_94.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_94.png"
               alt="m-4_94.png"
             />
             <p>土豆</p>
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_96.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_96.png"
               alt="m-4_96.png"
             />
             <p>爱奇艺</p>
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_98.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_98.png"
               alt="m-4_98.png"
             />
             <p>优酷</p>
@@ -662,28 +663,28 @@
         <ul class="clearfix">
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_110.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_110.png"
               alt="m-4_110.png"
             />
             <p>腾讯视频</p>
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_112.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_112.png"
               alt="m-4_112.png"
             />
             <p>QQ空间</p>
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_114.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_114.png"
               alt="m-4_114.png"
             />
             <p>哔哩哔哩</p>
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_116.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_116.png"
               alt="m-4_116.png"
             />
             <p>今日头条</p>
@@ -692,14 +693,14 @@
         <ul class="clearfix">
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_128.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_128.png"
               alt="m-4_128.png"
             />
             <p>秒拍</p>
           </li>
           <li>
             <img
-              src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_130.png"
+              data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/4_130.png"
               alt="m-4_130.png"
             />
             <p>一直播</p>
@@ -713,37 +714,37 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img
-                src="{dede:global.cfg_templets_skin/}/img/mobile/index/case1.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/case1.jpg"
                 alt="m-index-case1.jpg"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="{dede:global.cfg_templets_skin/}/img/mobile/index/case2.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/case2.jpg"
                 alt="m-index-case2.jpg"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="{dede:global.cfg_templets_skin/}/img/mobile/index/case3.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/case3.jpg"
                 alt="m-index-case3.jpg"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="{dede:global.cfg_templets_skin/}/img/mobile/index/case4.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/case4.jpg"
                 alt="m-index-case4.jpg"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="{dede:global.cfg_templets_skin/}/img/mobile/index/case5.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/case5.jpg"
                 alt="m-index-case5.jpg"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="{dede:global.cfg_templets_skin/}/img/mobile/index/case6.jpg"
+                data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/case6.jpg"
                 alt="m-index-case6.jpg"
               />
             </div>
@@ -759,7 +760,7 @@
       <div class="spe_news">
         {dede:arclist titlelen='90' limit='0,1' }
         <div class="news_img">
-          <img src="[field:picname /]" alt="缩略图" />
+          <img data-src="[field:picname /]" alt="缩略图" />
         </div>
         <div class="newest_desc">
           <div class="desc_title">

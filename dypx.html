@@ -31,27 +31,27 @@
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/base.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/header.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/contact.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/footer.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/tiktokTrain.css?v=' +
           new Date().getTime() +
-          '" rel="stylesheet" >'
+          '"rel="stylesheet">'
       );
     </script>
     <script>
@@ -65,6 +65,7 @@
     </script>
   </head>
   <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
+  <script src="{dede:global.cfg_templets_skin/}/js/lazyload.min.js"></script>
 
   <body>
     <div id="tiktokTrain">
@@ -72,7 +73,7 @@
       <div class="header clearfix">
         <a href="/" class="logo fl">
           <img
-            src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
+            data-src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
             alt="斗量传媒-logo"
           />
         </a>
@@ -125,7 +126,7 @@
           id="banner"
           class="compress_img"
           style="width: 100%"
-          src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/banner_01_min.jpg"
+          data-src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/banner_01_min.jpg"
           alt="抖音培训-banner"
         />
       </div>
@@ -150,7 +151,7 @@
             <ul>
               <li class="clearfix">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_3.png"
+                  data-src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_3.png"
                   alt="tiktokTrain-1_3.png"
                 />
                 <div class="scope_r_content">
@@ -163,7 +164,7 @@
               </li>
               <li class="clearfix">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_4.png"
+                  data-src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_4.png"
                   alt="tiktokTrain-1_4.png"
                 />
                 <div class="scope_r_content">
@@ -178,7 +179,7 @@
             <ul>
               <li class="clearfix">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_6.png"
+                  data-src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_6.png"
                   alt="tiktokTrain-1_6.png"
                 />
                 <div class="scope_r_content">
@@ -191,7 +192,7 @@
               </li>
               <li class="clearfix">
                 <img
-                  src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_5.png"
+                  data-src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_5.png"
                   alt="tiktokTrain-1_5.png"
                 />
                 <div class="scope_r_content">
@@ -209,21 +210,21 @@
           <ul>
             <li>
               <img
-                src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png"
+                data-src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png"
                 alt="tiktokTrain-1_1.png"
               />
               <div class="step_line"></div>
             </li>
             <li>
               <img
-                src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_2.png"
+                data-src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_2.png"
                 alt="tiktokTrain-1_2.png"
               />
               <div class="step_line"></div>
             </li>
             <li>
               <img
-                src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_2.png"
+                data-src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_2.png"
                 alt="tiktokTrain-1_2.png"
               />
               <div class="step_line"></div>
@@ -235,7 +236,7 @@
       <!-- need -->
       <div class="need compress_bgi clearfix">
         <img
-          src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png"
           alt="tiktokTrain-1_1.png"
         />
         <div class="need_l">
@@ -252,7 +253,7 @@
             <div>
               <img
                 class="compress_img"
-                src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/renwu_11_min.png"
+                data-src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/renwu_11_min.png"
                 alt="tiktokTrain-renwu_11.png"
               />
             </div>
@@ -315,7 +316,7 @@
       <!--  satisfy  -->
       <div class="satisfy compress_bgi">
         <img
-          src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png"
           alt="tiktokTrain-1_1.png"
         />
         <div class="public_title">
@@ -402,7 +403,7 @@
           </li>
         </ul>
         <img
-          src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/1_1.png"
           alt="tiktokTrain-1_1.png"
         />
       </div>
@@ -411,7 +412,7 @@
       <img
         style="width: 100%"
         class="compress_img"
-        src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/ditu_06_min.jpg"
+        data-src="{dede:global.cfg_templets_skin/}/img/tiktokTrain/ditu_06_min.jpg"
         alt="tiktokTrain-ditu_06.png"
       />
       <!-- footer -->
@@ -422,20 +423,20 @@
       <div class="head_m clearfix">
         <a href="/" class="logo_m fl">
           <img
-            src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
+            data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
             alt="m-斗量传媒-logo"
           />
         </a>
         <img
           id="navSlideDown"
-          src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
+          data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-2.png"
           alt="m-6-2.png"
         />
       </div>
       <!-- banner -->
       <div class="banner_m">
         <img
-          src="{dede:global.cfg_templets_skin/}/img/mobile/dypx/BANNER.jpg"
+          data-src="{dede:global.cfg_templets_skin/}/img/mobile/dypx/BANNER.jpg"
           alt="m-抖音培训-banner"
         />
       </div>
@@ -620,7 +621,7 @@
         </div>
         <img
           style="width: 100%; margin-top: 0.93rem"
-          src="{dede:global.cfg_templets_skin/}/img/mobile/dypx/2.jpg"
+          data-src="{dede:global.cfg_templets_skin/}/img/mobile/dypx/2.jpg"
           alt="m-2.jpg"
         />
         <!-- footer_m -->
