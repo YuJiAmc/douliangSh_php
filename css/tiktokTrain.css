@@ -18,7 +18,7 @@
 /* scope */
 .scope {
   position: relative;
-  background-image: url(../img/tiktokTrain/ditu_02_min.jpg);
+  /* background-image: url(../img/tiktokTrain/ditu_02_min.jpg); */
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -203,7 +203,7 @@
   height: 6.98rem /* 1340/192 */;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../img/tiktokTrain/ditu_03_min.jpg);
+  /* background-image: url(../img/tiktokTrain/ditu_03_min.jpg); */
 }
 .need > img {
   width: 0.68rem /* 131/192 */;
@@ -343,7 +343,7 @@
   height: 5.73rem /* 1100/192 */;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../img/tiktokTrain/ditu_04_min.jpg);
+  /* background-image: url(../img/tiktokTrain/ditu_04_min.jpg); */
   padding-top: 1.04rem /* 200/192 */;
   box-sizing: border-box;
   position: relative;

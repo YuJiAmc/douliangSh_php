@@ -54,5 +54,5 @@ window.addEventListener(
 // 图片懒加载
 $("img").lazyload();
 $(function() {
-  $("div.lazy").lazyload();
+  $(".lazy").lazyload();
 });

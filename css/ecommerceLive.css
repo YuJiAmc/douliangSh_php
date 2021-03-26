@@ -174,16 +174,16 @@
 }
 .satisfy ul li:first-child {
   width: 1.98rem /* 381/192 */;
-  background-image: url(../img/ecommerceLive/2_1.jpg);
+  /* background-image: url(../img/ecommerceLive/2_1.jpg); */
 }
 .satisfy ul li:nth-child(2) {
   width: 2.01rem /* 385/192 */;
-  background-image: url(../img/ecommerceLive/2_2.jpg);
+  /* background-image: url(../img/ecommerceLive/2_2.jpg); */
 }
 .satisfy ul li:last-child {
   margin-right: 0;
   width: 2.02rem /* 387/192 */;
-  background-image: url(../img/ecommerceLive/2_3.jpg);
+  /* background-image: url(../img/ecommerceLive/2_3.jpg); */
 }
 .satisfy > img {
   width: 0.68rem /* 131/192 */;
@@ -501,22 +501,22 @@
     margin-right: 0;
   }
   .case_m ul li:first-child {
-    background-image: url(../img/mobile/eclv/anli_23.png);
+    /* background-image: url(../img/mobile/eclv/anli_23.png); */
   }
   .case_m ul li:nth-child(2) {
-    background-image: url(../img/mobile/eclv/anli_25.png);
+    /* background-image: url(../img/mobile/eclv/anli_25.png); */
   }
   .case_m ul li:last-child {
-    background-image: url(../img/mobile/eclv/anli_27.png);
+    /* background-image: url(../img/mobile/eclv/anli_27.png); */
   }
   .case_m ul:last-child li:first-child {
-    background-image: url(../img/mobile/eclv/anli_37.png);
+    /* background-image: url(../img/mobile/eclv/anli_37.png); */
   }
   .case_m ul:last-child li:nth-child(2) {
-    background-image: url(../img/mobile/eclv/anli_39.png);
+    /* background-image: url(../img/mobile/eclv/anli_39.png); */
   }
   .case_m ul:last-child li:last-child {
-    background-image: url(../img/mobile/eclv/anli_41.png);
+    /* background-image: url(../img/mobile/eclv/anli_41.png); */
   }
   #eclv_contact_m {
     background: url(../img/mobile/eclv/di_06.jpg) no-repeat;

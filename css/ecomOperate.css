@@ -83,7 +83,8 @@
 /* satisfy */
 .satisfy {
   text-align: center;
-  background: url(../img/ecomOperate/ditu_02_min.jpg) no-repeat;
+  /* background: url(../img/ecomOperate/ditu_02_min.jpg) no-repeat; */
+  background-repeat: no-repeat;
   background-size: cover;
   padding-top: 0.94rem /* 180/192 */;
   box-sizing: border-box;
@@ -205,7 +206,8 @@
 .process ul .li_arrow {
   width: 0.1rem /* 20/192 */;
   height: 0.09rem /* 17/192 */;
-  background: url(../img/ecomOperate/jiantou_03.png) no-repeat;
+  /* background: url(../img/ecomOperate/jiantou_03.png) no-repeat; */
+  background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
   top: 20%;
@@ -233,7 +235,8 @@
 /* team */
 .team {
   text-align: center;
-  background: url(../img/ecomOperate/ditu_05_min.jpg) no-repeat;
+  /* background: url(../img/ecomOperate/ditu_05_min.jpg) no-repeat; */
+  background-repeat: no-repeat;
   background-size: cover;
   padding-top: 0.94rem /* 180/192 */;
   box-sizing: border-box;
@@ -315,7 +318,8 @@
 /* example */
 .example {
   text-align: center;
-  background: url(../img/ecomOperate/ditu_07_min.jpg) no-repeat;
+  /* background: url(../img/ecomOperate/ditu_07_min.jpg) no-repeat; */
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 0.94rem /* 180/192 */ 0;
   box-sizing: border-box;

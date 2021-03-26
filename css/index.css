@@ -18,16 +18,16 @@
   margin-right: 0;
 }
 .process li:nth-child(1) {
-  background-image: url("../img/index/2_03_min.jpg");
+  /* background-image: url("../img/index/2_03_min.jpg"); */
 }
 .process li:nth-child(2) {
-  background-image: url("../img/index/2_04_min.jpg");
+  /* background-image: url("../img/index/2_04_min.jpg"); */
 }
 .process li:nth-child(3) {
-  background-image: url("../img/index/1_03_min.png");
+  /* background-image: url("../img/index/1_03_min.png"); */
 }
 .process li:nth-child(4) {
-  background-image: url("../img/index/2_06_min.jpg");
+  /* background-image: url("../img/index/2_06_min.jpg"); */
 }
 .process li a {
   color: #fff;
@@ -173,58 +173,58 @@
   background-size: contain;
 }
 .platform_list .platform_1 li:nth-child(1) .bg {
-  background-image: url(../img/index/tubiao_68.png);
+  /* background-image: url(../img/index/tubiao_68.png); */
 }
 .platform_list .platform_1 li:nth-child(2) .bg {
-  background-image: url(../img/index/tubiao_70.png);
+  /* background-image: url(../img/index/tubiao_70.png); */
 }
 .platform_list .platform_1 li:nth-child(3) .bg {
-  background-image: url(../img/index/tubiao_72.png);
+  /* background-image: url(../img/index/tubiao_72.png); */
 }
 .platform_list .platform_1 li:nth-child(4) .bg {
-  background-image: url(../img/index/tubiao_74.png);
+  /* background-image: url(../img/index/tubiao_74.png); */
 }
 .platform_list .platform_1 li:nth-child(5) .bg {
-  background-image: url(../img/index/tubiao_76.png);
+  /* background-image: url(../img/index/tubiao_76.png); */
 }
 .platform_list .platform_1 li:nth-child(6) .bg {
-  background-image: url(../img/index/tubiao_78.png);
+  /* background-image: url(../img/index/tubiao_78.png); */
 }
 .platform_list .platform_2 li:nth-child(1) .bg {
-  background-image: url(../img/index/tubiao_100.png);
+  /* background-image: url(../img/index/tubiao_100.png); */
 }
 .platform_list .platform_2 li:nth-child(2) .bg {
-  background-image: url(../img/index/tubiao_102.png);
+  /* background-image: url(../img/index/tubiao_102.png); */
 }
 .platform_list .platform_2 li:nth-child(3) .bg {
-  background-image: url(../img/index/tubiao_104.png);
+  /* background-image: url(../img/index/tubiao_104.png); */
 }
 .platform_list .platform_2 li:nth-child(4) .bg {
-  background-image: url(../img/index/tubiao_106.png);
+  /* background-image: url(../img/index/tubiao_106.png); */
 }
 .platform_list .platform_2 li:nth-child(5) .bg {
-  background-image: url(../img/index/tubiao_108.png);
+  /* background-image: url(../img/index/tubiao_108.png); */
 }
 .platform_list .platform_2 li:nth-child(6) .bg {
-  background-image: url(../img/index/tubiao_110.png);
+  /* background-image: url(../img/index/tubiao_110.png); */
 }
 .platform_list .platform_3 li:nth-child(1) > .bg {
-  background-image: url(../img/index/tubiao_132.png);
+  /* background-image: url(../img/index/tubiao_132.png); */
 }
 .platform_list .platform_3 li:nth-child(2) .bg {
-  background-image: url(../img/index/tubiao_134.png);
+  /* background-image: url(../img/index/tubiao_134.png); */
 }
 .platform_list .platform_3 li:nth-child(3) .bg {
-  background-image: url(../img/index/tubiao_136.png);
+  /* background-image: url(../img/index/tubiao_136.png); */
 }
 .platform_list .platform_3 li:nth-child(4) .bg {
-  background-image: url(../img/index/tubiao_138.png);
+  /* background-image: url(../img/index/tubiao_138.png); */
 }
 .platform_list .platform_3 li:nth-child(5) .bg {
-  background-image: url(../img/index/tubiao_140.png);
+  /* background-image: url(../img/index/tubiao_140.png); */
 }
 .platform_list .platform_3 li:nth-child(6) .bg {
-  background-image: url(../img/index/tubiao_142.png);
+  /* background-image: url(../img/index/tubiao_142.png); */
 }
 .platform_list ul li:hover .bg {
   animation: rotate 0.5s linear infinite;
