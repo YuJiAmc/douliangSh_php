@@ -44,14 +44,14 @@
   transform: translate(-50%, -50%);
 }
 #matter .desc li:nth-child(1) {
-  background-image: url("../img/mgwb/1.png");
+  /* background-image: url("../img/mgwb/1.png"); */
 }
 #matter .desc li:nth-child(2) {
-  background-image: url("../img/mgwb/2.png");
+  /* background-image: url("../img/mgwb/2.png"); */
 }
 #matter .desc li:nth-child(3) {
   margin-right: 0px;
-  background-image: url("../img/mgwb/3.png");
+  /* background-image: url("../img/mgwb/3.png"); */
 }
 /* 服务范围 */
 #range {
@@ -437,7 +437,7 @@
   overflow-y: auto;
 }
 .banner {
-  padding-top: 50% /*978/1920*/
+  padding-top: 50% /*978/1920*/;
 }
 
 @media screen and (max-width: 750px) {

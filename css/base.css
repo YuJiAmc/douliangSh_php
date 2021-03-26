@@ -73,6 +73,9 @@ body {
 .nav_list {
   display: none;
 }
+.banner {
+  background-color: #000;
+}
 /* banner加载前预留高度 */
 .banner_m,.banner {
   width: 100%;

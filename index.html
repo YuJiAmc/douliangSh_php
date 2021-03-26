@@ -11,7 +11,6 @@
     <meta name="description" content="{dede:global.cfg_description/}" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="baidu-site-verification" content="code-6EeonmxLw2" />
-    <script src="{dede:global.cfg_templets_skin/}/js/flexible.js"></script>
     <link
       rel="icon"
       type="image/png"
@@ -24,10 +23,8 @@
       sizes="16x16"
       href="{dede:global.cfg_templets_skin/}/favicon-16x16.png"
     />
-    <link
-      rel="stylesheet"
-      href="{dede:global.cfg_templets_skin/}/js/swiper/swiper.min.css"
-    />
+    <script src="{dede:global.cfg_templets_skin/}/js/flexible.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
     <script>
       document.write(
         '<link href="{dede:global.cfg_templets_skin/}/css/base.css?v=' +
@@ -65,9 +62,7 @@
       })();
     </script>
   </head>
-  <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
-  <script src="{dede:global.cfg_templets_skin/}/js/lazyload.min.js"></script>
-
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <body>
     <div
       id="index"
@@ -478,7 +473,7 @@
       <div class="head_m clearfix">
         <a href="/" class="logo_m fl">
           <img
-            data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
+            src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
             alt="m-斗量传媒-logo"
           />
         </a>
@@ -805,30 +800,9 @@
     <!-- 移动端导航栏 -->
     <div id="head_m">{dede:include filename="header_m.html"/}</div>
 
-    <script src="{dede:global.cfg_templets_skin/}/js/swiper/swiper.min.js"></script>
-    <script>
-      (function () {
-        var slider = new Swiper(".swiper-container", {
-          speed: 500,
-          loop: true,
-          slidesPerView: 3,
-          navigation: {
-            nextEl: ".swiper-prev",
-            prevEl: ".swiper-next",
-          },
-        });
-
-        var mySwiper = new Swiper(".swiper-container1", {
-          loop: true,
-          slidesPerView: 5,
-          centeredSlides: true,
-          slidePrevClass: "my-slide-prev",
-          slideNextClass: "my-slide-next",
-        });
-      })();
-    </script>
   </body>
 </html>
+<script src="{dede:global.cfg_templets_skin/}/js/lazyload.min.js"></script>
 <script>
   document.write(
     '<script src="{dede:global.cfg_templets_skin/}/js/common.js?v=' +
@@ -836,3 +810,26 @@
       '"><\/script>'
   );
 </script>
+<script src="https://cdn.bootcdn.net/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<script>
+  (function () {
+    var slider = new Swiper(".swiper-container", {
+      speed: 500,
+      loop: true,
+      slidesPerView: 3,
+      navigation: {
+        nextEl: ".swiper-prev",
+        prevEl: ".swiper-next",
+      },
+    });
+
+    var mySwiper = new Swiper(".swiper-container1", {
+      loop: true,
+      slidesPerView: 5,
+      centeredSlides: true,
+      slidePrevClass: "my-slide-prev",
+      slideNextClass: "my-slide-next",
+    });
+  })();
+</script>
+

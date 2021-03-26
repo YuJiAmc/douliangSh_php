@@ -62,10 +62,7 @@
         s.parentNode.insertBefore(hm, s);
       })();
     </script>
-    <script src="{dede:global.cfg_templets_skin/}/js/jquery-1.12.4.js"></script>
-    <script src="{dede:global.cfg_templets_skin/}/js/bootstrap/bootstrap.js"></script>
-    <script src="{dede:global.cfg_templets_skin/}/js/bootstrap/bootstrap-paginator.min.js"></script>
-    <script src="{dede:global.cfg_templets_skin/}/js/lazyload.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
   <body>
     <div id="newsCenter">
@@ -82,7 +79,7 @@
         <div class="header clearfix">
           <a href="/" class="logo fl">
             <img
-              data-src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
+              src="{dede:global.cfg_templets_skin/}/img/index/logo.png"
               alt="斗量传媒-logo"
             />
           </a>
@@ -132,7 +129,7 @@
           <img
             id="banner"
             style="width: 100%"
-            data-src="{dede:global.cfg_templets_skin/}/img/newsCenter/banner.jpg"
+            src="{dede:global.cfg_templets_skin/}/img/newsCenter/banner.jpg"
             alt="新闻中心-banner"
           />
         </div>
@@ -172,7 +169,7 @@
       <div class="head_m clearfix">
         <a href="/" class="logo_m fl">
           <img
-            data-src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
+            src="{dede:global.cfg_templets_skin/}/img/mobile/index/6-3.png"
             alt="m-斗量传媒-logo"
           />
         </a>
@@ -223,18 +220,20 @@
     <!-- 移动端导航栏 -->
     <div id="head_m">{dede:include filename="header_m.html"/}</div>
   </body>
-  <script>
-    $(document).ready(function () {
-      $(".back_top li:last-child").click(function () {
-        $("body,html").animate({ scrollTop: 0 }, 500);
-      });
-    });
-  </script>
+ 
 </html>
+<script src="{dede:global.cfg_templets_skin/}/js/bootstrap/bootstrap.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/bootstrap/bootstrap-paginator.min.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/lazyload.min.js"></script>
 <script>
   document.write(
     '<script src="{dede:global.cfg_templets_skin/}/js/common.js?v=' +
       new Date().getTime() +
       '"><\/script>'
   );
+  $(document).ready(function () {
+    $(".back_top li:last-child").click(function () {
+      $("body,html").animate({ scrollTop: 0 }, 500);
+    });
+  });
 </script>

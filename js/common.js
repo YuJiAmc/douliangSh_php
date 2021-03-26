@@ -50,5 +50,9 @@ window.addEventListener(
   acrossOrVertical,
   false
 );
+
 // 图片懒加载
 $("img").lazyload();
+$(function() {
+  $("div.lazy").lazyload();
+});
